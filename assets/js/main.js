@@ -2,6 +2,7 @@ const FILM_INDEX_PATH = './assets/data/film_index.json';
 const SECTION_DATA_PATH = './assets/data/section.json';
 const EUNMAK_SECTION_ID = 'eunmak';
 const ALL = 'all';
+const HEART_PATH = 'M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z';
 
 let films = [];
 let sectionsById = {};
@@ -43,6 +44,10 @@ function sectionBadgeTitle(section) {
   return currentLanguage === DEFAULT_LANGUAGE
     ? `${section.title.ko} (${section.title.en})`
     : section.title.en;
+}
+
+function renderSectionDot(section) {
+  return `<span class="section-dot" style="background:${section.hex};"></span>`;
 }
 
 function matchesSection(film) {
@@ -110,7 +115,7 @@ function renderFavButton(film) {
   const isFav = bookmarks.includes(film.id);
   return `
     <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav('${film.id}', event)" aria-label="${t('common.save_to_favs')}">
-      ${isFav ? '♥' : '♡'}
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${HEART_PATH}"/></svg>
     </button>
   `;
 }
@@ -151,7 +156,7 @@ function renderSectionBanner(section) {
     <div class="color-curator-banner">
       <div class="ccb-top">
         <span class="ccb-color-badge" style="background:${section.hex};">
-          ${section.icon} ${escapeHtml(sectionBadgeTitle(section))}
+          ${renderSectionDot(section)}${escapeHtml(sectionBadgeTitle(section))}
         </span>
         <span class="ccb-subtitle">${escapeHtml(localized(section.subtitle))}</span>
       </div>
@@ -173,7 +178,7 @@ function renderSpectrumGuide() {
       <div class="sgb-list">
         ${festivalSections().map(section => `
           <div class="sgb-item">
-            <span class="sgb-name" style="color:${section.hex};">${section.icon} ${escapeHtml(localized(section.title))}</span>
+            <span class="sgb-name" style="color:${section.hex};">${renderSectionDot(section)}${escapeHtml(localized(section.title))}</span>
             <span class="sgb-meaning">${escapeHtml(localized(section.subtitle))}</span>
           </div>
         `).join('')}
@@ -228,10 +233,12 @@ function renderSpotlight() {
 
 function renderSectionTag(film) {
   if (isEunmak(film)) {
-    return `<span class="fc-color-tag" style="background:var(--color-eunmak);color:#0369a1;font-weight:800;">${t('eunmak.tag')}</span>`;
+    // return `<span class="fc-color-tag" style="background:var(--color-eunmak);color:#0369a1;font-weight:800;">${t('eunmak.tag')}</span>`;
+    return `<span class="fc-color-tag" style="background:var(--color-eunmak);color:#0369a1;font-weight:800;"></span>`;
   }
   const section = sectionOf(film);
-  return `<span class="fc-color-tag" style="background:${section.hex};">${escapeHtml(localized(section.title))}</span>`;
+  // return `<span class="fc-color-tag" style="background:${section.hex};">${escapeHtml(localized(section.title))}</span>`;
+  return `<span class="fc-color-tag" style="background:${section.hex};"></span>`;
 }
 
 function renderFilmCard(film) {
@@ -248,7 +255,7 @@ function renderFilmCard(film) {
         </div>
       </div>
       <div class="fc-info">
-        <h3 class="fc-title">${escapeHtml(localized(film.title))}</h3>
+        <h3 class="fc-title">${renderSectionDot(sectionOf(film))}${escapeHtml(localized(film.title))}</h3>
         <p class="fc-director">${isEunmak(film) ? t('film.presented_by_eunmak') : t('film.director', { name: escapeHtml(localized(film.director)) })}</p>
         <div class="fc-meta-sub">
           <span>${formatDay(film.screening.day)}</span>

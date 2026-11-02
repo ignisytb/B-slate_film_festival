@@ -27,8 +27,7 @@
 				"Obsession"
 			]
 		},
-		"hex": "#d6334c",
-		"icon": "🔴"
+		"hex": "#d6334c"
 	},
 	{
 		"id": "charcoal",
@@ -58,8 +57,7 @@
 				"Distrust"
 			]
 		},
-		"hex": "#64748b",
-		"icon": "🔘"
+		"hex": "#64748b"
 	},
 	{
 		"id": "pink",
@@ -89,8 +87,7 @@
 				"Youth"
 			]
 		},
-		"hex": "#e06d96",
-		"icon": "🌸"
+		"hex": "#e06d96"
 	},
 	{
 		"id": "khaki",
@@ -120,8 +117,7 @@
 				"Suspense"
 			]
 		},
-		"hex": "#7a8256",
-		"icon": "🫒"
+		"hex": "#7a8256"
 	},
 	{
 		"id": "orange",
@@ -151,8 +147,7 @@
 				"Opening & Closing"
 			]
 		},
-		"hex": "#e27137",
-		"icon": "🟠"
+		"hex": "#e27137"
 	},
 	{
 		"id": "eunmak",
@@ -182,7 +177,6 @@
 				"University Film Exchange"
 			]
 		},
-		"hex": "#38bdf8",
-		"icon": "🤝"
+		"hex": "#38bdf8"
 	}
 ]

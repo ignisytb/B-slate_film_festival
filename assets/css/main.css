@@ -387,6 +387,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	border-radius: 50%;
 	display: inline-block;
 }
+
+.section-dot {
+	width: 0.6em;
+	height: 0.6em;
+	margin-right: 0.4em;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: 0.05em;
+	flex-shrink: 0;
+}
+
+.ccb-color-badge .section-dot {
+	box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.9);
+}
 .chip-eunmak {
 	border-color: rgba(56, 189, 248, 0.4);
 	color: #bae6fd;
@@ -1322,8 +1336,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* 좋아요 버튼 */
 .fav-btn {
 	position: absolute;
-	top: 12px;
-	right: 12px;
+	top: 6px;
+	right: 6px;
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
@@ -1337,6 +1351,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	border: 1px solid rgba(255, 255, 255, 0.15);
 	z-index: 10;
 	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.fav-btn svg {
+	width: 18px;
+	height: 18px;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+}
+.fav-btn.active svg {
+	fill: currentColor;
 }
 .fav-btn.active {
 	color: #ef4444;
