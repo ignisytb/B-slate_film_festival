@@ -27,13 +27,13 @@
 	"running_time": "37:34",
 	"screening": {
 		"day": 3,
-		"start": "18:30",
+		"start": "19:00",
 		"end": "20:00",
 		"part": 1,
 		"order": null,
 		"hall": {
-			"ko": "DGIST E7 B관",
-			"en": "DGIST E7 Hall B"
+			"ko": "DGIST E7 235",
+			"en": "DGIST E7 235"
 		}
 	},
 	"is_gv": true,
