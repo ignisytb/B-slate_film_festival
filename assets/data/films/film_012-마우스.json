@@ -1,0 +1,72 @@
+{
+	"id": "film_012",
+	"title": {
+		"ko": "마우스",
+		"en": "Mouse"
+	},
+	"director": {
+		"ko": "조수빈",
+		"en": "Cho Su-bin"
+	},
+	"writer": {
+		"ko": "서유리",
+		"en": "Seo Yu-ri"
+	},
+	"year": 2025,
+	"section": "charcoal",
+	"session": {
+		"ko": "공포, 의심과 불안",
+		"en": "Horror, Suspicion and Anxiety"
+	},
+	"theme": {
+		"ko": "현실 · 의심과 불신",
+		"en": "Reality · Suspicion and Distrust"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "16:30",
+	"screening": {
+		"day": 2,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": 2,
+		"hall": {
+			"ko": "DGIST E7 C관",
+			"en": "DGIST E7 Hall C"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "신지우",
+				"en": "Shin Ji-woo"
+			},
+			"role": {
+				"ko": "",
+				"en": ""
+			}
+		},
+		{
+			"name": {
+				"ko": "강현성",
+				"en": "Kang Hyun-sung"
+			},
+			"role": {
+				"ko": "",
+				"en": ""
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "사라진 마우스 하나가 조별과제 팀원 사이에 걷잡을 수 없는 의심을 불러온다.",
+		"en": "A single missing mouse sparks uncontrollable suspicion among members of a group project."
+	},
+	"synopsis": {
+		"ko": "어느 날 캠퍼스에서 아끼던 무선 마우스를 잃어버린 정인. 흔적을 찾던 그녀의 시선에 조별과제 팀원인 하경의 책상 위에 놓인, 자신의 것과 똑같이 생긴 마우스가 포착된다. 확신할 수도 그냥 넘어갈 수도 없는 묘한 신경전 속에서, 작은 물건 하나가 불러온 의심은 두 사람의 관계를 일촉즉발의 긴장으로 몰아넣는다.",
+		"en": "One day, Jeong-in loses her favorite wireless mouse on campus. While searching for it, she spots a mouse identical to hers on the desk of Ha-kyung, a member of her group project team. Unable to be sure, yet unable to let it go, the two are drawn into a strange war of nerves, and the suspicion sparked by a small object pushes their relationship to the brink."
+	},
+	"stills": []
+}

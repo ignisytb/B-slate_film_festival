@@ -1,0 +1,72 @@
+{
+	"id": "film_024",
+	"title": {
+		"ko": "문",
+		"en": "The Door"
+	},
+	"director": {
+		"ko": "백인호",
+		"en": "Baek In-ho"
+	},
+	"writer": {
+		"ko": "백인호",
+		"en": "Baek In-ho"
+	},
+	"year": 2026,
+	"section": "orange",
+	"session": {
+		"ko": "폐막 (두려움 너머의 문)",
+		"en": "Closing (The Door Beyond Fear)"
+	},
+	"theme": {
+		"ko": "폐막작 · 두려움 너머의 문",
+		"en": "Closing Film · The Door Beyond Fear"
+	},
+	"is_opening": false,
+	"is_closing": true,
+	"running_time": null,
+	"screening": {
+		"day": 3,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 메인홀",
+			"en": "DGIST E7 Main Hall"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "정아임",
+				"en": "Jung A-im"
+			},
+			"role": {
+				"ko": "이지아",
+				"en": "Lee Ji-a"
+			}
+		},
+		{
+			"name": {
+				"ko": "김나영",
+				"en": "Kim Na-young"
+			},
+			"role": {
+				"ko": "제이",
+				"en": "Jay"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "타인의 시선이 두려워 문 앞에 멈춰 서던 연주자가 마침내 세상의 무대와 마주한다.",
+		"en": "A violinist who froze before every door out of fear of others' eyes finally faces the world's stage."
+	},
+	"synopsis": {
+		"ko": "아무도 보지 않는 방 안의 얼굴 없는 방송에서는 누구보다 자유롭게 바이올린을 켜는 지아. 하지만 타인의 시선이 닿는 순간, 그녀의 손끝은 얼어붙고 연주는 멈춰 버린다. 그러던 어느 날, 오랫동안 동경해온 바이올리니스트로부터 특별한 무대의 초대가 도착하고, 지아는 평생 피해왔던 세상이라는 문 앞에 처음으로 서게 된다.",
+		"en": "Ji-a plays the violin more freely than anyone in faceless livestreams from a room where no one can see her. But the moment others' eyes are on her, her fingers freeze and the music stops. Then one day, an invitation to a special stage arrives from a violinist she has long admired, and Ji-a stands for the first time before the door to the world she has avoided all her life."
+	},
+	"stills": []
+}

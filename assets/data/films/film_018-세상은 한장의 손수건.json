@@ -1,0 +1,72 @@
+{
+	"id": "film_018",
+	"title": {
+		"ko": "세상은 한장의 손수건",
+		"en": "The World Is a Handkerchief"
+	},
+	"director": {
+		"ko": "한예담",
+		"en": "Han Ye-dam"
+	},
+	"writer": {
+		"ko": "강은석",
+		"en": "Kang Eun-seok"
+	},
+	"year": 2024,
+	"section": "pink",
+	"session": {
+		"ko": "우연과 인연",
+		"en": "Chance and Fate"
+	},
+	"theme": {
+		"ko": "사랑과 만남 · 우연과 인연",
+		"en": "Love and Meeting · Chance and Fate"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "37:34",
+	"screening": {
+		"day": 3,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 B관",
+			"en": "DGIST E7 Hall B"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "허태훈",
+				"en": "Heo Tae-hoon"
+			},
+			"role": {
+				"ko": "지홍",
+				"en": "Ji-hong"
+			}
+		},
+		{
+			"name": {
+				"ko": "신연재",
+				"en": "Shin Yeon-jae"
+			},
+			"role": {
+				"ko": "도연",
+				"en": "Do-yeon"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "도움이 필요한 순간마다 스쳐 지나간 우연이 돌고 돌아 특별한 인연으로 이어진다.",
+		"en": "Chance encounters that pass by in moments of need come full circle into a special connection."
+	},
+	"synopsis": {
+		"ko": "도움이 절실한 순간마다 기묘하게 이어지는 우연 속에서 도연은 낯선 이들에게 뜻밖의 호의를 건네받는다. 누군가에게 받은 작은 친절은 또 다른 누군가의 삶을 움직이는 나비효과가 되어 캠퍼스 곳곳으로 번져 나간다. 우연과 인연의 경계에서 시작된 스침이 과연 사람들의 일상에 어떤 특별한 기적을 만들어낼까.",
+		"en": "Through strange coincidences that keep appearing whenever she desperately needs help, Do-yeon receives unexpected kindness from strangers. A small kindness received from one person becomes a butterfly effect that moves someone else's life, spreading across the campus. What special miracle will these brief encounters, born on the border between chance and fate, bring to people's everyday lives?"
+	},
+	"stills": []
+}

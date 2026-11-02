@@ -1,4 +1,5 @@
 const BOOKMARK_STORAGE_KEY = 'nangman_bookmarks';
+const FILM_DATA_DIR = './assets/data/films';
 const FILM_POSTER_DIR = 'assets/img/posters/film';
 const FILM_ID_PREFIX = 'film_';
 const FILM_ROUTE_PREFIX = '#/film/';
@@ -38,6 +39,10 @@ function filmLink(film) {
 
 function filmIdFromHash(hash) {
   return hash.startsWith(FILM_ROUTE_PREFIX) ? FILM_ID_PREFIX + hash.slice(FILM_ROUTE_PREFIX.length) : null;
+}
+
+function filmDataPath(folder) {
+  return `${FILM_DATA_DIR}/${encodeURIComponent(folder)}.json`;
 }
 
 function posterPath(film) {

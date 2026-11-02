@@ -1,0 +1,92 @@
+{
+	"id": "film_022",
+	"title": {
+		"ko": "지우개",
+		"en": "Eraser"
+	},
+	"director": {
+		"ko": "정욱진",
+		"en": "Jung Wook-jin"
+	},
+	"writer": {
+		"ko": "조수빈",
+		"en": "Cho Su-bin"
+	},
+	"year": 2025,
+	"section": "pink",
+	"session": {
+		"ko": "이별 (사랑의 끝과 수용)",
+		"en": "Parting (The End of Love and Acceptance)"
+	},
+	"theme": {
+		"ko": "사랑 · 이별 · 실험적",
+		"en": "Love · Parting · Experimental"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "13:31",
+	"screening": {
+		"day": 3,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": 4,
+		"hall": {
+			"ko": "DGIST E7 C관",
+			"en": "DGIST E7 Hall C"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "최도윤",
+				"en": "Choi Do-yoon"
+			},
+			"role": {
+				"ko": "그",
+				"en": "He"
+			}
+		},
+		{
+			"name": {
+				"ko": "김서현",
+				"en": "Kim Seo-hyun"
+			},
+			"role": {
+				"ko": "그녀",
+				"en": "She"
+			}
+		},
+		{
+			"name": {
+				"ko": "이하나",
+				"en": "Lee Ha-na"
+			},
+			"role": {
+				"ko": "그녀",
+				"en": "She"
+			}
+		},
+		{
+			"name": {
+				"ko": "신연재",
+				"en": "Shin Yeon-jae"
+			},
+			"role": {
+				"ko": "그녀",
+				"en": "She"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "방 안을 채운 추억의 물건들을 하나씩 비워내며 지난 사랑을 조용히 떠나보낸다.",
+		"en": "Emptying her room of keepsakes one by one, she quietly lets a past love go."
+	},
+	"synopsis": {
+		"ko": "작은 방 안을 가득 채운 지난날의 소중한 물건들. 언젠가는 정리해야 할 기억임을 잘 알면서도, 함께했던 흔적을 하나씩 지워낸다는 것은 그녀에게 결코 쉽지 않은 일이다. 손끝에 닿는 물건마다 되살아나는 기억들을 마주하며, 그녀는 비로소 지난 시간을 떠나보내기 위한 준비를 시작한다.",
+		"en": "A small room is filled with precious things from days gone by. She knows these are memories she will have to clear away someday, yet erasing the traces of their time together one by one is never easy. Facing the memories that come back with every object she touches, she finally begins to prepare to let the past go."
+	},
+	"stills": []
+}

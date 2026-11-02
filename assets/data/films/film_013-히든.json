@@ -1,0 +1,106 @@
+{
+	"id": "film_013",
+	"title": {
+		"ko": "히든",
+		"en": "Hidden"
+	},
+	"director": {
+		"ko": "황인탁",
+		"en": "Hwang In-tak"
+	},
+	"writer": {
+		"ko": "황인탁(각색), 강은호, 강은석",
+		"en": "Hwang In-tak (adaptation), Kang Eun-ho, Kang Eun-seok"
+	},
+	"year": 2019,
+	"section": "charcoal",
+	"session": {
+		"ko": "공포, 의심과 불안",
+		"en": "Horror, Suspicion and Anxiety"
+	},
+	"theme": {
+		"ko": "공포 · 옛날영화",
+		"en": "Horror · Retro Film"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "33:52",
+	"screening": {
+		"day": 2,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": 3,
+		"hall": {
+			"ko": "DGIST E7 C관",
+			"en": "DGIST E7 Hall C"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "정현수",
+				"en": "Jung Hyun-soo"
+			},
+			"role": {
+				"ko": "원석",
+				"en": "Won-seok"
+			}
+		},
+		{
+			"name": {
+				"ko": "정원우",
+				"en": "Jung Won-woo"
+			},
+			"role": {
+				"ko": "현민",
+				"en": "Hyun-min"
+			}
+		},
+		{
+			"name": {
+				"ko": "구본진",
+				"en": "Koo Bon-jin"
+			},
+			"role": {
+				"ko": "동현",
+				"en": "Dong-hyun"
+			}
+		},
+		{
+			"name": {
+				"ko": "서현진",
+				"en": "Seo Hyun-jin"
+			},
+			"role": {
+				"ko": "주은",
+				"en": "Ju-eun"
+			}
+		},
+		{
+			"name": {
+				"ko": "김주현",
+				"en": "Kim Ju-hyun"
+			},
+			"role": {
+				"ko": "재준",
+				"en": "Jae-jun"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "기숙사 방문 앞을 몰래 찍은 USB가 배달되며 애써 묻어두었던 과거의 죄책감이 깨어난다.",
+		"en": "When a USB of secret footage shot outside their dorm room arrives, long-buried guilt from the past awakens."
+	},
+	"synopsis": {
+		"ko": "대학 기숙사에 거주하는 원석과 룸메이트 현민 앞으로 누군가 자신들의 방문 앞을 몇 시간씩 몰래 촬영한 USB와 기괴한 그림, 옛집 사진이 연이어 배달된다. 정체불명의 시선에 극심한 불안을 느끼던 원석은 어린 시절 부모님이 입양하려 했으나, 자신의 악의적인 거짓말로 파양되었던 가정부의 아들 동현을 떠올린다. 결국 원석은 같은 대학 기숙사에 살고 있는 동현을 찾아가 추궁하기 시작하고, 애써 묻어두었던 과거의 진실은 걷잡을 수 없는 소용돌이를 불러온다.",
+		"en": "Won-seok and his roommate Hyun-min, who live in a university dormitory, keep receiving deliveries: a USB of footage secretly filmed outside their door for hours, grotesque drawings, and photos of an old house. Deeply unsettled by the unknown watcher, Won-seok remembers Dong-hyun, the housekeeper's son his parents once tried to adopt, until Won-seok's malicious lie ended the adoption. Won-seok finally confronts Dong-hyun, who lives in the same dormitory, and the buried truth of the past unleashes an uncontrollable whirlwind."
+	},
+	"stills": [
+		"assets/img/stills/film_013-히든/still_1.jpg",
+		"assets/img/stills/film_013-히든/still_2.jpg",
+		"assets/img/stills/film_013-히든/still_3.jpg"
+	]
+}

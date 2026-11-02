@@ -1,4 +1,4 @@
-const FILM_DATA_PATH = './assets/data/film.json';
+const FILM_INDEX_PATH = './assets/data/film_index.json';
 const SECTION_DATA_PATH = './assets/data/section.json';
 const EUNMAK_SECTION_ID = 'eunmak';
 const ALL = 'all';
@@ -562,12 +562,17 @@ function handleSearch(text) {
   focusSearchInputAtEnd();
 }
 
+async function loadFilms() {
+  const filmIndex = await loadJson(FILM_INDEX_PATH);
+  return Promise.all(filmIndex.map(async ({ folder }) => ({ ...await loadJson(filmDataPath(folder)), folder })));
+}
+
 async function init() {
   updateFavCount();
   setActiveNav(currentTab);
 
   try {
-    const [filmData, sectionData] = await Promise.all([loadJson(FILM_DATA_PATH), loadJson(SECTION_DATA_PATH)]);
+    const [filmData, sectionData] = await Promise.all([loadFilms(), loadJson(SECTION_DATA_PATH)]);
     films = filmData.sort(compareScreening);
     sectionsById = Object.fromEntries(sectionData.map(section => [section.id, section]));
   } catch (error) {

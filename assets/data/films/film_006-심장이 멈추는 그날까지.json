@@ -1,0 +1,86 @@
+{
+	"id": "film_006",
+	"title": {
+		"ko": "심장이 멈추는 그날까지",
+		"en": "Until the Day My Heart Stops"
+	},
+	"director": {
+		"ko": "황인탁",
+		"en": "Hwang In-tak"
+	},
+	"writer": {
+		"ko": "황인탁",
+		"en": "Hwang In-tak"
+	},
+	"year": 2019,
+	"section": "crimson",
+	"session": {
+		"ko": "욕망과 집착",
+		"en": "Desire and Obsession"
+	},
+	"theme": {
+		"ko": "사랑 · 연인 · 판타지",
+		"en": "Love · Lovers · Fantasy"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "24:53",
+	"screening": {
+		"day": 1,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
+		"order": 3,
+		"hall": {
+			"ko": "DGIST E7 C관",
+			"en": "DGIST E7 Hall C"
+		}
+	},
+	"is_gv": false,
+	"cast": [
+		{
+			"name": {
+				"ko": "박창희",
+				"en": "Park Chang-hee"
+			},
+			"role": {
+				"ko": "태형",
+				"en": "Tae-hyung"
+			}
+		},
+		{
+			"name": {
+				"ko": "이윤지",
+				"en": "Lee Yoon-ji"
+			},
+			"role": {
+				"ko": "하늘",
+				"en": "Haneul"
+			}
+		},
+		{
+			"name": {
+				"ko": "구본진",
+				"en": "Koo Bon-jin"
+			},
+			"role": {
+				"ko": "현식",
+				"en": "Hyun-sik"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "멈출 듯 아파오던 심장을 구원해준 운명적 사랑 이면에 서늘한 진실이 드러난다.",
+		"en": "Behind the fated love that saved his failing heart, a chilling truth comes to light."
+	},
+	"synopsis": {
+		"ko": "원인 불명의 유전성 심장병을 물려받아 언제 멈출지 모르는 심장을 안고 살아가는 신입생 태형. 어느 날 심장 발작으로 쓰러진 그의 앞에 운명처럼 하늘이 나타나 목숨을 구해주고, 신기하게도 그녀의 곁에 있을 때면 태형의 심장은 아무런 통증도 느끼지 않는다. 하늘이 선물한 열쇠고리를 지닌 채 꿈같은 연애를 이어가던 어느 날, 걸려온 의문의 전화 한 통에 이어 낯선 남자 현식이 두 사람 앞에 나타나면서 완벽했던 운명에 서늘한 균열이 일기 시작한다.",
+		"en": "Tae-hyung, a freshman, lives with an unexplained hereditary heart condition that could stop his heart at any moment. One day, when he collapses from a heart attack, Haneul appears as if by fate and saves his life, and strangely, his heart feels no pain whenever she is near. Carrying the keychain she gave him, he enjoys a dreamlike romance until a mysterious phone call and the arrival of a stranger, Hyun-sik, open a cold crack in their perfect fate."
+	},
+	"stills": [
+		"assets/img/stills/film_006-심장이 멈추는 그날까지/still_1.jpg",
+		"assets/img/stills/film_006-심장이 멈추는 그날까지/still_2.jpg",
+		"assets/img/stills/film_006-심장이 멈추는 그날까지/still_3.jpg"
+	]
+}

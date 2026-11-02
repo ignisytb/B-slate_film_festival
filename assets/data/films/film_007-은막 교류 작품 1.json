@@ -1,0 +1,62 @@
+{
+	"id": "film_007",
+	"title": {
+		"ko": "은막 교류 작품 1",
+		"en": "KAIST Eunmak Exchange Film 1"
+	},
+	"director": {
+		"ko": "KAIST 영화제작동아리 은막",
+		"en": "KAIST Film Club Eunmak"
+	},
+	"writer": {
+		"ko": "KAIST 은막 창작팀",
+		"en": "KAIST Eunmak Creative Team"
+	},
+	"year": null,
+	"section": "eunmak",
+	"session": {
+		"ko": "교류작 1",
+		"en": "Exchange Screening 1"
+	},
+	"theme": {
+		"ko": "카이스트(KAIST) 영화제작동아리 은막 초청 교류전",
+		"en": "Invited Exchange Screening with KAIST Film Club Eunmak"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "55:00",
+	"screening": {
+		"day": 2,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 A관",
+			"en": "DGIST E7 Hall A"
+		}
+	},
+	"is_gv": false,
+	"cast": [
+		{
+			"name": {
+				"ko": "카이스트 은막 단원들",
+				"en": "Members of KAIST Eunmak"
+			},
+			"role": {
+				"ko": "",
+				"en": ""
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "카이스트(KAIST) 유일의 중앙 영화제작동아리 '은막(銀幕)'과의 특별 교류 상영작입니다.",
+		"en": "A special exchange screening with Eunmak (銀幕), the only central filmmaking club at KAIST."
+	},
+	"synopsis": {
+		"ko": "카이스트(KAIST) 유일의 중앙 영화제작동아리 '은막(銀幕)'과 비슬영화제(B_SLATE)가 함께하는 특별 교류 프로그램입니다.\n\n과학기술특성화대학 청년 창작자들의 스크린 너머 시선과 새로운 예술적 시도를 담은 단편 수작들을 초청 상영합니다.\n\n• 상영 세션: 〈스크린 너머의 시선〉\n• 상영 장소: DGIST E7 A관\n• 주최/출품: 카이스트(KAIST) 영화제작동아리 은막(銀幕)",
+		"en": "A special exchange program between Eunmak (銀幕), the only central filmmaking club at KAIST, and the B-slate Film Festival.\n\nWe present a selection of fine short films by young creators from a science and technology university, capturing their view beyond the screen and their new artistic experiments.\n\n• Session: 〈A View Beyond the Screen〉\n• Venue: DGIST E7 Hall A\n• Presented by: KAIST Film Club Eunmak (銀幕)"
+	},
+	"stills": []
+}

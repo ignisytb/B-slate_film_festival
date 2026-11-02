@@ -1,0 +1,82 @@
+{
+	"id": "film_015",
+	"title": {
+		"ko": "완벽한 이별",
+		"en": "The Perfect Goodbye"
+	},
+	"director": {
+		"ko": "유제이",
+		"en": "Yoo Je-i"
+	},
+	"writer": {
+		"ko": "정욱진",
+		"en": "Jung Wook-jin"
+	},
+	"year": 2023,
+	"section": "pink",
+	"session": {
+		"ko": "미련과 새로운 시작",
+		"en": "Lingering Feelings and New Beginnings"
+	},
+	"theme": {
+		"ko": "삼각관계 · 사랑의 마침표",
+		"en": "Love Triangle · The End of Love"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "1:03:12",
+	"screening": {
+		"day": 2,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 B관",
+			"en": "DGIST E7 Hall B"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "최봄",
+				"en": "Choi Bom"
+			},
+			"role": {
+				"ko": "지웅",
+				"en": "Ji-woong"
+			}
+		},
+		{
+			"name": {
+				"ko": "유제이",
+				"en": "Yoo Je-i"
+			},
+			"role": {
+				"ko": "지연",
+				"en": "Ji-yeon"
+			}
+		},
+		{
+			"name": {
+				"ko": "남예지",
+				"en": "Nam Ye-ji"
+			},
+			"role": {
+				"ko": "서연",
+				"en": "Seo-yeon"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "정리하지 못한 익숙한 미련과 설레는 새로운 인연 사이에서 사랑의 마침표를 마주한다.",
+		"en": "Torn between lingering feelings he can't let go of and an exciting new connection, a man faces the end of a love."
+	},
+	"synopsis": {
+		"ko": "전 여자친구 서연과 헤어진 뒤에도 여전히 애매한 관계를 이어가고 있는 지웅. 정리되지 않은 미련 속에서 머뭇거리던 그에게 서연과는 전혀 다른 매력을 지닌 새로운 인연, 지연이 다가온다. 편안한 익숙함과 설레는 새로움 사이에서 지웅의 마음은 깊게 흔들리고, 그는 마침내 지나간 사랑의 마침표를 마주해야 하는 순간에 도달한다.",
+		"en": "Even after breaking up with his ex-girlfriend Seo-yeon, Ji-woong remains in an ambiguous relationship with her. As he hesitates amid unresolved feelings, Ji-yeon, someone with a completely different charm, comes into his life. Torn between comfortable familiarity and exciting newness, Ji-woong's heart is deeply shaken, until he finally reaches the moment when he must put an end to a past love."
+	},
+	"stills": []
+}

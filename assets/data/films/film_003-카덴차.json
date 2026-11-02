@@ -1,0 +1,72 @@
+{
+	"id": "film_003",
+	"title": {
+		"ko": "카덴차",
+		"en": "Cadenza"
+	},
+	"director": {
+		"ko": "정욱진",
+		"en": "Jung Wook-jin"
+	},
+	"writer": {
+		"ko": "김혜원",
+		"en": "Kim Hye-won"
+	},
+	"year": 2024,
+	"section": "orange",
+	"session": {
+		"ko": "애착과 불완전함",
+		"en": "Attachment and Imperfection"
+	},
+	"theme": {
+		"ko": "음악영화 · 악보의 여백",
+		"en": "Music Film · The Spaces Between the Notes"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "32:49",
+	"screening": {
+		"day": 1,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 B관",
+			"en": "DGIST E7 Hall B"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "최도윤",
+				"en": "Choi Do-yoon"
+			},
+			"role": {
+				"ko": "현우",
+				"en": "Hyun-woo"
+			}
+		},
+		{
+			"name": {
+				"ko": "위예은",
+				"en": "Wi Ye-eun"
+			},
+			"role": {
+				"ko": "혜진",
+				"en": "Hye-jin"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "클래식 선율로 가까워진 두 청춘의 시선이 예고 없이 어긋나기 시작한다.",
+		"en": "Two young people drawn together by classical music begin to drift apart without warning."
+	},
+	"synopsis": {
+		"ko": "물리학과 신입생 혜진의 눈에 클래식 피아노를 연주하는 조용한 동기 현우가 들어온다. 두 사람은 음악을 매개로 빠르게 가까워지며 평범한 친구 이상의 깊은 애착 관계를 형성해 나간다. 그러나 현우와 함께하는 시간이 늘어갈수록, 혜진이 미처 알지 못했던 현우의 시선은 점차 피아노가 아닌 낯선 곳을 향하기 시작한다.",
+		"en": "Hye-jin, a freshman in physics, notices Hyun-woo, a quiet classmate who plays classical piano. Brought together by music, the two quickly grow close and form an attachment deeper than friendship. But the more time Hye-jin spends with him, the more Hyun-woo's gaze turns away from the piano, toward something she never knew about."
+	},
+	"stills": []
+}

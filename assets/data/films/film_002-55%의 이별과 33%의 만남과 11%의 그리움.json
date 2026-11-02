@@ -1,0 +1,82 @@
+{
+	"id": "film_002",
+	"title": {
+		"ko": "55%의 이별과 33%의 만남과 11%의 그리움",
+		"en": "55% Farewell, 33% Encounter, 11% Longing"
+	},
+	"director": {
+		"ko": "강현성",
+		"en": "Kang Hyun-sung"
+	},
+	"writer": {
+		"ko": "강현성",
+		"en": "Kang Hyun-sung"
+	},
+	"year": 2026,
+	"section": "pink",
+	"session": {
+		"ko": "청춘과 그리움",
+		"en": "Youth and Longing"
+	},
+	"theme": {
+		"ko": "청춘과 그리움 · 성장",
+		"en": "Youth and Longing · Growing Up"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "46:04",
+	"screening": {
+		"day": 1,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 A관",
+			"en": "DGIST E7 Hall A"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "정아임",
+				"en": "Jung A-im"
+			},
+			"role": {
+				"ko": "배지민",
+				"en": "Bae Ji-min"
+			}
+		},
+		{
+			"name": {
+				"ko": "신지우",
+				"en": "Shin Ji-woo"
+			},
+			"role": {
+				"ko": "이영숙",
+				"en": "Lee Young-sook"
+			}
+		},
+		{
+			"name": {
+				"ko": "양태빈",
+				"en": "Yang Tae-bin"
+			},
+			"role": {
+				"ko": "배정우",
+				"en": "Bae Jung-woo"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "수많은 만남과 이별을 지나온 청춘이 오랫동안 외면해왔던 마음속 상처와 마주한다.",
+		"en": "A young woman who has been through countless meetings and partings finally faces the wounds she has long ignored."
+	},
+	"synopsis": {
+		"ko": "낯선 캠퍼스에서 설레는 대학 생활을 시작한 지민은 자신의 꿈을 향해 나아가며 수많은 인연과 마주한다. 그러나 새로운 만남의 기쁨도 잠시, 예고 없이 찾아오는 이별과 엇갈리는 감정 속에서 지민의 일상은 예상치 못한 파도에 휘말린다. 지나온 인연의 조각들과 그 사이에 남겨진 그리움을 되짚어가던 지민은 마침내 자신이 오랫동안 외면해왔던 마음속 상처와 마주하게 된다.",
+		"en": "Starting an exciting new life on an unfamiliar campus, Ji-min meets many people as she pursues her dreams. But the joy of new encounters is brief. Caught in sudden goodbyes and crossed feelings, her everyday life is swept up in unexpected waves. Retracing the fragments of past relationships and the longing left between them, Ji-min finally faces the wounds in her heart she has long ignored."
+	},
+	"stills": []
+}

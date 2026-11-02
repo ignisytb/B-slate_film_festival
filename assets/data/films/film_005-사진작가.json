@@ -1,0 +1,72 @@
+{
+	"id": "film_005",
+	"title": {
+		"ko": "사진작가",
+		"en": "The Photographer"
+	},
+	"director": {
+		"ko": "김성현",
+		"en": "Kim Sung-hyun"
+	},
+	"writer": {
+		"ko": "김성현",
+		"en": "Kim Sung-hyun"
+	},
+	"year": 2022,
+	"section": "charcoal",
+	"session": {
+		"ko": "욕망과 집착",
+		"en": "Desire and Obsession"
+	},
+	"theme": {
+		"ko": "집착 · 공포",
+		"en": "Obsession · Horror"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "12:06",
+	"screening": {
+		"day": 1,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
+		"order": 2,
+		"hall": {
+			"ko": "DGIST E7 C관",
+			"en": "DGIST E7 Hall C"
+		}
+	},
+	"is_gv": false,
+	"cast": [
+		{
+			"name": {
+				"ko": "김도현",
+				"en": "Kim Do-hyun"
+			},
+			"role": {
+				"ko": "현승",
+				"en": "Hyun-seung"
+			}
+		},
+		{
+			"name": {
+				"ko": "김여진",
+				"en": "Kim Yeo-jin"
+			},
+			"role": {
+				"ko": "유이",
+				"en": "Yui"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "렌즈 너머의 피사체를 소유하려는 갈망 끝에 현실과 환상의 경계가 무너져 내린다.",
+		"en": "Driven by the desire to possess the subject beyond his lens, a photographer watches the line between reality and illusion collapse."
+	},
+	"synopsis": {
+		"ko": "카메라 렌즈 너머의 피사체를 온전히 소유하고 싶다는 갈망에 사로잡힌 현승. 익숙했던 그의 일상이 조금씩 기묘하게 뒤틀리기 시작하면서, 현실과 환상의 경계는 걷잡을 수 없이 무너져 내린다. 반복되는 불안과 낯선 환각 속에서 기억과 욕망이 뒤섞이는 가운데, 현승이 집착 끝에 마주하게 될 진실은 무엇일까.",
+		"en": "Hyun-seung is consumed by the desire to fully possess the subject on the other side of his camera lens. As his familiar daily life slowly twists into something strange, the line between reality and illusion crumbles beyond control. Amid recurring anxiety and unfamiliar hallucinations where memory and desire blur together, what truth will Hyun-seung face at the end of his obsession?"
+	},
+	"stills": []
+}

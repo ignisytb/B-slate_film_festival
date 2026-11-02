@@ -1,0 +1,82 @@
+{
+	"id": "film_016",
+	"title": {
+		"ko": "안개",
+		"en": "Fog"
+	},
+	"director": {
+		"ko": "김도헌",
+		"en": "Kim Do-heon"
+	},
+	"writer": {
+		"ko": "김도헌",
+		"en": "Kim Do-heon"
+	},
+	"year": 2026,
+	"section": "khaki",
+	"session": {
+		"ko": "추적과 전장의 안개",
+		"en": "Pursuit and the Fog of War"
+	},
+	"theme": {
+		"ko": "액션 · 첩보 · 전장의 안개",
+		"en": "Action · Espionage · Fog of War"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "39:59",
+	"screening": {
+		"day": 2,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 C관",
+			"en": "DGIST E7 Hall C"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "최성웅",
+				"en": "Choi Sung-woong"
+			},
+			"role": {
+				"ko": "정현",
+				"en": "Jung-hyun"
+			}
+		},
+		{
+			"name": {
+				"ko": "양태빈",
+				"en": "Yang Tae-bin"
+			},
+			"role": {
+				"ko": "태성",
+				"en": "Tae-sung"
+			}
+		},
+		{
+			"name": {
+				"ko": "김서현",
+				"en": "Kim Seo-hyun"
+			},
+			"role": {
+				"ko": "유진",
+				"en": "Yu-jin"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "한 치 앞도 보이지 않는 전장의 안개 속, 보이지 않는 적을 향한 추적이 시작된다.",
+		"en": "In the fog of war where nothing can be seen ahead, the pursuit of an invisible enemy begins."
+	},
+	"synopsis": {
+		"ko": "한반도 곳곳에서 감지되는 수상한 전조를 좇아, 국군정보사 특임대 요원 강정현은 대구의 한 연구소에 파견되어 비밀 수사에 착수한다. 그러나 짙은 안개가 드리운 듯 단서들은 좀처럼 하나의 실체를 가리키지 않고, 정현이 흩어진 흔적을 더듬는 사이 정체불명의 세력은 이미 거대한 계획을 실행에 옮기기 시작한다. 보이지 않는 적의 그림자가 시시각각 조여오는 가운데, 정현은 한 치 앞도 예측할 수 없는 전장의 안개 속으로 걸어 들어간다.",
+		"en": "Following suspicious signs detected across the Korean Peninsula, Kang Jung-hyun, an agent of the Korea Defense Intelligence Command's special task unit, is dispatched to a research institute in Daegu to begin a secret investigation. But as if veiled in thick fog, the clues never point to a single answer, and while Jung-hyun traces scattered leads, an unknown force has already set a massive plan in motion. As the shadow of the invisible enemy closes in, Jung-hyun walks into a fog of war where not even a step ahead can be predicted."
+	},
+	"stills": []
+}

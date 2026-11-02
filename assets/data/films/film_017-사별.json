@@ -1,0 +1,82 @@
+{
+	"id": "film_017",
+	"title": {
+		"ko": "사별",
+		"en": "Bereavement"
+	},
+	"director": {
+		"ko": "백인호",
+		"en": "Baek In-ho"
+	},
+	"writer": {
+		"ko": "백인호",
+		"en": "Baek In-ho"
+	},
+	"year": 2024,
+	"section": "pink",
+	"session": {
+		"ko": "이별과 극복",
+		"en": "Loss and Overcoming"
+	},
+	"theme": {
+		"ko": "사랑과 이별 · 음악 · 성장",
+		"en": "Love and Loss · Music · Growing Up"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "46:51",
+	"screening": {
+		"day": 3,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 A관",
+			"en": "DGIST E7 Hall A"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "최성웅",
+				"en": "Choi Sung-woong"
+			},
+			"role": {
+				"ko": "창민",
+				"en": "Chang-min"
+			}
+		},
+		{
+			"name": {
+				"ko": "정아임",
+				"en": "Jung A-im"
+			},
+			"role": {
+				"ko": "수아",
+				"en": "Su-a"
+			}
+		},
+		{
+			"name": {
+				"ko": "양태빈",
+				"en": "Yang Tae-bin"
+			},
+			"role": {
+				"ko": "승원",
+				"en": "Seung-won"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "연인의 갑작스러운 죽음 이후 멈춰버린 세계 속, 남겨진 이들의 슬픔이 부딪힌다.",
+		"en": "In a world frozen after a lover's sudden death, the grief of those left behind collides."
+	},
+	"synopsis": {
+		"ko": "밴드부 보컬 창민은 연인 수아와의 5주년 기념일에 맞춰 그녀만을 위한 특별한 공연을 준비한다. 그러나 연습에 몰두하느라 수아가 남긴 부재중 전화와 마지막 메시지를 뒤늦게 확인하고, 갑작스러운 그녀의 죽음 앞에 창민의 세계는 산산조각 난다. 방문을 걸어 잠근 채 세상과 단절된 창민의 곁을 친구 승원과 여동생 서연이 묵묵히 지키려 하지만, 남겨진 이들의 슬픔은 서로 다른 모양으로 부딪히기 시작한다.",
+		"en": "Chang-min, the vocalist of a school band, prepares a special performance just for his girlfriend Su-a on their fifth anniversary. But absorbed in rehearsals, he checks her missed calls and last message too late, and her sudden death shatters his world. Chang-min locks himself in his room and cuts himself off from the world. His friend Seung-won and his younger sister Seo-yeon quietly try to stay by his side, but the grief of those left behind begins to collide in different shapes."
+	},
+	"stills": []
+}

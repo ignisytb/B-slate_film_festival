@@ -1,0 +1,82 @@
+{
+	"id": "film_019",
+	"title": {
+		"ko": "두사랑",
+		"en": "Two Loves"
+	},
+	"director": {
+		"ko": "박은혜",
+		"en": "Park Eun-hye"
+	},
+	"writer": {
+		"ko": "정욱진",
+		"en": "Jung Wook-jin"
+	},
+	"year": 2025,
+	"section": "pink",
+	"session": {
+		"ko": "이별 (사랑의 끝과 수용)",
+		"en": "Parting (The End of Love and Acceptance)"
+	},
+	"theme": {
+		"ko": "사랑 · LGBTQ · 폴리아모리",
+		"en": "Love · LGBTQ · Polyamory"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "12:24",
+	"screening": {
+		"day": 3,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": 1,
+		"hall": {
+			"ko": "DGIST E7 C관",
+			"en": "DGIST E7 Hall C"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "허태훈",
+				"en": "Heo Tae-hoon"
+			},
+			"role": {
+				"ko": "준열",
+				"en": "Jun-yeol"
+			}
+		},
+		{
+			"name": {
+				"ko": "신연재",
+				"en": "Shin Yeon-jae"
+			},
+			"role": {
+				"ko": "은정",
+				"en": "Eun-jung"
+			}
+		},
+		{
+			"name": {
+				"ko": "강현성",
+				"en": "Kang Hyun-sung"
+			},
+			"role": {
+				"ko": "그",
+				"en": "He"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "평온했던 연애의 일상 속, 또 다른 누군가가 스며들며 두 갈래의 감정이 흔들린다.",
+		"en": "In a calm, everyday relationship, someone new seeps in and his heart is torn two ways."
+	},
+	"synopsis": {
+		"ko": "연인 은정과 더없이 평온하고 행복한 나날을 보내고 있던 준열. 그러나 흔들림 없을 것 같던 그의 일상 속에 또 다른 누군가가 스며들고, 준열은 예상치 못한 두 번째 감정에 사로잡힌다. 한 사람을 향한 진심과 새롭게 피어난 끌림 사이에서, 그는 쉽게 답할 수 없는 사랑의 질문 앞에 서게 된다.",
+		"en": "Jun-yeol is spending peaceful, happy days with his girlfriend Eun-jung. But someone else quietly seeps into a life that seemed unshakable, and Jun-yeol is caught by an unexpected second feeling. Between his sincere love for one person and a newly blossoming attraction, he faces a question about love that has no easy answer."
+	},
+	"stills": []
+}

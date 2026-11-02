@@ -1,0 +1,72 @@
+{
+	"id": "film_001",
+	"title": {
+		"ko": "바다 건너의 불빛",
+		"en": "Lights Across the Sea"
+	},
+	"director": {
+		"ko": "정욱진",
+		"en": "Jung Wook-jin"
+	},
+	"writer": {
+		"ko": "정욱진",
+		"en": "Jung Wook-jin"
+	},
+	"year": 2026,
+	"section": "orange",
+	"session": {
+		"ko": "개막 (동경과 조우)",
+		"en": "Opening (Longing and Encounter)"
+	},
+	"theme": {
+		"ko": "개막작 · 동경과 조우",
+		"en": "Opening Film · Longing and Encounter"
+	},
+	"is_opening": true,
+	"is_closing": false,
+	"running_time": "23:07",
+	"screening": {
+		"day": 1,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": null,
+		"hall": {
+			"ko": "DGIST E7 메인홀",
+			"en": "DGIST E7 Main Hall"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "허태훈",
+				"en": "Heo Tae-hoon"
+			},
+			"role": {
+				"ko": "그",
+				"en": "He"
+			}
+		},
+		{
+			"name": {
+				"ko": "정아임",
+				"en": "Jung A-im"
+			},
+			"role": {
+				"ko": "그녀",
+				"en": "She"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "바다 건너편의 불빛을 동경하던 두 남녀가 낯선 밤길 위에서 우연히 마주한다.",
+		"en": "A man and a woman who have long yearned for the lights across the sea cross paths by chance on an unfamiliar road at night."
+	},
+	"synopsis": {
+		"ko": "대마도에서 나고 자란 소녀에게 밤바다 건너편에서 밝게 빛나는 부산은 늘 동경의 대상이었다. 오랫동안 꿈꾸던 부산 여행을 마치고 대마도로 돌아와 집으로 향하던 밤, 소녀는 길가에 멈춰 선 고장 난 차와 그 옆에 웅크리고 앉은 한 남자를 발견한다. 낯선 밤길 위에서 우연히 마주친 두 사람은 서로에게 조금씩 마음을 열고 밤하늘 아래 대화를 이어나간다.",
+		"en": "For a girl born and raised in Tsushima, Busan, shining brightly across the night sea, has always been a place of longing. One night, on her way home after returning from a long-awaited trip to Busan, she comes across a broken-down car on the roadside and a man crouched beside it. Meeting by chance on an unfamiliar night road, the two slowly open up to each other and keep talking beneath the night sky."
+	},
+	"stills": []
+}

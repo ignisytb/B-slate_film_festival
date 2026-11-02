@@ -1,0 +1,72 @@
+{
+	"id": "film_020",
+	"title": {
+		"ko": "너를 사랑할 수 없는 이유",
+		"en": "Why I Can't Love You"
+	},
+	"director": {
+		"ko": "정욱진",
+		"en": "Jung Wook-jin"
+	},
+	"writer": {
+		"ko": "정욱진",
+		"en": "Jung Wook-jin"
+	},
+	"year": 2022,
+	"section": "crimson",
+	"session": {
+		"ko": "이별 (사랑의 끝과 수용)",
+		"en": "Parting (The End of Love and Acceptance)"
+	},
+	"theme": {
+		"ko": "사랑의 이면 · 집착",
+		"en": "The Other Side of Love · Obsession"
+	},
+	"is_opening": false,
+	"is_closing": false,
+	"running_time": "07:24",
+	"screening": {
+		"day": 3,
+		"start": "18:30",
+		"end": "20:00",
+		"part": 1,
+		"order": 2,
+		"hall": {
+			"ko": "DGIST E7 C관",
+			"en": "DGIST E7 Hall C"
+		}
+	},
+	"is_gv": true,
+	"cast": [
+		{
+			"name": {
+				"ko": "구본진",
+				"en": "Koo Bon-jin"
+			},
+			"role": {
+				"ko": "재현",
+				"en": "Jae-hyun"
+			}
+		},
+		{
+			"name": {
+				"ko": "김여진",
+				"en": "Kim Yeo-jin"
+			},
+			"role": {
+				"ko": "가현",
+				"en": "Ga-hyun"
+			}
+		}
+	],
+	"trailer_url": "",
+	"logline": {
+		"ko": "지쳐가던 연애의 끝에서야 비로소 그 모든 배려가 자신의 착각이었음을 깨닫는다.",
+		"en": "Only at the end of an exhausting relationship does he realize all his care was an illusion."
+	},
+	"synopsis": {
+		"ko": "연인 가현의 반복되는 감정 기복과 미묘한 가스라이팅 속에 재현은 조금씩 지쳐간다. 그럼에도 힘들어 보이는 여자친구의 마음을 달래주고자 애쓰던 재현은 그녀를 위한 마지막 선물을 준비한다. 하지만 관계를 지키려 애쓸수록, 자신이 믿어왔던 사랑의 민낯이 서서히 드러나기 시작한다.",
+		"en": "Worn down by his girlfriend Ga-hyun's constant mood swings and subtle gaslighting, Jae-hyun slowly grows exhausted. Still trying to comfort her when she seems to be struggling, he prepares one last gift for her. But the harder he tries to protect the relationship, the more the true face of the love he believed in begins to show."
+	},
+	"stills": []
+}
