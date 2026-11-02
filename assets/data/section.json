@@ -1,0 +1,188 @@
+[
+	{
+		"id": "crimson",
+		"title": {
+			"ko": "진홍",
+			"en": "CRIMSON"
+		},
+		"subtitle": {
+			"ko": "판타지 · 비일상적 죽음 · 사랑의 이면과 집착",
+			"en": "Fantasy · Death Beyond the Everyday · The Dark Side of Love and Obsession"
+		},
+		"desc": {
+			"ko": "현실의 경계를 허무는 강렬한 붉은빛. 죽음마저 거래하는 판타지부터 영원한 사랑을 갈망하는 지독한 집착까지, 억누를 수 없이 붉게 타오르는 비일상적인 정념의 순간들을 조명합니다.",
+			"en": "An intense red that blurs the edges of reality. From fantasies where even death is traded to a relentless obsession that craves eternal love, this section spotlights extraordinary moments of passion that burn an uncontainable red."
+		},
+		"keywords": {
+			"ko": [
+				"판타지",
+				"죽음",
+				"사랑의 이면",
+				"집착"
+			],
+			"en": [
+				"Fantasy",
+				"Death",
+				"The Dark Side of Love",
+				"Obsession"
+			]
+		},
+		"hex": "#d6334c",
+		"icon": "🔴"
+	},
+	{
+		"id": "charcoal",
+		"title": {
+			"ko": "차콜",
+			"en": "CHARCOAL"
+		},
+		"subtitle": {
+			"ko": "심리 공포 · 스릴러 · 의심과 불신 · 미지의 암전",
+			"en": "Psychological Horror · Thriller · Suspicion and Distrust · Into the Unknown Dark"
+		},
+		"desc": {
+			"ko": "서늘한 적막과 어둠 속의 긴장감. 옴니버스 공포부터 일상을 서서히 옥죄어오는 의심과 현실의 불신까지, 인간 내면의 깊은 심연과 서스펜스를 묵직한 잿빛으로 포착합니다.",
+			"en": "Cold silence and tension in the dark. From horror omnibus to suspicion and distrust that slowly tighten around everyday life, this section captures the deep abyss of the human mind and its suspense in heavy shades of gray."
+		},
+		"keywords": {
+			"ko": [
+				"공포",
+				"스릴러",
+				"의심",
+				"불신"
+			],
+			"en": [
+				"Horror",
+				"Thriller",
+				"Suspicion",
+				"Distrust"
+			]
+		},
+		"hex": "#64748b",
+		"icon": "🔘"
+	},
+	{
+		"id": "pink",
+		"title": {
+			"ko": "분홍",
+			"en": "PINK SPECTRUM"
+		},
+		"subtitle": {
+			"ko": "사랑의 다채로운 스펙트럼 · 풋풋한 만남과 이별 · 청춘의 그리움",
+			"en": "The Many Shades of Love · Fresh Encounters and Farewells · The Longing of Youth"
+		},
+		"desc": {
+			"ko": "진한 분홍에서 연한 분홍, 어딘가에 스며든 노란빛 한 방울까지 번져나가는 사랑의 다채로운 굴절. LGBTQ, 삼각관계, 세로 영상의 찰나, 이별 뒤 남겨진 11%의 그리움까지 청춘이 마주하는 사랑의 모든 빛깔을 담았습니다.",
+			"en": "From deep pink to pale pink, with a single drop of yellow seeping in somewhere, love refracts in many colors. LGBTQ love, love triangles, fleeting moments in vertical video, and the 11% of longing left after a farewell: every color of love that youth encounters."
+		},
+		"keywords": {
+			"ko": [
+				"사랑",
+				"LGBTQ",
+				"이별과 만남",
+				"청춘"
+			],
+			"en": [
+				"Love",
+				"LGBTQ",
+				"Meeting and Parting",
+				"Youth"
+			]
+		},
+		"hex": "#e06d96",
+		"icon": "🌸"
+	},
+	{
+		"id": "khaki",
+		"title": {
+			"ko": "카키",
+			"en": "KHAKI"
+		},
+		"subtitle": {
+			"ko": "첩보 · 전장의 안개 · 추적과 서스펜스",
+			"en": "Espionage · The Fog of War · Pursuit and Suspense"
+		},
+		"desc": {
+			"ko": "묵직하고 건조한 전장의 공기. 시야를 가리는 안개 속에서 벌어지는 숨 막히는 첩보와 액션, 한 치 앞도 예측할 수 없는 긴박한 호흡을 카키빛의 서늘한 감각으로 펼쳐냅니다.",
+			"en": "The heavy, dry air of the battlefield. Breathtaking espionage and action unfold in a fog that blocks every view, with tense, unpredictable pacing told through the cool sense of khaki."
+		},
+		"keywords": {
+			"ko": [
+				"액션",
+				"첩보",
+				"전장의 안개",
+				"서스펜스"
+			],
+			"en": [
+				"Action",
+				"Espionage",
+				"The Fog of War",
+				"Suspense"
+			]
+		},
+		"hex": "#7a8256",
+		"icon": "🫒"
+	},
+	{
+		"id": "orange",
+		"title": {
+			"ko": "주황",
+			"en": "SUNSET ORANGE"
+		},
+		"subtitle": {
+			"ko": "노을 · 창작의 불씨 · 성장과 여운 · 개·폐막의 빛",
+			"en": "Sunset · Sparks of Creation · Growth and Afterglow · Light of the Opening and Closing"
+		},
+		"desc": {
+			"ko": "스크린 위로 서서히 번지는 노을빛의 따스함. 악보의 빈 여백을 채우는 음악, 대사 없이도 전해지는 미쟝센과 창작의 고뇌, 그리고 영화제의 문을 열고 닫는 개·폐막작까지 청춘의 찬란한 여운과 성장을 그립니다.",
+			"en": "The warmth of a sunset slowly spreading across the screen. Music that fills the blank spaces of a score, mise-en-scène and creative struggle that speak without words, and the opening and closing films that frame the festival: the brilliant afterglow and growth of youth."
+		},
+		"keywords": {
+			"ko": [
+				"노을",
+				"음악영화",
+				"창작과 성장",
+				"개·폐막"
+			],
+			"en": [
+				"Sunset",
+				"Music Film",
+				"Creation and Growth",
+				"Opening & Closing"
+			]
+		},
+		"hex": "#e27137",
+		"icon": "🟠"
+	},
+	{
+		"id": "eunmak",
+		"title": {
+			"ko": "초청 교류전",
+			"en": "KAIST EUNMAK"
+		},
+		"subtitle": {
+			"ko": "카이스트 유일의 중앙 영화제작동아리 '은막(銀幕)' 특별 교류 프로그램",
+			"en": "A special exchange program with Eunmak (銀幕), the only central filmmaking club at KAIST"
+		},
+		"desc": {
+			"ko": "과학기술특성화대학 청년 창작자들의 스크린 너머 시선과 새로운 예술적 시도를 담은 교류 상영작입니다. 비슬영화제와 카이스트 은막이 함께 2일차 E7 A관에서 특별 상영합니다.",
+			"en": "Exchange screenings that capture the view beyond the screen and new artistic experiments of young creators from a science and technology university. B-slate Film Festival and KAIST Eunmak present them together on Day 2 in DGIST E7 Hall A."
+		},
+		"keywords": {
+			"ko": [
+				"KAIST",
+				"은막",
+				"특별초청",
+				"대학영화교류"
+			],
+			"en": [
+				"KAIST",
+				"Eunmak",
+				"Special Invitation",
+				"University Film Exchange"
+			]
+		},
+		"hex": "#38bdf8",
+		"icon": "🤝"
+	}
+]
