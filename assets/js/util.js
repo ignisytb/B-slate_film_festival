@@ -73,19 +73,19 @@ function showNextImageSource(img) {
 }
 
 function formatDay(day) {
-  return `${day}일차`;
+  return t('format.day', { day });
 }
 
 function formatRuntime(runningTime) {
-  return runningTime ?? '러닝타임 미정';
+  return runningTime ?? t('format.runtime_unknown');
 }
 
 function formatScreeningTime(screening) {
-  return `${screening.start}~${screening.end} (${screening.part}부)`;
+  return t('format.screening_time', screening);
 }
 
 function shortHallName(hall) {
-  return hall.ko.replace('DGIST ', '');
+  return localized(hall).replace('DGIST ', '');
 }
 
 function compareScreening(a, b) {

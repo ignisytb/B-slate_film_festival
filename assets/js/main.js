@@ -39,6 +39,12 @@ function matchesSearch(film) {
     .some(text => text.toLowerCase().includes(query));
 }
 
+function sectionBadgeTitle(section) {
+  return currentLanguage === DEFAULT_LANGUAGE
+    ? `${section.title.ko} (${section.title.en})`
+    : section.title.en;
+}
+
 function matchesSection(film) {
   return selectedSectionId === ALL || film.section === selectedSectionId;
 }
@@ -103,7 +109,7 @@ function changeMainStill(src) {
 function renderFavButton(film) {
   const isFav = bookmarks.includes(film.id);
   return `
-    <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav('${film.id}', event)" aria-label="보관함 담기">
+    <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav('${film.id}', event)" aria-label="${t('common.save_to_favs')}">
       ${isFav ? '♥' : '♡'}
     </button>
   `;
@@ -111,10 +117,10 @@ function renderFavButton(film) {
 
 function renderSectionChips() {
   const chips = [
-    { id: ALL, label: '전체' },
+    { id: ALL, label: t('common.all') },
     ...Object.values(sectionsById).map(section => ({
       id: section.id,
-      label: section.id === EUNMAK_SECTION_ID ? '🤝 KAIST 은막' : section.title.ko,
+      label: section.id === EUNMAK_SECTION_ID ? t('eunmak.chip') : localized(section.title),
       hex: section.hex,
     })),
   ];
@@ -135,7 +141,7 @@ function renderSearchBox() {
   return `
     <div class="search-box">
       <svg viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/></svg>
-      <input id="search-input" type="text" placeholder="작품명 또는 감독 검색..." value="${escapeHtml(searchText)}" oninput="handleSearch(this.value)">
+      <input id="search-input" type="text" placeholder="${t('catalog.search_placeholder')}" value="${escapeHtml(searchText)}" oninput="handleSearch(this.value)">
     </div>
   `;
 }
@@ -145,13 +151,13 @@ function renderSectionBanner(section) {
     <div class="color-curator-banner">
       <div class="ccb-top">
         <span class="ccb-color-badge" style="background:${section.hex};">
-          ${section.icon} ${escapeHtml(section.title.ko)} (${escapeHtml(section.title.en)})
+          ${section.icon} ${escapeHtml(sectionBadgeTitle(section))}
         </span>
-        <span class="ccb-subtitle">${escapeHtml(section.subtitle.ko)}</span>
+        <span class="ccb-subtitle">${escapeHtml(localized(section.subtitle))}</span>
       </div>
-      <p class="ccb-desc">${escapeHtml(section.desc.ko)}</p>
+      <p class="ccb-desc">${escapeHtml(localized(section.desc))}</p>
       <div class="ccb-tags">
-        ${section.keywords.ko.map(keyword => `<span class="ccb-tag">#${escapeHtml(keyword)}</span>`).join('')}
+        ${localized(section.keywords).map(keyword => `<span class="ccb-tag">#${escapeHtml(keyword)}</span>`).join('')}
       </div>
     </div>
   `;
@@ -161,14 +167,14 @@ function renderSpectrumGuide() {
   return `
     <div class="spectrum-guide-bar">
       <div class="sgb-header">
-        <span>🎨 2026 비슬영화제 5대 감정 무드 컬러 스펙트럼</span>
-        <span>상단 칩을 눌러 무드별 탐색 가능</span>
+        <span>${t('catalog.spectrum_title')}</span>
+        <span>${t('catalog.spectrum_hint')}</span>
       </div>
       <div class="sgb-list">
         ${festivalSections().map(section => `
           <div class="sgb-item">
-            <span class="sgb-name" style="color:${section.hex};">${section.icon} ${escapeHtml(section.title.ko)}</span>
-            <span class="sgb-meaning">${escapeHtml(section.subtitle.ko)}</span>
+            <span class="sgb-name" style="color:${section.hex};">${section.icon} ${escapeHtml(localized(section.title))}</span>
+            <span class="sgb-meaning">${escapeHtml(localized(section.subtitle))}</span>
           </div>
         `).join('')}
       </div>
@@ -192,11 +198,11 @@ function renderSpotlightCard(film, badgeClass, badgeLabel) {
       </div>
       <div class="spotlight-info">
         <div class="spotlight-meta-row">
-          <span class="spotlight-hall">${formatDay(film.screening.day)} ${film.screening.start} · ${escapeHtml(film.screening.hall.ko)}</span>
+          <span class="spotlight-hall">${formatDay(film.screening.day)} ${film.screening.start} · ${escapeHtml(localized(film.screening.hall))}</span>
           <span>${escapeHtml(formatRuntime(film.running_time))}${film.is_gv ? ' · GV' : ''}</span>
         </div>
-        <h3 class="spotlight-film-title">${escapeHtml(film.title.ko)}</h3>
-        <p class="spotlight-logline">${escapeHtml(film.logline.ko || film.synopsis.ko)}</p>
+        <h3 class="spotlight-film-title">${escapeHtml(localized(film.title))}</h3>
+        <p class="spotlight-logline">${escapeHtml(localized(film.logline) || localized(film.synopsis))}</p>
       </div>
     </a>
   `;
@@ -210,11 +216,11 @@ function renderSpotlight() {
     <div class="spotlight-section">
       <div class="spotlight-header">
         <span class="spotlight-title">🎬 FESTIVAL HIGHLIGHT : OPENING & CLOSING</span>
-        <span style="font-size:0.7rem;color:var(--gold);font-weight:700;">DGIST E7 메인홀</span>
+        <span style="font-size:0.7rem;color:var(--gold);font-weight:700;">${t('catalog.spotlight_venue')}</span>
       </div>
       <div class="spotlight-grid">
-        ${openingFilm ? renderSpotlightCard(openingFilm, 'badge-opening', '✨ 개막작 (OPENING FILM)') : ''}
-        ${closingFilm ? renderSpotlightCard(closingFilm, 'badge-closing', '🌙 폐막작 (CLOSING FILM)') : ''}
+        ${openingFilm ? renderSpotlightCard(openingFilm, 'badge-opening', t('catalog.opening_badge')) : ''}
+        ${closingFilm ? renderSpotlightCard(closingFilm, 'badge-closing', t('catalog.closing_badge')) : ''}
       </div>
     </div>
   `;
@@ -222,10 +228,10 @@ function renderSpotlight() {
 
 function renderSectionTag(film) {
   if (isEunmak(film)) {
-    return `<span class="fc-color-tag" style="background:var(--color-eunmak);color:#0369a1;font-weight:800;">KAIST 은막</span>`;
+    return `<span class="fc-color-tag" style="background:var(--color-eunmak);color:#0369a1;font-weight:800;">${t('eunmak.tag')}</span>`;
   }
   const section = sectionOf(film);
-  return `<span class="fc-color-tag" style="background:${section.hex};">${escapeHtml(section.title.ko)}</span>`;
+  return `<span class="fc-color-tag" style="background:${section.hex};">${escapeHtml(localized(section.title))}</span>`;
 }
 
 function renderFilmCard(film) {
@@ -238,12 +244,12 @@ function renderFilmCard(film) {
         ${imageTag(imageSources(film))}
         <div class="fc-still-fallback">
           <span class="icon">🎬</span>
-          <span class="txt">${escapeHtml(film.title.ko)}</span>
+          <span class="txt">${escapeHtml(localized(film.title))}</span>
         </div>
       </div>
       <div class="fc-info">
-        <h3 class="fc-title">${escapeHtml(film.title.ko)}</h3>
-        <p class="fc-director">${isEunmak(film) ? '출품: KAIST 은막' : '감독: ' + escapeHtml(film.director.ko)}</p>
+        <h3 class="fc-title">${escapeHtml(localized(film.title))}</h3>
+        <p class="fc-director">${isEunmak(film) ? t('film.presented_by_eunmak') : t('film.director', { name: escapeHtml(localized(film.director)) })}</p>
         <div class="fc-meta-sub">
           <span>${formatDay(film.screening.day)}</span>
           ${film.is_gv ? `<span class="badge-gv-simple">GV</span>` : ''}
@@ -271,16 +277,14 @@ function renderEunmakPanel() {
         <span class="ebp-badge">🤝 SPECIAL EXCHANGE PROGRAM</span>
         <span class="ebp-collab">KAIST × DGIST</span>
       </div>
-      <h2 class="ebp-title">카이스트 영화제작동아리 ‘은막’ 초청 교류전</h2>
-      <p class="ebp-desc">
-        카이스트(KAIST) 유일의 중앙 영화제작동아리 <b>'은막(銀幕)'</b>과의 특별 상호 교류 프로그램입니다. 과학기술특성화대학 청년 창작자들의 스크린 너머 시선과 새로운 예술적 시도를 2일차 E7 A관에서 상영합니다.
-      </p>
+      <h2 class="ebp-title">${t('eunmak.panel_title')}</h2>
+      <p class="ebp-desc">${t('eunmak.panel_desc')}</p>
       <div class="ebp-sessions-grid">
         ${eunmakFilms.map(film => `
           <a href="${filmLink(film)}" class="ebp-card-link">
-            <span class="time-tag">${formatDay(film.screening.day)} ${film.screening.part}부 · ${film.screening.start}</span>
-            <span class="name-tag">${escapeHtml(film.title.ko)}</span>
-            <span class="meta-tag">러닝타임 ${escapeHtml(formatRuntime(film.running_time))} · ${escapeHtml(shortHallName(film.screening.hall))}</span>
+            <span class="time-tag">${formatDay(film.screening.day)} ${t('format.part', film.screening)} · ${film.screening.start}</span>
+            <span class="name-tag">${escapeHtml(localized(film.title))}</span>
+            <span class="meta-tag">${t('eunmak.panel_meta', { runtime: escapeHtml(formatRuntime(film.running_time)), hall: escapeHtml(shortHallName(film.screening.hall)) })}</span>
           </a>
         `).join('')}
       </div>
@@ -304,12 +308,12 @@ function sortForDefaultCatalog(items) {
   return [...openingAndClosing, ...festivalFilms, ...eunmakFilms];
 }
 
-function renderCatalogView(items, emptyMessage = '해당 조건의 상영작이 없습니다.') {
+function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
   const matched = items.filter(film => matchesSection(film) && matchesSearch(film));
   const visibleFilms = isDefaultCatalog() ? sortForDefaultCatalog(matched) : matched;
   const listTitle = selectedSectionId === ALL
-    ? '상영작 아카이브 (16:9 스틸컷)'
-    : `${sectionsById[selectedSectionId].title.ko} 세션 상영작`;
+    ? t('catalog.archive_title')
+    : t('catalog.section_title', { section: localized(sectionsById[selectedSectionId].title) });
   const showEunmakPanel = (selectedSectionId === ALL || selectedSectionId === EUNMAK_SECTION_ID) && !normalizedSearchText();
 
   return `
@@ -320,7 +324,7 @@ function renderCatalogView(items, emptyMessage = '해당 조건의 상영작이 
 
     <div class="section-title-bar">
       <span class="section-title">${escapeHtml(listTitle)}</span>
-      <span class="section-count">${visibleFilms.length}편</span>
+      <span class="section-count">${t('format.film_count', { count: visibleFilms.length })}</span>
     </div>
 
     <div class="films-grid">
@@ -333,7 +337,7 @@ function renderCatalogView(items, emptyMessage = '해당 조건의 상영작이 
 
     ${renderFooter(`
       <span>2026 BISEUL FILM FESTIVAL '낭만 ; 浪漫 ;'</span>
-      <span>주최: DGIST 영화제작동아리 B_SLATE · 전 상영관 DGIST E7</span>
+      <span>${t('footer.host')}</span>
     `)}
   `;
 }
@@ -341,9 +345,9 @@ function renderCatalogView(items, emptyMessage = '해당 조건의 상영작이 
 function renderScheduleCard(film) {
   const section = sectionOf(film);
   const sectionTag = isEunmak(film)
-    ? `<span class="badge-eunmak-tag">🤝 KAIST 은막</span>`
-    : `<span class="badge-color-tag" style="color:${section.hex};">[${escapeHtml(section.title.ko)}]</span>`;
-  const credit = isEunmak(film) ? '출품: 카이스트 영화제작동아리 은막' : '감독: ' + escapeHtml(film.director.ko);
+    ? `<span class="badge-eunmak-tag">${t('eunmak.chip')}</span>`
+    : `<span class="badge-color-tag" style="color:${section.hex};">[${escapeHtml(localized(section.title))}]</span>`;
+  const credit = isEunmak(film) ? t('eunmak.presented_by') : t('film.director', { name: escapeHtml(localized(film.director)) });
 
   return `
     <a class="schedule-card" href="${filmLink(film)}">
@@ -358,7 +362,7 @@ function renderScheduleCard(film) {
           <span style="font-size:0.68rem;color:var(--text-muted);">${escapeHtml(formatRuntime(film.running_time))}</span>
           ${film.is_gv ? `<span class="badge-gv-simple">GV</span>` : ''}
         </div>
-        <h2 class="sc-title">${escapeHtml(film.title.ko)}</h2>
+        <h2 class="sc-title">${escapeHtml(localized(film.title))}</h2>
         <p class="sc-director">${credit} · ${formatDay(film.screening.day)}</p>
       </div>
     </a>
@@ -372,14 +376,14 @@ function renderScheduleView() {
   return `
     <div class="filter-bar">
       ${[ALL, ...days].map(day => `
-        <button class="chip ${selectedDay === day ? 'active' : ''}" onclick="selectDay('${day}')">${day === ALL ? '전체' : formatDay(day)}</button>
+        <button class="chip ${selectedDay === day ? 'active' : ''}" onclick="selectDay('${day}')">${day === ALL ? t('common.all') : formatDay(day)}</button>
       `).join('')}
     </div>
 
     <div class="schedule-list">
       ${visibleFilms.length
         ? visibleFilms.map(renderScheduleCard).join('')
-        : renderEmptyState('📅', '해당 일자의 상영작이 없습니다.')}
+        : renderEmptyState('📅', t('schedule.empty'))}
     </div>
 
     ${renderFooter(`<span>2026 BISEUL FILM FESTIVAL '낭만 ; 浪漫 ;' · DGIST E7</span>`)}
@@ -390,14 +394,14 @@ function renderDetailPill(film) {
   if (isEunmak(film)) {
     return `
       <span class="detail-color-pill" style="background:linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
-        🤝 KAIST 영화제작동아리 은막(銀幕) 초청 교류전
+        ${t('eunmak.detail_pill')}
       </span>
     `;
   }
   const section = sectionOf(film);
   return `
     <span class="detail-color-pill" style="background:${section.hex};">
-      [${escapeHtml(section.title.ko)}] ${escapeHtml(film.theme.ko)}
+      [${escapeHtml(localized(section.title))}] ${escapeHtml(localized(film.theme))}
     </span>
   `;
 }
@@ -407,8 +411,8 @@ function renderEunmakBanner() {
     <div class="eunmak-detail-banner">
       <div class="icon">🤝</div>
       <div class="txt">
-        <b>[KAIST × DGIST 영화 교류전]</b><br>
-        본 작품은 카이스트(KAIST) 중앙 영화제작동아리 <b>'은막(銀幕)'</b>의 공식 출품작입니다.
+        <b>${t('eunmak.detail_banner_title')}</b><br>
+        ${t('eunmak.detail_banner_desc')}
       </div>
     </div>
   `;
@@ -419,8 +423,8 @@ function renderGvBanner(film) {
     <div class="gv-detail-banner">
       <span class="badge">GV</span>
       <div class="txt">
-        <b>관객과의 대화 [GV] 세션이 진행됩니다.</b><br>
-        영화 상영 후 상영관(${escapeHtml(shortHallName(film.screening.hall))})에서 진행됩니다.
+        <b>${t('detail.gv_title')}</b><br>
+        ${t('detail.gv_desc', { hall: escapeHtml(shortHallName(film.screening.hall)) })}
       </div>
     </div>
   `;
@@ -452,31 +456,31 @@ function renderCreditRow(label, value) {
 }
 
 function renderCredits(film) {
-  const actors = film.cast.map(member => member.name.ko).join(', ');
+  const actors = film.cast.map(member => localized(member.name)).join(', ');
   const roles = film.cast
-    .filter(member => member.role.ko)
-    .map(member => `${member.role.ko}(${member.name.ko})`)
+    .filter(member => localized(member.role))
+    .map(member => t('credit.role_entry', { role: localized(member.role), name: localized(member.name) }))
     .join(', ');
-  const writer = film.writer.ko !== film.director.ko ? film.writer.ko : '';
+  const writer = film.writer.ko !== film.director.ko ? localized(film.writer) : '';
 
   return `
     <table class="credits-table">
-      ${renderCreditRow(isEunmak(film) ? '출품' : '연출', film.director.ko)}
-      ${renderCreditRow('각본', writer)}
-      ${renderCreditRow('출연', actors)}
-      ${renderCreditRow('배역', roles)}
-      ${isEunmak(film) ? renderCreditRow('소속', '카이스트(KAIST) 중앙 영화제작동아리 은막(銀幕)') : ''}
+      ${renderCreditRow(isEunmak(film) ? t('credit.presenter') : t('credit.director'), localized(film.director))}
+      ${renderCreditRow(t('credit.writer'), writer)}
+      ${renderCreditRow(t('credit.cast'), actors)}
+      ${renderCreditRow(t('credit.roles'), roles)}
+      ${isEunmak(film) ? renderCreditRow(t('credit.affiliation'), t('eunmak.affiliation')) : ''}
     </table>
   `;
 }
 
 function renderDetailView(filmId) {
   const film = films.find(candidate => candidate.id === filmId);
-  if (!film) return renderEmptyState('🎬', '영화 정보를 찾을 수 없습니다.');
+  if (!film) return renderEmptyState('🎬', t('detail.not_found'));
 
   return `
     <div class="detail-view">
-      <a class="back-btn" href="javascript:history.back()">← 뒤로 가기</a>
+      <a class="back-btn" href="javascript:history.back()">${t('detail.back')}</a>
 
       <div class="detail-hero-card">
         ${renderFavButton(film)}
@@ -484,23 +488,23 @@ function renderDetailView(filmId) {
         <div class="detail-widescreen-wrap">
           <span class="detail-widescreen-watermark">16:9 WIDESCREEN</span>
           ${imageTag(imageSources(film), 'id="detail-main-still-img"')}
-          <div class="detail-widescreen-placeholder">${escapeHtml(film.title.ko)}</div>
+          <div class="detail-widescreen-placeholder">${escapeHtml(localized(film.title))}</div>
         </div>
 
         <div class="detail-hero-content">
           ${renderDetailPill(film)}
 
-          <h1 class="detail-title">${escapeHtml(film.title.ko)}</h1>
+          <h1 class="detail-title">${escapeHtml(localized(film.title))}</h1>
 
           <div class="detail-meta-line">
-            <span>상영: <b>${formatDay(film.screening.day)} ${formatScreeningTime(film.screening)}</b></span>
-            <span>장소: <b>${escapeHtml(film.screening.hall.ko)}</b></span>
-            <span>시간: <b>${escapeHtml(formatRuntime(film.running_time))}</b></span>
+            <span>${t('detail.screening')}: <b>${formatDay(film.screening.day)} ${formatScreeningTime(film.screening)}</b></span>
+            <span>${t('detail.venue')}: <b>${escapeHtml(localized(film.screening.hall))}</b></span>
+            <span>${t('detail.runtime')}: <b>${escapeHtml(formatRuntime(film.running_time))}</b></span>
           </div>
 
           ${isEunmak(film) ? renderEunmakBanner() : ''}
           ${film.is_gv ? renderGvBanner(film) : ''}
-          ${film.logline.ko ? `<div class="logline-box">"${escapeHtml(film.logline.ko)}"</div>` : ''}
+          ${localized(film.logline) ? `<div class="logline-box">"${escapeHtml(localized(film.logline))}"</div>` : ''}
         </div>
       </div>
 
@@ -508,7 +512,7 @@ function renderDetailView(filmId) {
 
       <div class="detail-section">
         <h3>SYNOPSIS</h3>
-        <p class="synopsis-text">${escapeHtml(film.synopsis.ko || '시놉시스 준비 중입니다.')}</p>
+        <p class="synopsis-text">${escapeHtml(localized(film.synopsis) || t('detail.synopsis_empty'))}</p>
       </div>
 
       <div class="detail-section">
@@ -535,7 +539,7 @@ function renderCurrentView() {
     app.innerHTML = renderCatalogView(films);
   } else if (currentTab === 'favs') {
     const favFilms = films.filter(film => bookmarks.includes(film.id));
-    app.innerHTML = renderCatalogView(favFilms, '아직 낭만 보관함에 담긴 영화가 없습니다.<br>보고 싶은 영화의 하트(♥)를 눌러보세요!');
+    app.innerHTML = renderCatalogView(favFilms, t('catalog.favs_empty'));
   }
 }
 
@@ -567,20 +571,30 @@ async function loadFilms() {
   return Promise.all(filmIndex.map(async ({ folder }) => ({ ...await loadJson(filmDataPath(folder)), folder })));
 }
 
+function setLanguage(language) {
+  if (!SUPPORTED_LANGUAGES.includes(language)) return;
+  currentLanguage = language;
+  saveLanguage(language);
+  applyStaticTranslations();
+  renderCurrentView();
+}
+
 async function init() {
+  currentLanguage = initialLanguage();
   updateFavCount();
   setActiveNav(currentTab);
 
   try {
-    const [filmData, sectionData] = await Promise.all([loadFilms(), loadJson(SECTION_DATA_PATH)]);
+    const [filmData, sectionData] = await Promise.all([loadFilms(), loadJson(SECTION_DATA_PATH), loadDictionaries()]);
     films = filmData.sort(compareScreening);
     sectionsById = Object.fromEntries(sectionData.map(section => [section.id, section]));
   } catch (error) {
     console.error(error);
-    document.getElementById('app-content').innerHTML = renderEmptyState('⚠️', '상영작 정보를 불러오지 못했습니다.<br>잠시 후 다시 시도해 주세요.');
+    document.getElementById('app-content').innerHTML = renderEmptyState('⚠️', t('common.load_error'));
     return;
   }
 
+  applyStaticTranslations();
   window.addEventListener('hashchange', renderCurrentView);
   renderCurrentView();
 }
