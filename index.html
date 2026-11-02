@@ -75,10 +75,10 @@
     }
 
     /* =========================================================
-       1. 헤더 & 비슬레이트 공식 로고 & 뷰파인더 브랜딩
+       1. 헤더 & 비슬레이트 공식 로고 & 뷰파인더 & 메인 포스터
        ========================================================= */
     .hero-header {
-      padding: 22px 20px 14px;
+      padding: 20px 18px 16px;
       position: relative;
       background: linear-gradient(180deg, rgba(20, 22, 28, 0.98) 0%, rgba(16, 18, 22, 0.9) 100%);
       border-bottom: 1px solid var(--surface-border);
@@ -120,7 +120,7 @@
       font-size: 0.68rem;
       letter-spacing: 0.08em;
       color: var(--text-muted);
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
       padding-bottom: 8px;
     }
@@ -150,11 +150,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .hero-logo-img {
-      height: 34px;
-      max-width: 180px;
+      height: 32px;
+      max-width: 170px;
       object-fit: contain;
       filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
     }
@@ -173,7 +173,7 @@
     }
     .hero-main-title {
       font-family: 'Noto Serif KR', serif;
-      font-size: 2.2rem;
+      font-size: 2.1rem;
       font-weight: 900;
       letter-spacing: 0.06em;
       color: #fff;
@@ -182,10 +182,10 @@
     }
     .hero-hanja {
       font-family: 'Noto Serif KR', serif;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       color: #d1d5db;
       letter-spacing: 0.35em;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-weight: 400;
       opacity: 0.85;
     }
@@ -194,7 +194,7 @@
       align-items: center;
       gap: 6px;
       font-size: 0.72rem;
-      padding: 4px 12px;
+      padding: 3px 12px;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -203,6 +203,125 @@
     }
     .hero-venue b {
       color: var(--gold);
+    }
+
+    /* 🌟 [신규 추가] 공식 메인 포스터 첫 화면 쇼케이스 */
+    .hero-poster-container {
+      margin: 16px auto 10px;
+      max-width: 260px;
+      width: 72%;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hero-poster-container:active {
+      transform: scale(0.98);
+    }
+    .hero-poster-wrap {
+      width: 100%;
+      aspect-ratio: 1 / 1.414;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.15);
+      position: relative;
+      background: #141720;
+    }
+    .hero-poster-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .hero-poster-wrap:hover .hero-poster-img {
+      transform: scale(1.02);
+    }
+    .poster-zoom-badge {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(16, 18, 22, 0.88);
+      backdrop-filter: blur(8px);
+      color: #f5f4ef;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      pointer-events: none;
+    }
+
+    .poster-series-bar {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    .ps-chip {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.64rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.18s;
+    }
+    .ps-chip.active {
+      background: var(--gold);
+      color: #0b0c0e;
+      border-color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* 포스터 전체화면 라이트박스 모달 */
+    .poster-lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.94);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      animation: fadeIn 0.2s ease-out;
+    }
+    .poster-lightbox.open {
+      display: flex;
+    }
+    .lightbox-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .lightbox-content-img {
+      max-width: 92%;
+      max-height: 86vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
     }
 
     /* =========================================================
@@ -289,7 +408,7 @@
     }
 
     /* =========================================================
-       3. 각 색상별 의미 설명 큐레이션 배너 (사용자 요청 4)
+       3. 각 색상별 의미 설명 큐레이션 배너
        ========================================================= */
     .color-curator-banner {
       margin: 10px 20px 16px;
@@ -389,7 +508,7 @@
     }
 
     /* =========================================================
-       4. 개막작 & 폐막작 최상단 스포트라이트 (사용자 요청 3)
+       4. 개막작 & 폐막작 최상단 스포트라이트
        ========================================================= */
     .spotlight-section {
       margin: 6px 20px 22px;
@@ -514,7 +633,7 @@
     }
 
     /* =========================================================
-       5. 16:9 와이드스크린 영화 도록 카드 (사용자 요청 1)
+       5. 16:9 와이드스크린 영화 도록 카드
        ========================================================= */
     .section-title-bar {
       margin: 16px 20px 10px;
@@ -658,7 +777,7 @@
     }
 
     /* =========================================================
-       6. 카이스트 은막 초청 교류전 최하단 피처 패널 (사용자 요청 2)
+       6. 카이스트 은막 초청 교류전 최하단 피처 패널
        ========================================================= */
     .eunmak-bottom-panel {
       margin: 28px 20px 20px;
@@ -956,7 +1075,7 @@
       color: #e2e8f0;
     }
 
-    /* 16:9 스틸컷 갤러리 섹션 (사용자 요청 1) */
+    /* 16:9 스틸컷 갤러리 섹션 */
     .stills-gallery-section {
       background: var(--surface-card);
       border: 1px solid var(--surface-border);
@@ -1219,7 +1338,7 @@
 <body>
   <div class="app-wrap">
     
-    <!-- 🎬 헤더: 비슬레이트 공식 로고 & 뷰파인더 브랜딩 -->
+    <!-- 🎬 헤더: 비슬레이트 공식 로고 & 뷰파인더 & 메인 포스터 쇼케이스 (첫 화면) -->
     <header class="hero-header">
       <div class="viewfinder-box">
         <div class="cam-meta-bar">
@@ -1228,7 +1347,7 @@
           <span>24FPS B_SLATE</span>
         </div>
         
-        <!-- 비슬레이트 공식 로고 이미지 (사용자 요청 5) -->
+        <!-- 비슬레이트 공식 로고 이미지 -->
         <div class="hero-logo-row">
           <img src="assets/logo/bslate_logo_white.png" alt="B_SLATE 로고" class="hero-logo-img" onerror="this.src='assets/logo/비슬로고 신버전 백누끼.png'; this.onerror=function(){this.remove();};">
         </div>
@@ -1238,6 +1357,26 @@
           <h1 class="hero-main-title">낭만 ;</h1>
           <p class="hero-hanja">浪漫 ;</p>
           <span class="hero-venue">장소 : <b>DGIST E7 전용</b></span>
+        </div>
+
+        <!-- 🌟 [첫 화면 메인포스터 쇼케이스] -->
+        <div class="hero-poster-container" onclick="openPosterModal(document.getElementById('hero-poster-img').src)">
+          <div class="hero-poster-wrap">
+            <img id="hero-poster-img" src="assets/main_poster.png" alt="2026 비슬영화제 낭만 메인 포스터" class="hero-poster-img" onerror="this.src='assets/메인포스터_최종.png';">
+            <div class="poster-zoom-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              포스터 터치하여 크게보기
+            </div>
+          </div>
+        </div>
+
+        <!-- 포스터 시리즈 선택 미니 칩 (메인, 서브1, 서브2, 티저) -->
+        <div class="poster-series-bar">
+          <button class="ps-chip active" onclick="switchHeroPoster('assets/main_poster.png', this)">메인 포스터</button>
+          <button class="ps-chip" onclick="switchHeroPoster('assets/sub_poster1.png', this)">서브 1</button>
+          <button class="ps-chip" onclick="switchHeroPoster('assets/sub_poster2.png', this)">서브 2</button>
+          <button class="ps-chip" onclick="switchHeroPoster('assets/teaser_poster_b.png', this)">티저 Black</button>
+          <button class="ps-chip" onclick="switchHeroPoster('assets/teaser_poster_w.png', this)">티저 White</button>
         </div>
       </div>
     </header>
@@ -1260,6 +1399,12 @@
         <span>낭만 보관함 (<span id="fav-count">0</span>)</span>
       </button>
     </nav>
+  </div>
+
+  <!-- 포스터 라이트박스 팝업 모달 -->
+  <div id="poster-lightbox-modal" class="poster-lightbox" onclick="closePosterModal()">
+    <button class="lightbox-close-btn" onclick="closePosterModal()">✕</button>
+    <img id="lightbox-modal-img" class="lightbox-content-img" src="" onclick="event.stopPropagation();">
   </div>
 
   <script>
@@ -1975,7 +2120,7 @@
   }
 ];
 
-    // 5대 감정 무드 컬러 큐레이션 설명 데이터 (사용자 요청 4)
+    // 5대 감정 무드 컬러 큐레이션 설명 데이터
     const COLOR_EXPLANATIONS = {
   "진홍": {
     "title": "진홍 (CRIMSON)",
@@ -2057,7 +2202,7 @@
   }
 };
 
-    let currentTab = 'catalog'; // 기본 진입을 전체 영화(catalog)로 권장 또는 schedule
+    let currentTab = 'catalog';
     let selectedDay = '전체';
     let selectedColor = '전체';
     let searchQuery = '';
@@ -2092,6 +2237,29 @@
       renderCurrentView();
     }
 
+    // 포스터 시리즈 전환 함수
+    function switchHeroPoster(src, btn) {
+      const img = document.getElementById('hero-poster-img');
+      if (img) img.src = src;
+      document.querySelectorAll('.ps-chip').forEach(c => c.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+    }
+
+    // 포스터 라이트박스 열기/닫기
+    function openPosterModal(src) {
+      const modal = document.getElementById('poster-lightbox-modal');
+      const modalImg = document.getElementById('lightbox-modal-img');
+      if (modal && modalImg) {
+        modalImg.src = src || document.getElementById('hero-poster-img').src;
+        modal.classList.add('open');
+      }
+    }
+
+    function closePosterModal() {
+      const modal = document.getElementById('poster-lightbox-modal');
+      if (modal) modal.classList.remove('open');
+    }
+
     // 스틸컷 갤러리 메인 뷰어 교체 함수
     function changeMainStill(imgSrc) {
       const mainImg = document.getElementById('detail-main-still-img');
@@ -2102,10 +2270,6 @@
 
     /* =========================================================
        1. 전체 영화 탭 (CATALOG VIEW)
-       - 개막/폐막작 최상단 배치 (사용자 요청 3)
-       - 각 색상별 의미 설명 큐레이션 패널 (사용자 요청 4)
-       - 16:9 와이드스크린 스틸컷 비율 적용 (사용자 요청 1)
-       - 카이스트 은막 교류전 최하단 배치 (사용자 요청 2)
        ========================================================= */
     function renderCatalogView(items, emptyMsg = "해당 조건의 상영작이 없습니다.") {
       const filterCategories = [
@@ -2134,7 +2298,7 @@
       // 전체 보기일 때:
       // 1) 개막작 / 폐막작 최우선
       // 2) 5색 테마 비슬영화제 본선작들
-      // 3) 카이스트 은막 교류작은 항상 리스트 맨 마지막! (사용자 요청 2)
+      // 3) 카이스트 은막 교류작은 항상 리스트 맨 마지막!
       if (selectedColor === '전체' && !searchQuery) {
         const openingClosing = filtered.filter(f => f.isOpening || f.isClosing);
         const regularFestival = filtered.filter(f => !f.isOpening && !f.isClosing && !f.isEunmak);
@@ -2142,11 +2306,8 @@
         filtered = [...openingClosing, ...regularFestival, ...eunmakWorks];
       }
 
-      // 개막작 및 폐막작 객체
       const openingFilm = FILMS_DATA.find(f => f.isOpening);
       const closingFilm = FILMS_DATA.find(f => f.isClosing);
-
-      // 선택된 색상의 설명 데이터
       const curColorInfo = COLOR_EXPLANATIONS[selectedColor];
 
       return `
@@ -2165,7 +2326,7 @@
           <input type="text" placeholder="작품명 또는 감독 검색..." value="${esc(searchQuery)}" oninput="handleSearch(this.value)">
         </div>
 
-        <!-- 🎨 [사용자 요청 4] 각 색상별 의미 설명 큐레이션 배너 -->
+        <!-- 각 색상별 의미 설명 큐레이션 배너 -->
         ${curColorInfo ? `
           <div class="color-curator-banner">
             <div class="ccb-top">
@@ -2180,7 +2341,6 @@
             </div>
           </div>
         ` : (selectedColor === '전체' && !searchQuery ? `
-          <!-- 전체 보기 시 5대 감정 무드 스펙트럼 요약 안내 -->
           <div class="spectrum-guide-bar">
             <div class="sgb-header">
               <span>🎨 2026 비슬영화제 5대 감정 무드 컬러 스펙트럼</span>
@@ -2196,7 +2356,7 @@
           </div>
         ` : '')}
 
-        <!-- 🌟 [사용자 요청 3] 개막작 & 폐막작 최상단 스포트라이트 (전체 보기일 때) -->
+        <!-- 개막작 & 폐막작 최상단 스포트라이트 (전체 보기일 때) -->
         ${(selectedColor === '전체' && !searchQuery) ? `
           <div class="spotlight-section">
             <div class="spotlight-header">
@@ -2243,7 +2403,7 @@
           </div>
         ` : ''}
 
-        <!-- 🎬 [사용자 요청 1] 16:9 와이드스크린 스틸컷 그리드 -->
+        <!-- 16:9 와이드스크린 스틸컷 그리드 -->
         <div class="section-title-bar">
           <span class="section-title">
             ${selectedColor === '전체' ? '상영작 아카이브 (16:9 스틸컷)' : selectedColor + ' 세션 상영작'}
@@ -2262,7 +2422,6 @@
                   ${isFav ? '♥' : '♡'}
                 </button>
                 
-                <!-- 16:9 와이드스크린 스틸컷 프레임 -->
                 <div class="fc-still-wrap">
                   <span class="fc-runtime-tag">${esc(f.runtime)}</span>
                   ${f.isEunmak ? `
@@ -2298,7 +2457,7 @@
           `}
         </div>
 
-        <!-- 🤝 [사용자 요청 2] 카이스트 은막 초청 교류전 최하단 피처 패널 (목록 맨 아래에 배치) -->
+        <!-- 카이스트 은막 초청 교류전 최하단 피처 패널 (목록 맨 아래에 배치) -->
         ${(selectedColor === '전체' || selectedColor === '교류작') && !searchQuery ? `
           <div class="eunmak-bottom-panel">
             <div class="ebp-header">
@@ -2387,9 +2546,6 @@
 
     /* =========================================================
        3. 영화 상세 뷰 (FILM DETAIL VIEW)
-       - 16:9 와이드스크린 메인 뷰어
-       - 16:9 스틸컷 갤러리 (다중 스틸컷 클릭 시 메인 화면 교체)
-       - 은막 소속 명시 & 심플 GV 안내
        ========================================================= */
     function renderDetailView(filmId) {
       const f = FILMS_DATA.find(x => x.id === filmId);
@@ -2397,21 +2553,17 @@
 
       const isFav = bookmarks.includes(f.id);
       const safeTitle = f.safeTitle;
-
-      // 대표 16:9 스틸컷 이미지 경로
       const defaultStill = f.stillFiles && f.stillFiles.length ? f.stillFiles[0] : `assets/stills/${encodeURIComponent(safeTitle)}_스틸컷_1.jpg`;
 
       return `
         <div class="detail-view">
           <a class="back-btn" href="javascript:history.back()">← 뒤로 가기</a>
 
-          <!-- 상세 헤더 카드: 16:9 와이드스크린 -->
           <div class="detail-hero-card">
             <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav(${f.id}, event)" aria-label="보관함 담기">
               ${isFav ? '♥' : '♡'}
             </button>
 
-            <!-- 16:9 와이드스크린 시네마 뷰어 -->
             <div class="detail-widescreen-wrap">
               <span class="detail-widescreen-watermark">16:9 WIDESCREEN</span>
               <img id="detail-main-still-img" src="${defaultStill}" 
@@ -2438,7 +2590,6 @@
                 <span>시간: <b>${esc(f.runtime)}</b></span>
               </div>
 
-              <!-- KAIST 은막 전용 상세 배너 -->
               ${f.isEunmak ? `
                 <div class="eunmak-detail-banner">
                   <div class="icon">🤝</div>
@@ -2449,7 +2600,6 @@
                 </div>
               ` : ''}
 
-              <!-- 단일 GV 안내 배너 -->
               ${f.isGV ? `
                 <div class="gv-detail-banner">
                   <span class="badge">GV</span>
@@ -2460,7 +2610,6 @@
                 </div>
               ` : ''}
 
-              <!-- 한 줄 로그라인 -->
               ${f.logline ? `
                 <div class="logline-box">
                   "${esc(f.logline)}"
@@ -2469,7 +2618,6 @@
             </div>
           </div>
 
-          <!-- 🎬 [사용자 요청 1] 16:9 스틸컷 갤러리 섹션 -->
           <div class="stills-gallery-section">
             <div class="sgs-header">
               <span class="sgs-title">🎬 16:9 WIDESCREEN STILLS</span>
@@ -2485,13 +2633,11 @@
             </div>
           </div>
 
-          <!-- 시놉시스 전문 -->
           <div class="detail-section">
             <h3>SYNOPSIS</h3>
             <p class="synopsis-text">${esc(f.synopsis || "시놉시스 준비 중입니다.")}</p>
           </div>
 
-          <!-- 크레딧 정보 -->
           <div class="detail-section">
             <h3>CAST & CREW</h3>
             <table class="credits-table">
