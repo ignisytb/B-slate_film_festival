@@ -689,7 +689,7 @@ body::before {
 	font-size: 1rem;
 }
 .logline-box {
-	font-family: var(--font-chalk);
+	font-family: var(--font-body);
 	font-size: 1.45rem;
 	border-left-width: 6px;
 }
