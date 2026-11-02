@@ -38,7 +38,7 @@
 		"spotlight_venue": "DGIST E7 메인홀",
 		"opening_badge": "✨ 개막작 (OPENING FILM)",
 		"closing_badge": "🌙 폐막작 (CLOSING FILM)",
-		"archive_title": "상영작 아카이브",
+		"archive_title": "상영작 목록",
 		"section_title": "{section} 세션 상영작",
 		"empty": "해당 조건의 상영작이 없습니다.",
 		"favs_empty": "아직 낭만 보관함에 담긴 영화가 없습니다.<br>보고 싶은 영화의 하트(♥)를 눌러보세요!"
@@ -52,7 +52,7 @@
 		"tag": "KAIST 은막",
 		"presented_by": "출품: 카이스트 영화제작동아리 은막",
 		"panel_title": "카이스트 영화제작동아리 ‘은막’ 초청 교류전",
-		"panel_desc": "카이스트(KAIST) 유일의 중앙 영화제작동아리 <b>'은막(銀幕)'</b>과의 특별 상호 교류 프로그램입니다. 과학기술특성화대학 청년 창작자들의 스크린 너머 시선과 새로운 예술적 시도를 2일차 E7 A관에서 상영합니다.",
+		"panel_desc": "카이스트(KAIST) 유일의 중앙 영화제작동아리 <b>'은막(銀幕)'</b>과의 특별 상호 교류 프로그램입니다. 과학기술특성화대학 청년 창작자들의 스크린 너머 시선과 새로운 예술적 시도를 2일차에 상영합니다.",
 		"panel_meta": "러닝타임 {runtime} · {hall}",
 		"detail_pill": "🤝 KAIST 영화제작동아리 은막(銀幕) 초청 교류전",
 		"detail_banner_title": "[KAIST × DGIST 영화 교류전]",

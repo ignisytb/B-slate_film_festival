@@ -198,7 +198,7 @@ function renderSpotlightCard(film, badgeClass, badgeLabel) {
     <a class="spotlight-card" href="${filmLink(film)}">
       <div class="spotlight-media-wrap">
         <span class="spotlight-badge-floating ${badgeClass}">${badgeLabel}</span>
-        <span class="spotlight-widescreen-tag">16:9 CINEMA</span>
+        <span style="display: none;" class="spotlight-widescreen-tag">16:9 CINEMA</span>
         ${imageTag(imageSources(film))}
       </div>
       <div class="spotlight-info">
@@ -221,7 +221,7 @@ function renderSpotlight() {
     <div class="spotlight-section">
       <div class="spotlight-header">
         <span class="spotlight-title">🎬 FESTIVAL HIGHLIGHT : OPENING & CLOSING</span>
-        <span style="font-size:0.7rem;color:var(--gold);font-weight:700;">${t('catalog.spotlight_venue')}</span>
+        <span style="display:none; font-size:0.7rem;color:var(--gold);font-weight:700;">${t('catalog.spotlight_venue')}</span>
       </div>
       <div class="spotlight-grid">
         ${openingFilm ? renderSpotlightCard(openingFilm, 'badge-opening', t('catalog.opening_badge')) : ''}

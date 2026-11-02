@@ -38,7 +38,7 @@
 		"spotlight_venue": "DGIST E7 Main Hall",
 		"opening_badge": "✨ OPENING FILM",
 		"closing_badge": "🌙 CLOSING FILM",
-		"archive_title": "Film Archive",
+		"archive_title": "Film List",
 		"section_title": "{section} Session",
 		"empty": "No films match your search.",
 		"favs_empty": "Your collection is empty.<br>Tap the heart (♥) on the films you want to see!"
@@ -52,7 +52,7 @@
 		"tag": "KAIST Eunmak",
 		"presented_by": "Presented by KAIST film club Eunmak",
 		"panel_title": "Invited Exchange Screening with KAIST Film Club ‘Eunmak’",
-		"panel_desc": "A special exchange program with <b>Eunmak (銀幕)</b>, the only central filmmaking club at KAIST. Screening on Day 2 in E7 Hall A, these films capture young creators from a science and technology university looking beyond the screen and trying new artistic directions.",
+		"panel_desc": "A special exchange program with <b>Eunmak (銀幕)</b>, the only central filmmaking club at KAIST. Screening on Day 2, these films capture young creators from a science and technology university looking beyond the screen and trying new artistic directions.",
 		"panel_meta": "Runtime {runtime} · {hall}",
 		"detail_pill": "🤝 Invited Exchange Screening: KAIST Film Club Eunmak (銀幕)",
 		"detail_banner_title": "[KAIST × DGIST Film Exchange]",
