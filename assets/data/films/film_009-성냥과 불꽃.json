@@ -26,14 +26,14 @@
 	"is_closing": false,
 	"running_time": "10:30",
 	"screening": {
-		"day": 2,
-		"start": "18:30",
-		"end": "20:00",
-		"part": 1,
+		"day": 1,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
 		"order": 2,
 		"hall": {
-			"ko": "DGIST E7 B관",
-			"en": "DGIST E7 Hall B"
+			"ko": "DGIST E7 235",
+			"en": "DGIST E7 235"
 		}
 	},
 	"is_gv": true,

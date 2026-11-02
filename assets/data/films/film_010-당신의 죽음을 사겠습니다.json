@@ -26,10 +26,10 @@
 	"is_closing": false,
 	"running_time": "21:02",
 	"screening": {
-		"day": 2,
-		"start": "18:30",
-		"end": "20:00",
-		"part": 1,
+		"day": 1,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
 		"order": 3,
 		"hall": {
 			"ko": "DGIST E7 B관",
