@@ -19,8 +19,8 @@ assets/
 ├── img/
 │   ├── logo/               비슬레이트 로고
 │   ├── posters/            영화제 메인·서브·티저 포스터
-│   │   └── film/<폴더>/    영화별 포스터 (poster.jpg)
-│   └── stills/<폴더>/      영화별 스틸컷 (still_1.jpg, still_2.jpg, ...)
+│   │   └── film/<폴더>/    영화별 포스터 (poster.jpg 또는 poster.png)
+│   └── stills/<폴더>/      영화별 스틸컷 (still_1.jpg, still_2.png, ...)
 └── legacy/                 이전 버전의 CSV·시놉시스 원본 (참고용)
 ```
 
@@ -56,7 +56,6 @@ python -m http.server
 | `cast` | 출연과 배역 | `[{ "name": {...}, "role": {...} }]` |
 | `trailer_url` | 예고편 링크 (없으면 빈칸) | `""` |
 | `logline`, `synopsis` | 한 줄 소개, 시놉시스 | `{ "ko": "...", "en": "..." }` |
-| `stills` | 스틸컷 경로 목록 | `["assets/img/stills/film_013-히든/still_1.jpg"]` |
 
 글이 들어가는 항목은 모두 `{ "ko": ..., "en": ... }` 형태입니다. 영어가 아직 없으면 `"en": ""` 으로 둡니다.
 
@@ -66,8 +65,8 @@ python -m http.server
 
 영화마다 `assets/img/posters/film/` 과 `assets/img/stills/` 아래에 `film_001-바다 건너의 불빛` 같은 폴더가 있습니다.
 
-- 포스터: 해당 폴더에 `poster.jpg` 로 넣습니다. 따로 등록할 필요 없이 바로 표시됩니다.
-- 스틸컷: 해당 폴더에 `still_1.jpg`, `still_2.jpg` ... 로 넣고, 그 영화 데이터 파일의 `stills` 에도 경로를 추가합니다. (정적 사이트는 폴더 안 파일 목록을 읽을 수 없어서 경로를 직접 적어야 합니다.)
+- 포스터: 해당 폴더에 `poster.jpg` 또는 `poster.png` 로 넣습니다. 따로 등록할 필요 없이 바로 표시됩니다.
+- 스틸컷: 해당 폴더에 `still_1`, `still_2`, `still_3` ... 순서로 `.jpg` 또는 `.png` 파일을 넣습니다. 페이지가 1번부터 차례로 찾다가 처음 없는 번호에서 멈추므로 **번호를 건너뛰지 않습니다.** (정적 사이트는 폴더 안 파일 목록을 읽을 수 없어서 이름 규칙으로 찾습니다.)
 - 이미지가 없으면 스틸컷 → 포스터 → 제목 카드 순서로 대신 표시됩니다.
 - 빈 폴더의 `.gitkeep` 은 git 에 빈 폴더를 올리기 위한 파일이라, 이미지를 넣은 뒤 지워도 됩니다.
 

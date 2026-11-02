@@ -437,8 +437,7 @@ function renderGvBanner(film) {
   `;
 }
 
-function renderStillsGallery(film) {
-  const stills = stillPaths(film);
+function renderStillsGallery(stills) {
   if (!stills.length) return '';
 
   return `
@@ -481,8 +480,13 @@ function renderCredits(film) {
   `;
 }
 
-function renderDetailView(filmId) {
-  const film = films.find(candidate => candidate.id === filmId);
+async function showStillsGallery(film) {
+  const stills = await findStills(film);
+  const gallery = document.getElementById('stills-gallery');
+  if (gallery && gallery.dataset.filmId === film.id) gallery.innerHTML = renderStillsGallery(stills);
+}
+
+function renderDetailView(film) {
   if (!film) return renderEmptyState('🎬', t('detail.not_found'));
 
   return `
@@ -515,7 +519,7 @@ function renderDetailView(filmId) {
         </div>
       </div>
 
-      ${renderStillsGallery(film)}
+      <div id="stills-gallery" data-film-id="${film.id}"></div>
 
       <div class="detail-section">
         <h3>SYNOPSIS</h3>
@@ -535,8 +539,10 @@ function renderCurrentView() {
   const filmId = filmIdFromHash(window.location.hash);
 
   if (filmId) {
-    app.innerHTML = renderDetailView(filmId);
+    const film = films.find(candidate => candidate.id === filmId);
+    app.innerHTML = renderDetailView(film);
     window.scrollTo(0, 0);
+    if (film) showStillsGallery(film);
     return;
   }
 

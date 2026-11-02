@@ -1,6 +1,9 @@
 const BOOKMARK_STORAGE_KEY = 'nangman_bookmarks';
 const FILM_DATA_DIR = './assets/data/films';
 const FILM_POSTER_DIR = 'assets/img/posters/film';
+const FILM_STILL_DIR = 'assets/img/stills';
+const MAX_STILLS = 20;
+const IMAGE_EXTENSIONS = ['jpg', 'png', 'webp'];
 const FILM_ID_PREFIX = 'film_';
 const FILM_ROUTE_PREFIX = '#/film/';
 
@@ -45,16 +48,42 @@ function filmDataPath(folder) {
   return `${FILM_DATA_DIR}/${encodeURIComponent(folder)}.json`;
 }
 
-function posterPath(film) {
-  return `${FILM_POSTER_DIR}/${encodeURIComponent(film.folder)}/poster.jpg`;
+function posterPaths(film) {
+  return IMAGE_EXTENSIONS.map(extension => `${FILM_POSTER_DIR}/${encodeURIComponent(film.folder)}/poster.${extension}`);
 }
 
-function stillPaths(film) {
-  return (film.stills || []).map(path => encodeURI(path));
+function stillPaths(film, number) {
+  return IMAGE_EXTENSIONS.map(extension => `${FILM_STILL_DIR}/${encodeURIComponent(film.folder)}/still_${number}.${extension}`);
 }
 
 function imageSources(film) {
-  return [...stillPaths(film), posterPath(film)];
+  return [...stillPaths(film, 1), ...posterPaths(film)];
+}
+
+function imageExists(src) {
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => resolve(true);
+    img.onerror = () => resolve(false);
+    img.src = src;
+  });
+}
+
+async function firstExistingImage(sources) {
+  for (const src of sources) {
+    if (await imageExists(src)) return src;
+  }
+  return null;
+}
+
+async function findStills(film) {
+  const stills = [];
+  for (let number = 1; number <= MAX_STILLS; number++) {
+    const still = await firstExistingImage(stillPaths(film, number));
+    if (!still) break;
+    stills.push(still);
+  }
+  return stills;
 }
 
 function imageTag(sources, attributes = '') {
