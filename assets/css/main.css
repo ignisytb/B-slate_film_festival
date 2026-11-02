@@ -111,6 +111,38 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	padding-bottom: 8px;
 }
 
+.lang-switch-box {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	padding: 3px 8px;
+	border-radius: 999px;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.68rem;
+	letter-spacing: 0.04em;
+}
+
+.lang-btn {
+	color: #94a3b8;
+	font-weight: 600;
+	padding: 1px 3px;
+	transition: all 0.18s;
+	cursor: pointer;
+}
+
+.lang-btn.active {
+	color: var(--gold);
+	font-weight: 800;
+	text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+}
+
+.lang-divider {
+	color: rgba(255, 255, 255, 0.25);
+	font-size: 0.6rem;
+}
+
 .rec-indicator {
 	display: inline-flex;
 	align-items: center;

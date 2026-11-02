@@ -1,0 +1,87 @@
+{
+	"page": {
+		"title": "2026 Biseul Film Festival Official Program Book"
+	},
+	"hero": {
+		"venue": "Venue: <b>DGIST E7</b>",
+		"poster_alt": "2026 Biseul Film Festival '낭만 ;' main poster",
+		"poster_zoom": "Tap the poster to enlarge"
+	},
+	"poster": {
+		"main": "Main Poster",
+		"sub_1": "Sub 1",
+		"sub_2": "Sub 2",
+		"teaser_black": "Teaser Black",
+		"teaser_white": "Teaser White"
+	},
+	"tab": {
+		"catalog": "All Films",
+		"schedule": "Schedule",
+		"favs": "My Collection"
+	},
+	"common": {
+		"all": "All",
+		"save_to_favs": "Save to collection",
+		"load_error": "Couldn't load the film list.<br>Please try again in a moment."
+	},
+	"format": {
+		"day": "Day {day}",
+		"part": "Part {part}",
+		"screening_time": "{start}–{end} (Part {part})",
+		"runtime_unknown": "TBA",
+		"film_count": "{count} films"
+	},
+	"catalog": {
+		"search_placeholder": "Search by title or director...",
+		"spectrum_title": "🎨 2026 Biseul Film Festival: Five Mood Colors",
+		"spectrum_hint": "Tap a chip above to browse by mood",
+		"spotlight_venue": "DGIST E7 Main Hall",
+		"opening_badge": "✨ OPENING FILM",
+		"closing_badge": "🌙 CLOSING FILM",
+		"archive_title": "Film Archive (16:9 Stills)",
+		"section_title": "{section} Session",
+		"empty": "No films match your search.",
+		"favs_empty": "Your collection is empty.<br>Tap the heart (♥) on the films you want to see!"
+	},
+	"film": {
+		"director": "Director: {name}",
+		"presented_by_eunmak": "Presented by KAIST Eunmak"
+	},
+	"eunmak": {
+		"chip": "🤝 KAIST Eunmak",
+		"tag": "KAIST Eunmak",
+		"presented_by": "Presented by KAIST film club Eunmak",
+		"panel_title": "Invited Exchange Screening with KAIST Film Club ‘Eunmak’",
+		"panel_desc": "A special exchange program with <b>Eunmak (銀幕)</b>, the only central filmmaking club at KAIST. Screening on Day 2 in E7 Hall A, these films capture young creators from a science and technology university looking beyond the screen and trying new artistic directions.",
+		"panel_meta": "Runtime {runtime} · {hall}",
+		"detail_pill": "🤝 Invited Exchange Screening: KAIST Film Club Eunmak (銀幕)",
+		"detail_banner_title": "[KAIST × DGIST Film Exchange]",
+		"detail_banner_desc": "This film is an official entry from <b>Eunmak (銀幕)</b>, KAIST's central filmmaking club.",
+		"affiliation": "KAIST central film club Eunmak (銀幕)"
+	},
+	"schedule": {
+		"empty": "No screenings on this day."
+	},
+	"detail": {
+		"back": "← Back",
+		"not_found": "Film not found.",
+		"screening": "Screening",
+		"venue": "Venue",
+		"runtime": "Runtime",
+		"gv_title": "A Q&A with the filmmakers [GV] follows the screening.",
+		"gv_desc": "It takes place in {hall} right after the film.",
+		"synopsis_empty": "Synopsis coming soon."
+	},
+	"credit": {
+		"presenter": "Presented by",
+		"director": "Director",
+		"writer": "Screenplay",
+		"cast": "Cast",
+		"roles": "Roles",
+		"affiliation": "Affiliation",
+		"role_entry": "{role} ({name})"
+	},
+	"footer": {
+		"host": "Hosted by B_SLATE, DGIST film club · All screenings at DGIST E7"
+	}
+}
