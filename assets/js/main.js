@@ -497,7 +497,7 @@ function renderDetailView(film) {
         ${renderFavButton(film)}
 
         <div class="detail-widescreen-wrap">
-          <span class="detail-widescreen-watermark">SCREENING</span>
+          <span class="detail-widescreen-watermark">SCREEN</span>
           ${imageTag(imageSources(film), 'id="detail-main-still-img"')}
           <div class="detail-widescreen-placeholder">${escapeHtml(localized(film.title))}</div>
         </div>
