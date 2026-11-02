@@ -443,7 +443,7 @@ function renderStillsGallery(stills) {
   return `
     <div class="stills-gallery-section">
       <div class="sgs-header">
-        <span class="sgs-title">🎬 16:9 WIDESCREEN STILLS</span>
+        <span class="sgs-title">🎬 STILLS</span>
         <span class="sgs-ratio">1920 × 1080 (16:9)</span>
       </div>
       <div class="stills-thumb-grid">
@@ -497,7 +497,7 @@ function renderDetailView(film) {
         ${renderFavButton(film)}
 
         <div class="detail-widescreen-wrap">
-          <span class="detail-widescreen-watermark">16:9 WIDESCREEN</span>
+          <span class="detail-widescreen-watermark">SCREENING</span>
           ${imageTag(imageSources(film), 'id="detail-main-still-img"')}
           <div class="detail-widescreen-placeholder">${escapeHtml(localized(film.title))}</div>
         </div>
