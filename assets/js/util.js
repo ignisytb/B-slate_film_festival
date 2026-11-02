@@ -6,6 +6,7 @@ const MAX_STILLS = 20;
 const IMAGE_EXTENSIONS = ['jpg', 'png', 'webp'];
 const FILM_ID_PREFIX = 'film_';
 const FILM_ROUTE_PREFIX = '#/film/';
+const HALL_ORDER = ['DGIST E7 L29', 'DGIST E7 233', 'DGIST E7 235'];
 
 function escapeHtml(value) {
   return (value ?? '').toString()
@@ -117,9 +118,14 @@ function shortHallName(hall) {
   return localized(hall).replace('DGIST ', '');
 }
 
+function hallRank(hall) {
+  const rank = HALL_ORDER.indexOf(hall.ko);
+  return rank === -1 ? HALL_ORDER.length : rank;
+}
+
 function compareScreening(a, b) {
   return a.screening.day - b.screening.day
     || a.screening.start.localeCompare(b.screening.start)
-    || a.screening.hall.ko.localeCompare(b.screening.hall.ko)
+    || hallRank(a.screening.hall) - hallRank(b.screening.hall)
     || (a.screening.order ?? 0) - (b.screening.order ?? 0);
 }

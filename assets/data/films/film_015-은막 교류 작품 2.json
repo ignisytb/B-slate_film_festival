@@ -1,8 +1,8 @@
 {
-	"id": "film_007",
+	"id": "film_015",
 	"title": {
-		"ko": "은막 교류 작품 1",
-		"en": "KAIST Eunmak Exchange Film 1"
+		"ko": "은막 교류 작품 2",
+		"en": "KAIST Eunmak Exchange Film 2"
 	},
 	"director": {
 		"ko": "KAIST 영화제작동아리 은막",
@@ -15,8 +15,8 @@
 	"year": null,
 	"section": "eunmak",
 	"session": {
-		"ko": "교류작 1",
-		"en": "Exchange Screening 1"
+		"ko": "교류작 2",
+		"en": "Exchange Screening 2"
 	},
 	"theme": {
 		"ko": "카이스트(KAIST) 영화제작동아리 은막 초청 교류전",
@@ -24,12 +24,12 @@
 	},
 	"is_opening": false,
 	"is_closing": false,
-	"running_time": "55:00",
+	"running_time": "47:00",
 	"screening": {
 		"day": 2,
-		"start": "19:00",
-		"end": "20:00",
-		"part": 1,
+		"start": "20:30",
+		"end": "22:00",
+		"part": 2,
 		"order": null,
 		"hall": {
 			"ko": "DGIST E7 233",
