@@ -689,7 +689,7 @@ body::before {
 	font-size: 1rem;
 }
 .logline-box {
-	font-family: var(--font-body);
+	font-family: var(--font-display);
 	font-size: 1.45rem;
 	border-left-width: 6px;
 }
@@ -888,7 +888,7 @@ body {
 }
 .logline-box {
 	border-left: 2px solid var(--chalk);
-	font-size: 1.35rem;
+	font-size: 1.2rem;
 }
 .gv-detail-banner {
 	background: transparent;
