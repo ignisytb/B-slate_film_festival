@@ -1,0 +1,1815 @@
+[
+	{
+		"id": "film_001",
+		"folder": "film_001-바다 건너의 불빛",
+		"title": {
+			"ko": "바다 건너의 불빛",
+			"en": "Lights Across the Sea"
+		},
+		"director": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"writer": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"year": 2026,
+		"section": "orange",
+		"session": {
+			"ko": "개막 (동경과 조우)",
+			"en": "Opening (Longing and Encounter)"
+		},
+		"theme": {
+			"ko": "개막작 · 동경과 조우",
+			"en": "Opening Film · Longing and Encounter"
+		},
+		"is_opening": true,
+		"is_closing": false,
+		"running_time": "23:07",
+		"screening": {
+			"day": 1,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 메인홀",
+				"en": "DGIST E7 Main Hall"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "허태훈",
+					"en": "Heo Tae-hoon"
+				},
+				"role": {
+					"ko": "그",
+					"en": "He"
+				}
+			},
+			{
+				"name": {
+					"ko": "정아임",
+					"en": "Jung A-im"
+				},
+				"role": {
+					"ko": "그녀",
+					"en": "She"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "바다 건너편의 불빛을 동경하던 두 남녀가 낯선 밤길 위에서 우연히 마주한다.",
+			"en": "A man and a woman who have long yearned for the lights across the sea cross paths by chance on an unfamiliar road at night."
+		},
+		"synopsis": {
+			"ko": "대마도에서 나고 자란 소녀에게 밤바다 건너편에서 밝게 빛나는 부산은 늘 동경의 대상이었다. 오랫동안 꿈꾸던 부산 여행을 마치고 대마도로 돌아와 집으로 향하던 밤, 소녀는 길가에 멈춰 선 고장 난 차와 그 옆에 웅크리고 앉은 한 남자를 발견한다. 낯선 밤길 위에서 우연히 마주친 두 사람은 서로에게 조금씩 마음을 열고 밤하늘 아래 대화를 이어나간다.",
+			"en": "For a girl born and raised in Tsushima, Busan, shining brightly across the night sea, has always been a place of longing. One night, on her way home after returning from a long-awaited trip to Busan, she comes across a broken-down car on the roadside and a man crouched beside it. Meeting by chance on an unfamiliar night road, the two slowly open up to each other and keep talking beneath the night sky."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_002",
+		"folder": "film_002-55%의 이별과 33%의 만남과 11%의 그리움",
+		"title": {
+			"ko": "55%의 이별과 33%의 만남과 11%의 그리움",
+			"en": "55% Farewell, 33% Encounter, 11% Longing"
+		},
+		"director": {
+			"ko": "강현성",
+			"en": "Kang Hyun-sung"
+		},
+		"writer": {
+			"ko": "강현성",
+			"en": "Kang Hyun-sung"
+		},
+		"year": 2026,
+		"section": "pink",
+		"session": {
+			"ko": "청춘과 그리움",
+			"en": "Youth and Longing"
+		},
+		"theme": {
+			"ko": "청춘과 그리움 · 성장",
+			"en": "Youth and Longing · Growing Up"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "46:04",
+		"screening": {
+			"day": 1,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 A관",
+				"en": "DGIST E7 Hall A"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "정아임",
+					"en": "Jung A-im"
+				},
+				"role": {
+					"ko": "배지민",
+					"en": "Bae Ji-min"
+				}
+			},
+			{
+				"name": {
+					"ko": "신지우",
+					"en": "Shin Ji-woo"
+				},
+				"role": {
+					"ko": "이영숙",
+					"en": "Lee Young-sook"
+				}
+			},
+			{
+				"name": {
+					"ko": "양태빈",
+					"en": "Yang Tae-bin"
+				},
+				"role": {
+					"ko": "배정우",
+					"en": "Bae Jung-woo"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "수많은 만남과 이별을 지나온 청춘이 오랫동안 외면해왔던 마음속 상처와 마주한다.",
+			"en": "A young woman who has been through countless meetings and partings finally faces the wounds she has long ignored."
+		},
+		"synopsis": {
+			"ko": "낯선 캠퍼스에서 설레는 대학 생활을 시작한 지민은 자신의 꿈을 향해 나아가며 수많은 인연과 마주한다. 그러나 새로운 만남의 기쁨도 잠시, 예고 없이 찾아오는 이별과 엇갈리는 감정 속에서 지민의 일상은 예상치 못한 파도에 휘말린다. 지나온 인연의 조각들과 그 사이에 남겨진 그리움을 되짚어가던 지민은 마침내 자신이 오랫동안 외면해왔던 마음속 상처와 마주하게 된다.",
+			"en": "Starting an exciting new life on an unfamiliar campus, Ji-min meets many people as she pursues her dreams. But the joy of new encounters is brief. Caught in sudden goodbyes and crossed feelings, her everyday life is swept up in unexpected waves. Retracing the fragments of past relationships and the longing left between them, Ji-min finally faces the wounds in her heart she has long ignored."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_003",
+		"folder": "film_003-카덴차",
+		"title": {
+			"ko": "카덴차",
+			"en": "Cadenza"
+		},
+		"director": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"writer": {
+			"ko": "김혜원",
+			"en": "Kim Hye-won"
+		},
+		"year": 2024,
+		"section": "orange",
+		"session": {
+			"ko": "애착과 불완전함",
+			"en": "Attachment and Imperfection"
+		},
+		"theme": {
+			"ko": "음악영화 · 악보의 여백",
+			"en": "Music Film · The Spaces Between the Notes"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "32:49",
+		"screening": {
+			"day": 1,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 B관",
+				"en": "DGIST E7 Hall B"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "최도윤",
+					"en": "Choi Do-yoon"
+				},
+				"role": {
+					"ko": "현우",
+					"en": "Hyun-woo"
+				}
+			},
+			{
+				"name": {
+					"ko": "위예은",
+					"en": "Wi Ye-eun"
+				},
+				"role": {
+					"ko": "혜진",
+					"en": "Hye-jin"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "클래식 선율로 가까워진 두 청춘의 시선이 예고 없이 어긋나기 시작한다.",
+			"en": "Two young people drawn together by classical music begin to drift apart without warning."
+		},
+		"synopsis": {
+			"ko": "물리학과 신입생 혜진의 눈에 클래식 피아노를 연주하는 조용한 동기 현우가 들어온다. 두 사람은 음악을 매개로 빠르게 가까워지며 평범한 친구 이상의 깊은 애착 관계를 형성해 나간다. 그러나 현우와 함께하는 시간이 늘어갈수록, 혜진이 미처 알지 못했던 현우의 시선은 점차 피아노가 아닌 낯선 곳을 향하기 시작한다.",
+			"en": "Hye-jin, a freshman in physics, notices Hyun-woo, a quiet classmate who plays classical piano. Brought together by music, the two quickly grow close and form an attachment deeper than friendship. But the more time Hye-jin spends with him, the more Hyun-woo's gaze turns away from the piano, toward something she never knew about."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_004",
+		"folder": "film_004-돈보다 마음",
+		"title": {
+			"ko": "돈보다 마음?",
+			"en": "Heart Over Money?"
+		},
+		"director": {
+			"ko": "이준성",
+			"en": "Lee Jun-sung"
+		},
+		"writer": {
+			"ko": "이준성",
+			"en": "Lee Jun-sung"
+		},
+		"year": 2021,
+		"section": "pink",
+		"session": {
+			"ko": "욕망과 집착",
+			"en": "Desire and Obsession"
+		},
+		"theme": {
+			"ko": "사랑 · 현실 · 도박",
+			"en": "Love · Reality · Gambling"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "18:04",
+		"screening": {
+			"day": 1,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": 1,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": false,
+		"cast": [
+			{
+				"name": {
+					"ko": "차건희",
+					"en": "Cha Geon-hee"
+				},
+				"role": {
+					"ko": "이상후",
+					"en": "Lee Sang-hoo"
+				}
+			},
+			{
+				"name": {
+					"ko": "최아영",
+					"en": "Choi A-young"
+				},
+				"role": {
+					"ko": "강지안",
+					"en": "Kang Ji-an"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "연애조차 버거운 텅 빈 지갑 앞, 사랑보다 달콤한 투자의 유혹이 찾아온다.",
+			"en": "Facing an empty wallet that makes even dating a struggle, a student is tempted by an investment sweeter than love."
+		},
+		"synopsis": {
+			"ko": "바닥을 보이는 통장 잔고에 늘 쪼달리며 살아가는 대학생 상후. 그에게는 사랑하는 여자친구 지안이 있지만, 가벼운 주머니 사정에 행복한 연애조차 큰 부담으로 다가온다. 현실적인 한계 앞에 지쳐가던 상후의 눈에 일확천금을 꿈꾸게 하는 주식 투자가 들어오고, 그의 마음은 점차 흔들리기 시작한다.",
+			"en": "Sang-hoo is a college student always scraping by on a nearly empty bank account. He has a girlfriend he loves, Ji-an, but with so little money, even a happy relationship feels like a heavy burden. Worn down by his circumstances, he notices stock investing and its promise of a quick fortune, and his heart begins to waver."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_005",
+		"folder": "film_005-사진작가",
+		"title": {
+			"ko": "사진작가",
+			"en": "The Photographer"
+		},
+		"director": {
+			"ko": "김성현",
+			"en": "Kim Sung-hyun"
+		},
+		"writer": {
+			"ko": "김성현",
+			"en": "Kim Sung-hyun"
+		},
+		"year": 2022,
+		"section": "charcoal",
+		"session": {
+			"ko": "욕망과 집착",
+			"en": "Desire and Obsession"
+		},
+		"theme": {
+			"ko": "집착 · 공포",
+			"en": "Obsession · Horror"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "12:06",
+		"screening": {
+			"day": 1,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": 2,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": false,
+		"cast": [
+			{
+				"name": {
+					"ko": "김도현",
+					"en": "Kim Do-hyun"
+				},
+				"role": {
+					"ko": "현승",
+					"en": "Hyun-seung"
+				}
+			},
+			{
+				"name": {
+					"ko": "김여진",
+					"en": "Kim Yeo-jin"
+				},
+				"role": {
+					"ko": "유이",
+					"en": "Yui"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "렌즈 너머의 피사체를 소유하려는 갈망 끝에 현실과 환상의 경계가 무너져 내린다.",
+			"en": "Driven by the desire to possess the subject beyond his lens, a photographer watches the line between reality and illusion collapse."
+		},
+		"synopsis": {
+			"ko": "카메라 렌즈 너머의 피사체를 온전히 소유하고 싶다는 갈망에 사로잡힌 현승. 익숙했던 그의 일상이 조금씩 기묘하게 뒤틀리기 시작하면서, 현실과 환상의 경계는 걷잡을 수 없이 무너져 내린다. 반복되는 불안과 낯선 환각 속에서 기억과 욕망이 뒤섞이는 가운데, 현승이 집착 끝에 마주하게 될 진실은 무엇일까.",
+			"en": "Hyun-seung is consumed by the desire to fully possess the subject on the other side of his camera lens. As his familiar daily life slowly twists into something strange, the line between reality and illusion crumbles beyond control. Amid recurring anxiety and unfamiliar hallucinations where memory and desire blur together, what truth will Hyun-seung face at the end of his obsession?"
+		},
+		"stills": []
+	},
+	{
+		"id": "film_006",
+		"folder": "film_006-심장이 멈추는 그날까지",
+		"title": {
+			"ko": "심장이 멈추는 그날까지",
+			"en": "Until the Day My Heart Stops"
+		},
+		"director": {
+			"ko": "황인탁",
+			"en": "Hwang In-tak"
+		},
+		"writer": {
+			"ko": "황인탁",
+			"en": "Hwang In-tak"
+		},
+		"year": 2019,
+		"section": "crimson",
+		"session": {
+			"ko": "욕망과 집착",
+			"en": "Desire and Obsession"
+		},
+		"theme": {
+			"ko": "사랑 · 연인 · 판타지",
+			"en": "Love · Lovers · Fantasy"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "24:53",
+		"screening": {
+			"day": 1,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": 3,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": false,
+		"cast": [
+			{
+				"name": {
+					"ko": "박창희",
+					"en": "Park Chang-hee"
+				},
+				"role": {
+					"ko": "태형",
+					"en": "Tae-hyung"
+				}
+			},
+			{
+				"name": {
+					"ko": "이윤지",
+					"en": "Lee Yoon-ji"
+				},
+				"role": {
+					"ko": "하늘",
+					"en": "Haneul"
+				}
+			},
+			{
+				"name": {
+					"ko": "구본진",
+					"en": "Koo Bon-jin"
+				},
+				"role": {
+					"ko": "현식",
+					"en": "Hyun-sik"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "멈출 듯 아파오던 심장을 구원해준 운명적 사랑 이면에 서늘한 진실이 드러난다.",
+			"en": "Behind the fated love that saved his failing heart, a chilling truth comes to light."
+		},
+		"synopsis": {
+			"ko": "원인 불명의 유전성 심장병을 물려받아 언제 멈출지 모르는 심장을 안고 살아가는 신입생 태형. 어느 날 심장 발작으로 쓰러진 그의 앞에 운명처럼 하늘이 나타나 목숨을 구해주고, 신기하게도 그녀의 곁에 있을 때면 태형의 심장은 아무런 통증도 느끼지 않는다. 하늘이 선물한 열쇠고리를 지닌 채 꿈같은 연애를 이어가던 어느 날, 걸려온 의문의 전화 한 통에 이어 낯선 남자 현식이 두 사람 앞에 나타나면서 완벽했던 운명에 서늘한 균열이 일기 시작한다.",
+			"en": "Tae-hyung, a freshman, lives with an unexplained hereditary heart condition that could stop his heart at any moment. One day, when he collapses from a heart attack, Haneul appears as if by fate and saves his life, and strangely, his heart feels no pain whenever she is near. Carrying the keychain she gave him, he enjoys a dreamlike romance until a mysterious phone call and the arrival of a stranger, Hyun-sik, open a cold crack in their perfect fate."
+		},
+		"stills": [
+			"assets/img/stills/film_006-심장이 멈추는 그날까지/still_1.jpg",
+			"assets/img/stills/film_006-심장이 멈추는 그날까지/still_2.jpg",
+			"assets/img/stills/film_006-심장이 멈추는 그날까지/still_3.jpg"
+		]
+	},
+	{
+		"id": "film_007",
+		"folder": "film_007-은막 교류 작품 1",
+		"title": {
+			"ko": "은막 교류 작품 1",
+			"en": "KAIST Eunmak Exchange Film 1"
+		},
+		"director": {
+			"ko": "KAIST 영화제작동아리 은막",
+			"en": "KAIST Film Club Eunmak"
+		},
+		"writer": {
+			"ko": "KAIST 은막 창작팀",
+			"en": "KAIST Eunmak Creative Team"
+		},
+		"year": null,
+		"section": "eunmak",
+		"session": {
+			"ko": "교류작 1",
+			"en": "Exchange Screening 1"
+		},
+		"theme": {
+			"ko": "카이스트(KAIST) 영화제작동아리 은막 초청 교류전",
+			"en": "Invited Exchange Screening with KAIST Film Club Eunmak"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "55:00",
+		"screening": {
+			"day": 2,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 A관",
+				"en": "DGIST E7 Hall A"
+			}
+		},
+		"is_gv": false,
+		"cast": [
+			{
+				"name": {
+					"ko": "카이스트 은막 단원들",
+					"en": "Members of KAIST Eunmak"
+				},
+				"role": {
+					"ko": "",
+					"en": ""
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "카이스트(KAIST) 유일의 중앙 영화제작동아리 '은막(銀幕)'과의 특별 교류 상영작입니다.",
+			"en": "A special exchange screening with Eunmak (銀幕), the only central filmmaking club at KAIST."
+		},
+		"synopsis": {
+			"ko": "카이스트(KAIST) 유일의 중앙 영화제작동아리 '은막(銀幕)'과 비슬영화제(B_SLATE)가 함께하는 특별 교류 프로그램입니다.\n\n과학기술특성화대학 청년 창작자들의 스크린 너머 시선과 새로운 예술적 시도를 담은 단편 수작들을 초청 상영합니다.\n\n• 상영 세션: 〈스크린 너머의 시선〉\n• 상영 장소: DGIST E7 A관\n• 주최/출품: 카이스트(KAIST) 영화제작동아리 은막(銀幕)",
+			"en": "A special exchange program between Eunmak (銀幕), the only central filmmaking club at KAIST, and the B-slate Film Festival.\n\nWe present a selection of fine short films by young creators from a science and technology university, capturing their view beyond the screen and their new artistic experiments.\n\n• Session: 〈A View Beyond the Screen〉\n• Venue: DGIST E7 Hall A\n• Presented by: KAIST Film Club Eunmak (銀幕)"
+		},
+		"stills": []
+	},
+	{
+		"id": "film_008",
+		"folder": "film_008-하늘 안료",
+		"title": {
+			"ko": "하늘 안료",
+			"en": "Sky Pigment"
+		},
+		"director": {
+			"ko": "천애은",
+			"en": "Cheon Ae-eun"
+		},
+		"writer": {
+			"ko": "천애은",
+			"en": "Cheon Ae-eun"
+		},
+		"year": 2026,
+		"section": "orange",
+		"session": {
+			"ko": "위로 (창작과 삶의 불씨)",
+			"en": "Comfort (Sparks of Creation and Life)"
+		},
+		"theme": {
+			"ko": "노력 · 영감 · 내면의 빛",
+			"en": "Effort · Inspiration · Inner Light"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "06:17",
+		"screening": {
+			"day": 2,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 1,
+			"hall": {
+				"ko": "DGIST E7 B관",
+				"en": "DGIST E7 Hall B"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "곽민환",
+					"en": "Kwak Min-hwan"
+				},
+				"role": {
+					"ko": "주인공",
+					"en": "Protagonist"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "마감에 지친 미술학도가 우연히 마주한 노을 속에서 잊고 있던 진심을 되찾는다.",
+			"en": "An art student worn out by deadlines rediscovers their true feelings in a sunset they happen upon."
+		},
+		"synopsis": {
+			"ko": "끝없는 마감에 쫓기며 붓을 놀리던 미술학도는 어느 날 작업실 창밖으로 번지는 붉은 노을을 발견한다. 완벽한 결과물을 만들어내야 한다는 압박에서 잠시 벗어나, 그는 시시각각 변해가는 하늘의 색을 오직 자신의 감각으로 화폭에 담아낸다. 마침내 찾아온 최종 제출의 순간, 오랫동안 공들여온 과제물과 자신의 진심이 담긴 하늘 그림 사이에서 그는 마지막 선택의 기로에 선다.",
+			"en": "Chased by endless deadlines, an art student notices a red sunset spreading outside the studio window. Stepping away from the pressure to produce perfect work, the student captures the ever-changing colors of the sky on canvas, guided only by their own senses. When the moment of final submission arrives, the student stands at a crossroads between the assignment they have labored over and the painting of the sky that holds their true feelings."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_009",
+		"folder": "film_009-성냥과 불꽃",
+		"title": {
+			"ko": "성냥과 불꽃",
+			"en": "Matches and Flames"
+		},
+		"director": {
+			"ko": "김도헌",
+			"en": "Kim Do-heon"
+		},
+		"writer": {
+			"ko": "신지우",
+			"en": "Shin Ji-woo"
+		},
+		"year": 2026,
+		"section": "orange",
+		"session": {
+			"ko": "위로 (창작과 삶의 불씨)",
+			"en": "Comfort (Sparks of Creation and Life)"
+		},
+		"theme": {
+			"ko": "창작과 성장 · 미쟝센",
+			"en": "Creation and Growth · Mise-en-scène"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "10:30",
+		"screening": {
+			"day": 2,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 2,
+			"hall": {
+				"ko": "DGIST E7 B관",
+				"en": "DGIST E7 Hall B"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "백인호",
+					"en": "Baek In-ho"
+				},
+				"role": {
+					"ko": "주인공",
+					"en": "Protagonist"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "실패 끝에 모든 것을 지워버린 밤, 낯선 이가 건넨 작은 성냥불이 피어오른다.",
+			"en": "On the night he erased everything after failing, a small match lit by a stranger begins to burn."
+		},
+		"synopsis": {
+			"ko": "잇따른 실패와 깊은 무기력 끝에 공들여 만든 작업물마저 스스로 지워버린 남자는 목적 없이 어두운 밤거리를 헤맨다. 불조차 켜지지 않는 고장 난 라이터를 만지작거리던 그의 앞에, 정체를 알 수 없는 한 남자가 나타나 '소원을 말해봐'라고 적힌 성냥갑을 건넨다. 어둠 속에서 하나씩 타들어가는 성냥불을 바라보던 그의 긴 밤은 과연 어떤 새벽을 맞이하게 될까.",
+			"en": "After a string of failures and deep lethargy, a man deletes even the work he poured himself into and wanders the dark streets without purpose. As he fiddles with a broken lighter that won't spark, a mysterious man appears and hands him a matchbox that reads \"Make a wish.\" Watching the matches burn one by one in the dark, what kind of dawn will his long night lead to?"
+		},
+		"stills": []
+	},
+	{
+		"id": "film_010",
+		"folder": "film_010-당신의 죽음을 사겠습니다",
+		"title": {
+			"ko": "당신의 죽음을 사겠습니다",
+			"en": "I Will Buy Your Death"
+		},
+		"director": {
+			"ko": "강은호",
+			"en": "Kang Eun-ho"
+		},
+		"writer": {
+			"ko": "강은호",
+			"en": "Kang Eun-ho"
+		},
+		"year": 2018,
+		"section": "crimson",
+		"session": {
+			"ko": "위로 (창작과 삶의 불씨)",
+			"en": "Comfort (Sparks of Creation and Life)"
+		},
+		"theme": {
+			"ko": "판타지 · 죽음",
+			"en": "Fantasy · Death"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "21:02",
+		"screening": {
+			"day": 2,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 3,
+			"hall": {
+				"ko": "DGIST E7 B관",
+				"en": "DGIST E7 Hall B"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "노지윤",
+					"en": "Noh Ji-yoon"
+				},
+				"role": {
+					"ko": "이체",
+					"en": "Lee Che"
+				}
+			},
+			{
+				"name": {
+					"ko": "김태영",
+					"en": "Kim Tae-young"
+				},
+				"role": {
+					"ko": "이범수",
+					"en": "Lee Beom-soo"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "죽음 매매 계약을 체결한 무명 소설가에게 뒤늦게 삶을 되찾아야 할 이유가 생긴다.",
+			"en": "An unknown novelist who signed a contract to sell his death suddenly finds a reason to take his life back."
+		},
+		"synopsis": {
+			"ko": "초라한 재능에 절망하며 수백 장의 원고지를 찢어버린 무명 소설가 이체는 삶을 비관해 옥상 난간에 선다. 바로 그때, 가치 있는 죽음을 매입하는 회사 '주식회사 메르테르'의 이범수 대리가 나타나 다음 생에 천재적인 글재주를 주겠다며 솔깃한 죽음 매매 계약을 제안한다. 그러나 계약서에 서명한 직후 자신의 소설이 공모전 대상에 당선되었다는 기적 같은 연락이 걸려오고, 뒤늦게 삶을 되찾으려는 이체 앞에 이범수 대리는 냉혹한 계약 위반 조항을 들이민다.",
+			"en": "Despairing over his meager talent, unknown novelist Lee Che tears up hundreds of manuscript pages and stands on the edge of a rooftop. At that moment, Assistant Manager Lee Beom-soo of Merter Inc., a company that buys worthwhile deaths, appears and offers a tempting deal: sell his death in exchange for genius writing talent in his next life. But right after he signs, a miraculous call comes in: his novel has won the grand prize in a contest. As Lee Che tries to reclaim his life, Lee Beom-soo presents the contract's ruthless breach clause."
+		},
+		"stills": [
+			"assets/img/stills/film_010-당신의 죽음을 사겠습니다/still_1.jpg",
+			"assets/img/stills/film_010-당신의 죽음을 사겠습니다/still_2.jpg",
+			"assets/img/stills/film_010-당신의 죽음을 사겠습니다/still_3.jpg"
+		]
+	},
+	{
+		"id": "film_011",
+		"folder": "film_011-공포 영화 시리즈 EP.1~3",
+		"title": {
+			"ko": "공포 영화 시리즈 EP.1~3",
+			"en": "Horror Film Series EP.1–3"
+		},
+		"director": {
+			"ko": "비슬영화제",
+			"en": "B-slate Film Festival"
+		},
+		"writer": {
+			"ko": "",
+			"en": ""
+		},
+		"year": null,
+		"section": "charcoal",
+		"session": {
+			"ko": "공포, 의심과 불안",
+			"en": "Horror, Suspicion and Anxiety"
+		},
+		"theme": {
+			"ko": "공포 옴니버스",
+			"en": "Horror Omnibus"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "20:26",
+		"screening": {
+			"day": 2,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 1,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [],
+		"trailer_url": "",
+		"logline": {
+			"ko": "",
+			"en": ""
+		},
+		"synopsis": {
+			"ko": "",
+			"en": ""
+		},
+		"stills": []
+	},
+	{
+		"id": "film_012",
+		"folder": "film_012-마우스",
+		"title": {
+			"ko": "마우스",
+			"en": "Mouse"
+		},
+		"director": {
+			"ko": "조수빈",
+			"en": "Cho Su-bin"
+		},
+		"writer": {
+			"ko": "서유리",
+			"en": "Seo Yu-ri"
+		},
+		"year": 2025,
+		"section": "charcoal",
+		"session": {
+			"ko": "공포, 의심과 불안",
+			"en": "Horror, Suspicion and Anxiety"
+		},
+		"theme": {
+			"ko": "현실 · 의심과 불신",
+			"en": "Reality · Suspicion and Distrust"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "16:30",
+		"screening": {
+			"day": 2,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 2,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "신지우",
+					"en": "Shin Ji-woo"
+				},
+				"role": {
+					"ko": "",
+					"en": ""
+				}
+			},
+			{
+				"name": {
+					"ko": "강현성",
+					"en": "Kang Hyun-sung"
+				},
+				"role": {
+					"ko": "",
+					"en": ""
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "사라진 마우스 하나가 조별과제 팀원 사이에 걷잡을 수 없는 의심을 불러온다.",
+			"en": "A single missing mouse sparks uncontrollable suspicion among members of a group project."
+		},
+		"synopsis": {
+			"ko": "어느 날 캠퍼스에서 아끼던 무선 마우스를 잃어버린 정인. 흔적을 찾던 그녀의 시선에 조별과제 팀원인 하경의 책상 위에 놓인, 자신의 것과 똑같이 생긴 마우스가 포착된다. 확신할 수도 그냥 넘어갈 수도 없는 묘한 신경전 속에서, 작은 물건 하나가 불러온 의심은 두 사람의 관계를 일촉즉발의 긴장으로 몰아넣는다.",
+			"en": "One day, Jeong-in loses her favorite wireless mouse on campus. While searching for it, she spots a mouse identical to hers on the desk of Ha-kyung, a member of her group project team. Unable to be sure, yet unable to let it go, the two are drawn into a strange war of nerves, and the suspicion sparked by a small object pushes their relationship to the brink."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_013",
+		"folder": "film_013-히든",
+		"title": {
+			"ko": "히든",
+			"en": "Hidden"
+		},
+		"director": {
+			"ko": "황인탁",
+			"en": "Hwang In-tak"
+		},
+		"writer": {
+			"ko": "황인탁(각색), 강은호, 강은석",
+			"en": "Hwang In-tak (adaptation), Kang Eun-ho, Kang Eun-seok"
+		},
+		"year": 2019,
+		"section": "charcoal",
+		"session": {
+			"ko": "공포, 의심과 불안",
+			"en": "Horror, Suspicion and Anxiety"
+		},
+		"theme": {
+			"ko": "공포 · 옛날영화",
+			"en": "Horror · Retro Film"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "33:52",
+		"screening": {
+			"day": 2,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 3,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "정현수",
+					"en": "Jung Hyun-soo"
+				},
+				"role": {
+					"ko": "원석",
+					"en": "Won-seok"
+				}
+			},
+			{
+				"name": {
+					"ko": "정원우",
+					"en": "Jung Won-woo"
+				},
+				"role": {
+					"ko": "현민",
+					"en": "Hyun-min"
+				}
+			},
+			{
+				"name": {
+					"ko": "구본진",
+					"en": "Koo Bon-jin"
+				},
+				"role": {
+					"ko": "동현",
+					"en": "Dong-hyun"
+				}
+			},
+			{
+				"name": {
+					"ko": "서현진",
+					"en": "Seo Hyun-jin"
+				},
+				"role": {
+					"ko": "주은",
+					"en": "Ju-eun"
+				}
+			},
+			{
+				"name": {
+					"ko": "김주현",
+					"en": "Kim Ju-hyun"
+				},
+				"role": {
+					"ko": "재준",
+					"en": "Jae-jun"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "기숙사 방문 앞을 몰래 찍은 USB가 배달되며 애써 묻어두었던 과거의 죄책감이 깨어난다.",
+			"en": "When a USB of secret footage shot outside their dorm room arrives, long-buried guilt from the past awakens."
+		},
+		"synopsis": {
+			"ko": "대학 기숙사에 거주하는 원석과 룸메이트 현민 앞으로 누군가 자신들의 방문 앞을 몇 시간씩 몰래 촬영한 USB와 기괴한 그림, 옛집 사진이 연이어 배달된다. 정체불명의 시선에 극심한 불안을 느끼던 원석은 어린 시절 부모님이 입양하려 했으나, 자신의 악의적인 거짓말로 파양되었던 가정부의 아들 동현을 떠올린다. 결국 원석은 같은 대학 기숙사에 살고 있는 동현을 찾아가 추궁하기 시작하고, 애써 묻어두었던 과거의 진실은 걷잡을 수 없는 소용돌이를 불러온다.",
+			"en": "Won-seok and his roommate Hyun-min, who live in a university dormitory, keep receiving deliveries: a USB of footage secretly filmed outside their door for hours, grotesque drawings, and photos of an old house. Deeply unsettled by the unknown watcher, Won-seok remembers Dong-hyun, the housekeeper's son his parents once tried to adopt, until Won-seok's malicious lie ended the adoption. Won-seok finally confronts Dong-hyun, who lives in the same dormitory, and the buried truth of the past unleashes an uncontrollable whirlwind."
+		},
+		"stills": [
+			"assets/img/stills/film_013-히든/still_1.jpg",
+			"assets/img/stills/film_013-히든/still_2.jpg",
+			"assets/img/stills/film_013-히든/still_3.jpg"
+		]
+	},
+	{
+		"id": "film_014",
+		"folder": "film_014-은막 교류 작품 2",
+		"title": {
+			"ko": "은막 교류 작품 2",
+			"en": "KAIST Eunmak Exchange Film 2"
+		},
+		"director": {
+			"ko": "KAIST 영화제작동아리 은막",
+			"en": "KAIST Film Club Eunmak"
+		},
+		"writer": {
+			"ko": "KAIST 은막 창작팀",
+			"en": "KAIST Eunmak Creative Team"
+		},
+		"year": null,
+		"section": "eunmak",
+		"session": {
+			"ko": "교류작 2",
+			"en": "Exchange Screening 2"
+		},
+		"theme": {
+			"ko": "카이스트(KAIST) 영화제작동아리 은막 초청 교류전",
+			"en": "Invited Exchange Screening with KAIST Film Club Eunmak"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "47:00",
+		"screening": {
+			"day": 2,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 A관",
+				"en": "DGIST E7 Hall A"
+			}
+		},
+		"is_gv": false,
+		"cast": [
+			{
+				"name": {
+					"ko": "카이스트 은막 단원들",
+					"en": "Members of KAIST Eunmak"
+				},
+				"role": {
+					"ko": "",
+					"en": ""
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "카이스트(KAIST) 유일의 중앙 영화제작동아리 '은막(銀幕)'과의 특별 교류 상영작입니다.",
+			"en": "A special exchange screening with Eunmak (銀幕), the only central filmmaking club at KAIST."
+		},
+		"synopsis": {
+			"ko": "카이스트(KAIST) 유일의 중앙 영화제작동아리 '은막(銀幕)'과 비슬영화제(B_SLATE)가 함께하는 특별 교류 프로그램입니다.\n\n과학기술특성화대학 청년 창작자들의 스크린 너머 시선과 새로운 예술적 시도를 담은 단편 수작들을 초청 상영합니다.\n\n• 상영 세션: 〈스크린 너머의 시선〉\n• 상영 장소: DGIST E7 A관\n• 주최/출품: 카이스트(KAIST) 영화제작동아리 은막(銀幕)",
+			"en": "A special exchange program between Eunmak (銀幕), the only central filmmaking club at KAIST, and the B-slate Film Festival.\n\nWe present a selection of fine short films by young creators from a science and technology university, capturing their view beyond the screen and their new artistic experiments.\n\n• Session: 〈A View Beyond the Screen〉\n• Venue: DGIST E7 Hall A\n• Presented by: KAIST Film Club Eunmak (銀幕)"
+		},
+		"stills": []
+	},
+	{
+		"id": "film_015",
+		"folder": "film_015-완벽한 이별",
+		"title": {
+			"ko": "완벽한 이별",
+			"en": "The Perfect Goodbye"
+		},
+		"director": {
+			"ko": "유제이",
+			"en": "Yoo Je-i"
+		},
+		"writer": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"year": 2023,
+		"section": "pink",
+		"session": {
+			"ko": "미련과 새로운 시작",
+			"en": "Lingering Feelings and New Beginnings"
+		},
+		"theme": {
+			"ko": "삼각관계 · 사랑의 마침표",
+			"en": "Love Triangle · The End of Love"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "1:03:12",
+		"screening": {
+			"day": 2,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 B관",
+				"en": "DGIST E7 Hall B"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "최봄",
+					"en": "Choi Bom"
+				},
+				"role": {
+					"ko": "지웅",
+					"en": "Ji-woong"
+				}
+			},
+			{
+				"name": {
+					"ko": "유제이",
+					"en": "Yoo Je-i"
+				},
+				"role": {
+					"ko": "지연",
+					"en": "Ji-yeon"
+				}
+			},
+			{
+				"name": {
+					"ko": "남예지",
+					"en": "Nam Ye-ji"
+				},
+				"role": {
+					"ko": "서연",
+					"en": "Seo-yeon"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "정리하지 못한 익숙한 미련과 설레는 새로운 인연 사이에서 사랑의 마침표를 마주한다.",
+			"en": "Torn between lingering feelings he can't let go of and an exciting new connection, a man faces the end of a love."
+		},
+		"synopsis": {
+			"ko": "전 여자친구 서연과 헤어진 뒤에도 여전히 애매한 관계를 이어가고 있는 지웅. 정리되지 않은 미련 속에서 머뭇거리던 그에게 서연과는 전혀 다른 매력을 지닌 새로운 인연, 지연이 다가온다. 편안한 익숙함과 설레는 새로움 사이에서 지웅의 마음은 깊게 흔들리고, 그는 마침내 지나간 사랑의 마침표를 마주해야 하는 순간에 도달한다.",
+			"en": "Even after breaking up with his ex-girlfriend Seo-yeon, Ji-woong remains in an ambiguous relationship with her. As he hesitates amid unresolved feelings, Ji-yeon, someone with a completely different charm, comes into his life. Torn between comfortable familiarity and exciting newness, Ji-woong's heart is deeply shaken, until he finally reaches the moment when he must put an end to a past love."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_016",
+		"folder": "film_016-안개",
+		"title": {
+			"ko": "안개",
+			"en": "Fog"
+		},
+		"director": {
+			"ko": "김도헌",
+			"en": "Kim Do-heon"
+		},
+		"writer": {
+			"ko": "김도헌",
+			"en": "Kim Do-heon"
+		},
+		"year": 2026,
+		"section": "khaki",
+		"session": {
+			"ko": "추적과 전장의 안개",
+			"en": "Pursuit and the Fog of War"
+		},
+		"theme": {
+			"ko": "액션 · 첩보 · 전장의 안개",
+			"en": "Action · Espionage · Fog of War"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "39:59",
+		"screening": {
+			"day": 2,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "최성웅",
+					"en": "Choi Sung-woong"
+				},
+				"role": {
+					"ko": "정현",
+					"en": "Jung-hyun"
+				}
+			},
+			{
+				"name": {
+					"ko": "양태빈",
+					"en": "Yang Tae-bin"
+				},
+				"role": {
+					"ko": "태성",
+					"en": "Tae-sung"
+				}
+			},
+			{
+				"name": {
+					"ko": "김서현",
+					"en": "Kim Seo-hyun"
+				},
+				"role": {
+					"ko": "유진",
+					"en": "Yu-jin"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "한 치 앞도 보이지 않는 전장의 안개 속, 보이지 않는 적을 향한 추적이 시작된다.",
+			"en": "In the fog of war where nothing can be seen ahead, the pursuit of an invisible enemy begins."
+		},
+		"synopsis": {
+			"ko": "한반도 곳곳에서 감지되는 수상한 전조를 좇아, 국군정보사 특임대 요원 강정현은 대구의 한 연구소에 파견되어 비밀 수사에 착수한다. 그러나 짙은 안개가 드리운 듯 단서들은 좀처럼 하나의 실체를 가리키지 않고, 정현이 흩어진 흔적을 더듬는 사이 정체불명의 세력은 이미 거대한 계획을 실행에 옮기기 시작한다. 보이지 않는 적의 그림자가 시시각각 조여오는 가운데, 정현은 한 치 앞도 예측할 수 없는 전장의 안개 속으로 걸어 들어간다.",
+			"en": "Following suspicious signs detected across the Korean Peninsula, Kang Jung-hyun, an agent of the Korea Defense Intelligence Command's special task unit, is dispatched to a research institute in Daegu to begin a secret investigation. But as if veiled in thick fog, the clues never point to a single answer, and while Jung-hyun traces scattered leads, an unknown force has already set a massive plan in motion. As the shadow of the invisible enemy closes in, Jung-hyun walks into a fog of war where not even a step ahead can be predicted."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_017",
+		"folder": "film_017-사별",
+		"title": {
+			"ko": "사별",
+			"en": "Bereavement"
+		},
+		"director": {
+			"ko": "백인호",
+			"en": "Baek In-ho"
+		},
+		"writer": {
+			"ko": "백인호",
+			"en": "Baek In-ho"
+		},
+		"year": 2024,
+		"section": "pink",
+		"session": {
+			"ko": "이별과 극복",
+			"en": "Loss and Overcoming"
+		},
+		"theme": {
+			"ko": "사랑과 이별 · 음악 · 성장",
+			"en": "Love and Loss · Music · Growing Up"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "46:51",
+		"screening": {
+			"day": 3,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 A관",
+				"en": "DGIST E7 Hall A"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "최성웅",
+					"en": "Choi Sung-woong"
+				},
+				"role": {
+					"ko": "창민",
+					"en": "Chang-min"
+				}
+			},
+			{
+				"name": {
+					"ko": "정아임",
+					"en": "Jung A-im"
+				},
+				"role": {
+					"ko": "수아",
+					"en": "Su-a"
+				}
+			},
+			{
+				"name": {
+					"ko": "양태빈",
+					"en": "Yang Tae-bin"
+				},
+				"role": {
+					"ko": "승원",
+					"en": "Seung-won"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "연인의 갑작스러운 죽음 이후 멈춰버린 세계 속, 남겨진 이들의 슬픔이 부딪힌다.",
+			"en": "In a world frozen after a lover's sudden death, the grief of those left behind collides."
+		},
+		"synopsis": {
+			"ko": "밴드부 보컬 창민은 연인 수아와의 5주년 기념일에 맞춰 그녀만을 위한 특별한 공연을 준비한다. 그러나 연습에 몰두하느라 수아가 남긴 부재중 전화와 마지막 메시지를 뒤늦게 확인하고, 갑작스러운 그녀의 죽음 앞에 창민의 세계는 산산조각 난다. 방문을 걸어 잠근 채 세상과 단절된 창민의 곁을 친구 승원과 여동생 서연이 묵묵히 지키려 하지만, 남겨진 이들의 슬픔은 서로 다른 모양으로 부딪히기 시작한다.",
+			"en": "Chang-min, the vocalist of a school band, prepares a special performance just for his girlfriend Su-a on their fifth anniversary. But absorbed in rehearsals, he checks her missed calls and last message too late, and her sudden death shatters his world. Chang-min locks himself in his room and cuts himself off from the world. His friend Seung-won and his younger sister Seo-yeon quietly try to stay by his side, but the grief of those left behind begins to collide in different shapes."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_018",
+		"folder": "film_018-세상은 한장의 손수건",
+		"title": {
+			"ko": "세상은 한장의 손수건",
+			"en": "The World Is a Handkerchief"
+		},
+		"director": {
+			"ko": "한예담",
+			"en": "Han Ye-dam"
+		},
+		"writer": {
+			"ko": "강은석",
+			"en": "Kang Eun-seok"
+		},
+		"year": 2024,
+		"section": "pink",
+		"session": {
+			"ko": "우연과 인연",
+			"en": "Chance and Fate"
+		},
+		"theme": {
+			"ko": "사랑과 만남 · 우연과 인연",
+			"en": "Love and Meeting · Chance and Fate"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "37:34",
+		"screening": {
+			"day": 3,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 B관",
+				"en": "DGIST E7 Hall B"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "허태훈",
+					"en": "Heo Tae-hoon"
+				},
+				"role": {
+					"ko": "지홍",
+					"en": "Ji-hong"
+				}
+			},
+			{
+				"name": {
+					"ko": "신연재",
+					"en": "Shin Yeon-jae"
+				},
+				"role": {
+					"ko": "도연",
+					"en": "Do-yeon"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "도움이 필요한 순간마다 스쳐 지나간 우연이 돌고 돌아 특별한 인연으로 이어진다.",
+			"en": "Chance encounters that pass by in moments of need come full circle into a special connection."
+		},
+		"synopsis": {
+			"ko": "도움이 절실한 순간마다 기묘하게 이어지는 우연 속에서 도연은 낯선 이들에게 뜻밖의 호의를 건네받는다. 누군가에게 받은 작은 친절은 또 다른 누군가의 삶을 움직이는 나비효과가 되어 캠퍼스 곳곳으로 번져 나간다. 우연과 인연의 경계에서 시작된 스침이 과연 사람들의 일상에 어떤 특별한 기적을 만들어낼까.",
+			"en": "Through strange coincidences that keep appearing whenever she desperately needs help, Do-yeon receives unexpected kindness from strangers. A small kindness received from one person becomes a butterfly effect that moves someone else's life, spreading across the campus. What special miracle will these brief encounters, born on the border between chance and fate, bring to people's everyday lives?"
+		},
+		"stills": []
+	},
+	{
+		"id": "film_019",
+		"folder": "film_019-두사랑",
+		"title": {
+			"ko": "두사랑",
+			"en": "Two Loves"
+		},
+		"director": {
+			"ko": "박은혜",
+			"en": "Park Eun-hye"
+		},
+		"writer": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"year": 2025,
+		"section": "pink",
+		"session": {
+			"ko": "이별 (사랑의 끝과 수용)",
+			"en": "Parting (The End of Love and Acceptance)"
+		},
+		"theme": {
+			"ko": "사랑 · LGBTQ · 폴리아모리",
+			"en": "Love · LGBTQ · Polyamory"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "12:24",
+		"screening": {
+			"day": 3,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 1,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "허태훈",
+					"en": "Heo Tae-hoon"
+				},
+				"role": {
+					"ko": "준열",
+					"en": "Jun-yeol"
+				}
+			},
+			{
+				"name": {
+					"ko": "신연재",
+					"en": "Shin Yeon-jae"
+				},
+				"role": {
+					"ko": "은정",
+					"en": "Eun-jung"
+				}
+			},
+			{
+				"name": {
+					"ko": "강현성",
+					"en": "Kang Hyun-sung"
+				},
+				"role": {
+					"ko": "그",
+					"en": "He"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "평온했던 연애의 일상 속, 또 다른 누군가가 스며들며 두 갈래의 감정이 흔들린다.",
+			"en": "In a calm, everyday relationship, someone new seeps in and his heart is torn two ways."
+		},
+		"synopsis": {
+			"ko": "연인 은정과 더없이 평온하고 행복한 나날을 보내고 있던 준열. 그러나 흔들림 없을 것 같던 그의 일상 속에 또 다른 누군가가 스며들고, 준열은 예상치 못한 두 번째 감정에 사로잡힌다. 한 사람을 향한 진심과 새롭게 피어난 끌림 사이에서, 그는 쉽게 답할 수 없는 사랑의 질문 앞에 서게 된다.",
+			"en": "Jun-yeol is spending peaceful, happy days with his girlfriend Eun-jung. But someone else quietly seeps into a life that seemed unshakable, and Jun-yeol is caught by an unexpected second feeling. Between his sincere love for one person and a newly blossoming attraction, he faces a question about love that has no easy answer."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_020",
+		"folder": "film_020-너를 사랑할 수 없는 이유",
+		"title": {
+			"ko": "너를 사랑할 수 없는 이유",
+			"en": "Why I Can't Love You"
+		},
+		"director": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"writer": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"year": 2022,
+		"section": "crimson",
+		"session": {
+			"ko": "이별 (사랑의 끝과 수용)",
+			"en": "Parting (The End of Love and Acceptance)"
+		},
+		"theme": {
+			"ko": "사랑의 이면 · 집착",
+			"en": "The Other Side of Love · Obsession"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "07:24",
+		"screening": {
+			"day": 3,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 2,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "구본진",
+					"en": "Koo Bon-jin"
+				},
+				"role": {
+					"ko": "재현",
+					"en": "Jae-hyun"
+				}
+			},
+			{
+				"name": {
+					"ko": "김여진",
+					"en": "Kim Yeo-jin"
+				},
+				"role": {
+					"ko": "가현",
+					"en": "Ga-hyun"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "지쳐가던 연애의 끝에서야 비로소 그 모든 배려가 자신의 착각이었음을 깨닫는다.",
+			"en": "Only at the end of an exhausting relationship does he realize all his care was an illusion."
+		},
+		"synopsis": {
+			"ko": "연인 가현의 반복되는 감정 기복과 미묘한 가스라이팅 속에 재현은 조금씩 지쳐간다. 그럼에도 힘들어 보이는 여자친구의 마음을 달래주고자 애쓰던 재현은 그녀를 위한 마지막 선물을 준비한다. 하지만 관계를 지키려 애쓸수록, 자신이 믿어왔던 사랑의 민낯이 서서히 드러나기 시작한다.",
+			"en": "Worn down by his girlfriend Ga-hyun's constant mood swings and subtle gaslighting, Jae-hyun slowly grows exhausted. Still trying to comfort her when she seems to be struggling, he prepares one last gift for her. But the harder he tries to protect the relationship, the more the true face of the love he believed in begins to show."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_021",
+		"folder": "film_021-초단편",
+		"title": {
+			"ko": "초단편",
+			"en": "Ultra Short"
+		},
+		"director": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"writer": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"year": 2026,
+		"section": "pink",
+		"session": {
+			"ko": "이별 (사랑의 끝과 수용)",
+			"en": "Parting (The End of Love and Acceptance)"
+		},
+		"theme": {
+			"ko": "세로 영상 · 이별의 찰나",
+			"en": "Vertical Video · The Moment of Parting"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": null,
+		"screening": {
+			"day": 3,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 3,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "곽민환",
+					"en": "Kwak Min-hwan"
+				},
+				"role": {
+					"ko": "그",
+					"en": "He"
+				}
+			},
+			{
+				"name": {
+					"ko": "정아임",
+					"en": "Jung A-im"
+				},
+				"role": {
+					"ko": "수연",
+					"en": "Su-yeon"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "헤어진 지 열흘 뒤 찾아온 밤, 끝내 이별을 받아들이지 못한 남자가 이유를 묻는다.",
+			"en": "Ten days after the breakup, a man who could never accept it shows up one night to ask why."
+		},
+		"synopsis": {
+			"ko": "이별을 고한 지 열흘 하고도 하루가 더 지난 늦은 밤, 수연의 집 앞에 헤어진 연인이 예고 없이 찾아온다. 떠나겠다는 그녀의 결심을 끝내 받아들이지 못한 그는 '우리, 헤어질 이유 없잖아'라며 무너진 관계를 되돌리려 애쓴다. 이미 마음이 떠난 이의 침묵과 이별의 이유를 찾으려는 이의 간절함이 깊은 밤공기 속에서 맞부딪힌다.",
+			"en": "Late one night, eleven days after the breakup, her ex shows up unannounced at Su-yeon's door. Unable to accept her decision to leave, he says, \"We have no reason to break up,\" and tries to put the broken relationship back together. The silence of someone whose heart has already left and the desperation of someone searching for a reason collide in the deep night air."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_022",
+		"folder": "film_022-지우개",
+		"title": {
+			"ko": "지우개",
+			"en": "Eraser"
+		},
+		"director": {
+			"ko": "정욱진",
+			"en": "Jung Wook-jin"
+		},
+		"writer": {
+			"ko": "조수빈",
+			"en": "Cho Su-bin"
+		},
+		"year": 2025,
+		"section": "pink",
+		"session": {
+			"ko": "이별 (사랑의 끝과 수용)",
+			"en": "Parting (The End of Love and Acceptance)"
+		},
+		"theme": {
+			"ko": "사랑 · 이별 · 실험적",
+			"en": "Love · Parting · Experimental"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": "13:31",
+		"screening": {
+			"day": 3,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 4,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "최도윤",
+					"en": "Choi Do-yoon"
+				},
+				"role": {
+					"ko": "그",
+					"en": "He"
+				}
+			},
+			{
+				"name": {
+					"ko": "김서현",
+					"en": "Kim Seo-hyun"
+				},
+				"role": {
+					"ko": "그녀",
+					"en": "She"
+				}
+			},
+			{
+				"name": {
+					"ko": "이하나",
+					"en": "Lee Ha-na"
+				},
+				"role": {
+					"ko": "그녀",
+					"en": "She"
+				}
+			},
+			{
+				"name": {
+					"ko": "신연재",
+					"en": "Shin Yeon-jae"
+				},
+				"role": {
+					"ko": "그녀",
+					"en": "She"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "방 안을 채운 추억의 물건들을 하나씩 비워내며 지난 사랑을 조용히 떠나보낸다.",
+			"en": "Emptying her room of keepsakes one by one, she quietly lets a past love go."
+		},
+		"synopsis": {
+			"ko": "작은 방 안을 가득 채운 지난날의 소중한 물건들. 언젠가는 정리해야 할 기억임을 잘 알면서도, 함께했던 흔적을 하나씩 지워낸다는 것은 그녀에게 결코 쉽지 않은 일이다. 손끝에 닿는 물건마다 되살아나는 기억들을 마주하며, 그녀는 비로소 지난 시간을 떠나보내기 위한 준비를 시작한다.",
+			"en": "A small room is filled with precious things from days gone by. She knows these are memories she will have to clear away someday, yet erasing the traces of their time together one by one is never easy. Facing the memories that come back with every object she touches, she finally begins to prepare to let the past go."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_023",
+		"folder": "film_023-완독",
+		"title": {
+			"ko": "완독",
+			"en": "Read to the End"
+		},
+		"director": {
+			"ko": "김나영",
+			"en": "Kim Na-young"
+		},
+		"writer": {
+			"ko": "김나영",
+			"en": "Kim Na-young"
+		},
+		"year": 2026,
+		"section": "orange",
+		"session": {
+			"ko": "이별 (사랑의 끝과 수용)",
+			"en": "Parting (The End of Love and Acceptance)"
+		},
+		"theme": {
+			"ko": "사랑의 시작부터 이별까지 · 무언극",
+			"en": "From First Love to Farewell · Pantomime"
+		},
+		"is_opening": false,
+		"is_closing": false,
+		"running_time": null,
+		"screening": {
+			"day": 3,
+			"start": "18:30",
+			"end": "20:00",
+			"part": 1,
+			"order": 5,
+			"hall": {
+				"ko": "DGIST E7 C관",
+				"en": "DGIST E7 Hall C"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "곽민환",
+					"en": "Kwak Min-hwan"
+				},
+				"role": {
+					"ko": "그",
+					"en": "He"
+				}
+			},
+			{
+				"name": {
+					"ko": "정아임",
+					"en": "Jung A-im"
+				},
+				"role": {
+					"ko": "그녀",
+					"en": "She"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "함께 써 내려간 사랑의 기억을 되짚으며 두 사람이 마지막 페이지를 앞두게 된다.",
+			"en": "Retracing the memories of a love they wrote together, two people come to the last page."
+		},
+		"synopsis": {
+			"ko": "함께했던 계절마다 한 줄씩 채워 넣었던 두 사람의 기억이 한 권의 책으로 남았다. 설레던 첫 문장부터 차마 넘기기 힘들었던 이별의 문장까지, 지나간 사랑의 흔적을 되짚어가며 두 사람은 이제 마지막 페이지를 앞두게 된다.",
+			"en": "The memories two people filled in, one line each season they shared, remain as a single book. From the thrilling first sentence to the sentences of parting they could hardly bear to turn, they retrace the traces of their past love and now arrive at the last page."
+		},
+		"stills": []
+	},
+	{
+		"id": "film_024",
+		"folder": "film_024-문",
+		"title": {
+			"ko": "문",
+			"en": "The Door"
+		},
+		"director": {
+			"ko": "백인호",
+			"en": "Baek In-ho"
+		},
+		"writer": {
+			"ko": "백인호",
+			"en": "Baek In-ho"
+		},
+		"year": 2026,
+		"section": "orange",
+		"session": {
+			"ko": "폐막 (두려움 너머의 문)",
+			"en": "Closing (The Door Beyond Fear)"
+		},
+		"theme": {
+			"ko": "폐막작 · 두려움 너머의 문",
+			"en": "Closing Film · The Door Beyond Fear"
+		},
+		"is_opening": false,
+		"is_closing": true,
+		"running_time": null,
+		"screening": {
+			"day": 3,
+			"start": "20:30",
+			"end": "22:00",
+			"part": 2,
+			"order": null,
+			"hall": {
+				"ko": "DGIST E7 메인홀",
+				"en": "DGIST E7 Main Hall"
+			}
+		},
+		"is_gv": true,
+		"cast": [
+			{
+				"name": {
+					"ko": "정아임",
+					"en": "Jung A-im"
+				},
+				"role": {
+					"ko": "이지아",
+					"en": "Lee Ji-a"
+				}
+			},
+			{
+				"name": {
+					"ko": "김나영",
+					"en": "Kim Na-young"
+				},
+				"role": {
+					"ko": "제이",
+					"en": "Jay"
+				}
+			}
+		],
+		"trailer_url": "",
+		"logline": {
+			"ko": "타인의 시선이 두려워 문 앞에 멈춰 서던 연주자가 마침내 세상의 무대와 마주한다.",
+			"en": "A violinist who froze before every door out of fear of others' eyes finally faces the world's stage."
+		},
+		"synopsis": {
+			"ko": "아무도 보지 않는 방 안의 얼굴 없는 방송에서는 누구보다 자유롭게 바이올린을 켜는 지아. 하지만 타인의 시선이 닿는 순간, 그녀의 손끝은 얼어붙고 연주는 멈춰 버린다. 그러던 어느 날, 오랫동안 동경해온 바이올리니스트로부터 특별한 무대의 초대가 도착하고, 지아는 평생 피해왔던 세상이라는 문 앞에 처음으로 서게 된다.",
+			"en": "Ji-a plays the violin more freely than anyone in faceless livestreams from a room where no one can see her. But the moment others' eyes are on her, her fingers freeze and the music stops. Then one day, an invitation to a special stage arrives from a violinist she has long admired, and Ji-a stands for the first time before the door to the world she has avoided all her life."
+		},
+		"stills": []
+	}
+]
