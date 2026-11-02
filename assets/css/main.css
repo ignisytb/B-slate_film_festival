@@ -1,0 +1,1321 @@
+:root {
+	--bg: #101216;
+	--surface: #161820;
+	--surface-card: #1c1f2a;
+	--surface-border: #282e3d;
+	--text-main: #f5f4ef;
+	--text-sub: #9ca3af;
+	--text-muted: #64748b;
+	
+	/* 5색 세션 테마 컬러 */
+	--color-crimson: #d6334c;      /* 진홍: 판타지, 사랑의 이면, 죽음 */
+	--color-charcoal: #64748b;     /* 진회색: 공포, 스릴러, 의심 */
+	--color-pink: #e06d96;         /* 분홍색: 사랑의 스펙트럼 */
+	--color-khaki: #7a8256;        /* 카키색: 첩보, 액션, 전장의 안개 */
+	--color-orange: #e27137;       /* 주황색: 노을, 창작의 불씨, 성장 */
+	
+	/* 카이스트 은막 교류전 시그니처 */
+	--color-eunmak: #38bdf8;       /* 카이스트 사이언 블루 */
+	--eunmak-glow: rgba(56, 189, 248, 0.15);
+	
+	--gold: #f59e0b;
+	--rec-red: #ef4444;
+	--container-max: 540px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; background: var(--bg); }
+body {
+	background: var(--bg);
+	color: var(--text-main);
+	font-family: "Pretendard Variable", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	overflow-x: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* 미세 필름 그레인 오버레이 */
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: 999;
+	opacity: 0.035;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+.app-wrap {
+	width: 100%;
+	max-width: var(--container-max);
+	margin: 0 auto;
+	padding-bottom: 90px;
+	flex: 1;
+	position: relative;
+}
+
+/* =========================================================
+	1. 헤더 & 비슬레이트 공식 로고 & 뷰파인더 & 메인 포스터
+	========================================================= */
+.hero-header {
+	padding: 20px 18px 16px;
+	position: relative;
+	background: linear-gradient(180deg, rgba(20, 22, 28, 0.98) 0%, rgba(16, 18, 22, 0.9) 100%);
+	border-bottom: 1px solid var(--surface-border);
+}
+
+.viewfinder-box {
+	position: relative;
+	padding: 16px 14px 18px;
+	border: 1px dashed rgba(255, 255, 255, 0.15);
+	border-radius: 8px;
+	background: radial-gradient(circle at 50% 0%, rgba(226, 113, 55, 0.08) 0%, transparent 70%);
+}
+
+/* 뷰파인더 코너 브래킷 */
+.viewfinder-box::before, .viewfinder-box::after {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-color: rgba(255, 255, 255, 0.7);
+	pointer-events: none;
+}
+.viewfinder-box::before {
+	top: -1px; left: -1px;
+	border-top: 2px solid;
+	border-left: 2px solid;
+}
+.viewfinder-box::after {
+	bottom: -1px; right: -1px;
+	border-bottom: 2px solid;
+	border-right: 2px solid;
+}
+
+.cam-meta-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Space Grotesk', monospace;
+	font-size: 0.68rem;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
+	margin-bottom: 12px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	padding-bottom: 8px;
+}
+
+.rec-indicator {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	color: #f87171;
+	font-weight: 700;
+}
+.rec-dot {
+	width: 7px;
+	height: 7px;
+	background-color: var(--rec-red);
+	border-radius: 50%;
+	animation: pulseRec 1.6s infinite ease-in-out;
+	box-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
+}
+@keyframes pulseRec {
+	0%, 100% { opacity: 1; transform: scale(1); }
+	50% { opacity: 0.25; transform: scale(0.85); }
+}
+
+/* 공식 B_SLATE 로고 헤더 영역 */
+.hero-logo-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 8px;
+}
+.hero-logo-img {
+	height: 32px;
+	max-width: 170px;
+	object-fit: contain;
+	filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
+}
+
+.hero-title-wrap {
+	text-align: center;
+}
+.hero-edition {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 0.22em;
+	color: var(--gold);
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+}
+.hero-main-title {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 2.1rem;
+	font-weight: 900;
+	letter-spacing: 0.06em;
+	color: #fff;
+	margin-bottom: 2px;
+	text-shadow: 0 3px 18px rgba(0, 0, 0, 0.8);
+}
+.hero-hanja {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 0.92rem;
+	color: #d1d5db;
+	letter-spacing: 0.35em;
+	margin-bottom: 8px;
+	font-weight: 400;
+	opacity: 0.85;
+}
+.hero-venue {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 0.72rem;
+	padding: 3px 12px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	color: #e2e8f0;
+	letter-spacing: 0.05em;
+}
+.hero-venue b {
+	color: var(--gold);
+}
+
+/* 🌟 [신규 추가] 공식 메인 포스터 첫 화면 쇼케이스 */
+.hero-poster-container {
+	margin: 16px auto 10px;
+	max-width: 260px;
+	width: 72%;
+	cursor: pointer;
+	position: relative;
+	transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-poster-container:active {
+	transform: scale(0.98);
+}
+.hero-poster-wrap {
+	width: 100%;
+	aspect-ratio: 1 / 1.414;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 14px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.15);
+	position: relative;
+	background: #141720;
+}
+.hero-poster-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.3s ease;
+}
+.hero-poster-wrap:hover .hero-poster-img {
+	transform: scale(1.02);
+}
+.poster-zoom-badge {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(16, 18, 22, 0.88);
+	backdrop-filter: blur(8px);
+	color: #f5f4ef;
+	font-size: 0.65rem;
+	font-weight: 700;
+	padding: 4px 10px;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	white-space: nowrap;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+	pointer-events: none;
+}
+
+.poster-series-bar {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	margin-top: 8px;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.ps-chip {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.64rem;
+	font-weight: 600;
+	padding: 3px 8px;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.06);
+	color: #94a3b8;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	transition: all 0.18s;
+}
+.ps-chip.active {
+	background: var(--gold);
+	color: #0b0c0e;
+	border-color: var(--gold);
+	font-weight: 700;
+}
+
+/* 포스터 전체화면 라이트박스 모달 */
+.poster-lightbox {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.94);
+	backdrop-filter: blur(12px);
+	z-index: 1000;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	animation: fadeIn 0.2s ease-out;
+}
+.poster-lightbox.open {
+	display: flex;
+}
+.lightbox-close-btn {
+	position: absolute;
+	top: 18px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.15);
+	color: #fff;
+	font-size: 1.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	cursor: pointer;
+	z-index: 1001;
+}
+.lightbox-content-img {
+	max-width: 92%;
+	max-height: 86vh;
+	object-fit: contain;
+	border-radius: 8px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+}
+
+/* =========================================================
+	2. 네비게이션 & 필터 & 탭 바
+	========================================================= */
+.filter-bar {
+	display: flex;
+	gap: 8px;
+	padding: 12px 20px;
+	overflow-x: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	background: var(--bg);
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	border-bottom: 1px solid var(--surface-border);
+}
+.filter-bar::-webkit-scrollbar { display: none; }
+
+.chip {
+	padding: 6px 14px;
+	border-radius: 999px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	white-space: nowrap;
+	background: var(--surface);
+	border: 1px solid var(--surface-border);
+	color: var(--text-sub);
+	transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+.chip.active {
+	background: #fff;
+	color: #0b0c0e;
+	border-color: #fff;
+	font-weight: 700;
+	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+}
+.chip-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	display: inline-block;
+}
+.chip-eunmak {
+	border-color: rgba(56, 189, 248, 0.4);
+	color: #bae6fd;
+}
+.chip-eunmak.active {
+	background: var(--color-eunmak);
+	color: #0369a1;
+	border-color: var(--color-eunmak);
+}
+
+.search-box {
+	padding: 10px 20px;
+	position: relative;
+}
+.search-box input {
+	width: 100%;
+	background: var(--surface);
+	border: 1px solid var(--surface-border);
+	border-radius: 8px;
+	padding: 10px 14px 10px 38px;
+	color: var(--text-main);
+	font-size: 0.85rem;
+	outline: none;
+	transition: border 0.2s;
+}
+.search-box input:focus {
+	border-color: var(--color-orange);
+}
+.search-box svg {
+	position: absolute;
+	left: 32px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+	fill: var(--text-muted);
+}
+
+/* =========================================================
+	3. 각 색상별 의미 설명 큐레이션 배너
+	========================================================= */
+.color-curator-banner {
+	margin: 10px 20px 16px;
+	padding: 16px 18px;
+	border-radius: 12px;
+	background: linear-gradient(135deg, rgba(28, 31, 42, 0.95) 0%, rgba(20, 22, 28, 0.98) 100%);
+	border: 1px solid var(--surface-border);
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+	animation: fadeIn 0.25s ease-out;
+}
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(-4px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.ccb-top {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 6px;
+}
+.ccb-color-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 0.75rem;
+	font-weight: 800;
+	padding: 3px 10px;
+	border-radius: 6px;
+	color: #fff;
+}
+.ccb-subtitle {
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #e2e8f0;
+	letter-spacing: -0.01em;
+}
+.ccb-desc {
+	font-size: 0.8rem;
+	color: #cbd5e1;
+	line-height: 1.55;
+	margin-bottom: 10px;
+	word-break: keep-all;
+}
+.ccb-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+.ccb-tag {
+	font-size: 0.68rem;
+	padding: 2px 8px;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.06);
+	color: #94a3b8;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 전체 보기 상태에서의 5색 무드 스펙트럼 가이드 요약 바 */
+.spectrum-guide-bar {
+	margin: 8px 20px 16px;
+	padding: 14px 16px;
+	background: rgba(24, 26, 34, 0.7);
+	border: 1px dashed rgba(255, 255, 255, 0.12);
+	border-radius: 10px;
+}
+.sgb-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.72rem;
+	color: var(--gold);
+	font-weight: 700;
+	margin-bottom: 8px;
+	letter-spacing: 0.04em;
+}
+.sgb-list {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.sgb-item {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+	font-size: 0.74rem;
+	color: #cbd5e1;
+}
+.sgb-name {
+	font-weight: 700;
+	min-width: 46px;
+}
+.sgb-meaning {
+	color: #94a3b8;
+	font-size: 0.72rem;
+}
+
+/* =========================================================
+	4. 개막작 & 폐막작 최상단 스포트라이트
+	========================================================= */
+.spotlight-section {
+	margin: 6px 20px 22px;
+}
+.spotlight-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.spotlight-title {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.75rem;
+	letter-spacing: 0.12em;
+	color: var(--gold);
+	font-weight: 700;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.spotlight-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.spotlight-card {
+	display: block;
+	background: var(--surface-card);
+	border: 1px solid rgba(226, 113, 55, 0.35);
+	border-radius: 12px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+	transition: transform 0.18s, border-color 0.18s;
+}
+.spotlight-card:active {
+	transform: scale(0.99);
+}
+/* 16:9 와이드스크린 스틸컷 비율 */
+.spotlight-media-wrap {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	background: #141720;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.spotlight-media-wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.spotlight-badge-floating {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: rgba(16, 18, 22, 0.85);
+	backdrop-filter: blur(8px);
+	padding: 4px 10px;
+	border-radius: 6px;
+	font-size: 0.72rem;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.badge-opening {
+	color: #fb923c;
+	border-color: rgba(251, 146, 60, 0.4);
+}
+.badge-closing {
+	color: #38bdf8;
+	border-color: rgba(56, 189, 248, 0.4);
+}
+.spotlight-widescreen-tag {
+	position: absolute;
+	bottom: 8px;
+	right: 10px;
+	font-family: 'Space Grotesk', monospace;
+	font-size: 0.62rem;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 2px 6px;
+	border-radius: 4px;
+	color: #94a3b8;
+	letter-spacing: 0.05em;
+}
+.spotlight-info {
+	padding: 14px 16px;
+}
+.spotlight-meta-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.72rem;
+	color: var(--text-muted);
+	margin-bottom: 4px;
+}
+.spotlight-hall {
+	color: var(--gold);
+	font-weight: 600;
+}
+.spotlight-film-title {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 4px;
+}
+.spotlight-logline {
+	font-size: 0.78rem;
+	color: #cbd5e1;
+	line-height: 1.45;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* =========================================================
+	5. 16:9 와이드스크린 영화 도록 카드
+	========================================================= */
+.section-title-bar {
+	margin: 16px 20px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.section-title {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.74rem;
+	letter-spacing: 0.1em;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.section-count {
+	font-size: 0.72rem;
+	color: #94a3b8;
+}
+
+/* 16:9 시네마틱 와이드 카드 그리드 */
+.films-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 14px;
+	padding: 0 20px;
+}
+
+.film-card {
+	background: var(--surface-card);
+	border: 1px solid var(--surface-border);
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: transform 0.18s, border-color 0.18s;
+}
+.film-card:active {
+	transform: scale(0.97);
+}
+
+/* 16:9 가로 스틸컷 래퍼 */
+.fc-still-wrap {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	background: #141720;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fc-still-wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fc-color-tag {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	font-size: 0.64rem;
+	font-weight: 800;
+	padding: 2px 7px;
+	border-radius: 4px;
+	color: #fff;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+	z-index: 2;
+}
+.fc-runtime-tag {
+	position: absolute;
+	bottom: 5px;
+	right: 6px;
+	background: rgba(0, 0, 0, 0.75);
+	font-size: 0.6rem;
+	padding: 1px 5px;
+	border-radius: 3px;
+	color: #d1d5db;
+	font-family: 'Space Grotesk', monospace;
+	z-index: 2;
+}
+.fc-still-fallback {
+	padding: 8px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	background: linear-gradient(135deg, rgba(20, 23, 30, 0.9) 0%, rgba(30, 35, 46, 0.95) 100%);
+}
+.fc-still-fallback .icon {
+	font-size: 1.1rem;
+	opacity: 0.4;
+	margin-bottom: 2px;
+}
+.fc-still-fallback .txt {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 0.72rem;
+	color: #cbd5e1;
+	line-height: 1.25;
+	font-weight: 600;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.fc-info {
+	padding: 10px 10px 12px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.fc-title {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 0.88rem;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 4px;
+	line-height: 1.3;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.fc-director {
+	font-size: 0.7rem;
+	color: var(--text-muted);
+	margin-bottom: 6px;
+}
+.fc-meta-sub {
+	font-size: 0.68rem;
+	color: #94a3b8;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: auto;
+}
+
+/* =========================================================
+	6. 카이스트 은막 초청 교류전 최하단 피처 패널
+	========================================================= */
+.eunmak-bottom-panel {
+	margin: 28px 20px 20px;
+	background: linear-gradient(145deg, rgba(14, 28, 44, 0.95) 0%, rgba(18, 22, 32, 0.98) 100%);
+	border: 1px solid rgba(56, 189, 248, 0.35);
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+	position: relative;
+	overflow: hidden;
+}
+.ebp-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+.ebp-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: var(--eunmak-glow);
+	border: 1px solid rgba(56, 189, 248, 0.4);
+	color: var(--color-eunmak);
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.68rem;
+	font-weight: 700;
+	padding: 3px 10px;
+	border-radius: 4px;
+	letter-spacing: 0.04em;
+}
+.ebp-collab {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.72rem;
+	color: #93c5fd;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+}
+.ebp-title {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 1.15rem;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 6px;
+}
+.ebp-desc {
+	font-size: 0.8rem;
+	color: #bae6fd;
+	line-height: 1.55;
+	margin-bottom: 14px;
+	word-break: keep-all;
+}
+.ebp-desc b {
+	color: #fff;
+}
+.ebp-sessions-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+.ebp-card-link {
+	background: rgba(15, 23, 42, 0.85);
+	border: 1px solid rgba(56, 189, 248, 0.25);
+	border-radius: 8px;
+	padding: 10px 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	transition: background 0.18s, border-color 0.18s;
+}
+.ebp-card-link:hover, .ebp-card-link:active {
+	background: rgba(30, 41, 59, 0.95);
+	border-color: var(--color-eunmak);
+}
+.ebp-card-link .time-tag {
+	font-family: 'Space Grotesk', monospace;
+	font-size: 0.68rem;
+	color: var(--color-eunmak);
+	font-weight: 700;
+}
+.ebp-card-link .name-tag {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 0.82rem;
+	font-weight: 700;
+	color: #fff;
+}
+.ebp-card-link .meta-tag {
+	font-size: 0.68rem;
+	color: #94a3b8;
+}
+
+/* =========================================================
+	7. 시간표 뷰 (SCHEDULE VIEW)
+	========================================================= */
+.schedule-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 12px 20px;
+}
+.schedule-card {
+	background: var(--surface-card);
+	border: 1px solid var(--surface-border);
+	border-radius: 10px;
+	padding: 14px 16px;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.15s, border-color 0.15s;
+}
+.schedule-card:active {
+	transform: scale(0.98);
+}
+.sc-color-strip {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 5px;
+}
+.sc-time-col {
+	min-width: 65px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid var(--surface-border);
+	padding-right: 12px;
+}
+.sc-time {
+	font-family: 'Space Grotesk', monospace;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: -0.02em;
+}
+.sc-hall {
+	font-size: 0.68rem;
+	color: var(--text-muted);
+	margin-top: 2px;
+	font-weight: 600;
+}
+.sc-content {
+	flex: 1;
+	min-width: 0;
+}
+.sc-meta {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 4px;
+}
+.sc-title {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 0.96rem;
+	font-weight: 700;
+	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 2px;
+}
+.sc-director {
+	font-size: 0.74rem;
+	color: var(--text-muted);
+}
+
+/* 단일 GV 뱃지 (심플 골드) */
+.badge-gv-simple {
+	background: rgba(245, 158, 11, 0.15);
+	border: 1px solid rgba(245, 158, 11, 0.4);
+	color: var(--gold);
+	font-size: 0.62rem;
+	font-weight: 800;
+	padding: 1px 6px;
+	border-radius: 4px;
+	letter-spacing: 0.04em;
+}
+.badge-color-tag {
+	font-size: 0.64rem;
+	font-weight: 700;
+	padding: 1px 5px;
+	border-radius: 3px;
+	background: rgba(255, 255, 255, 0.06);
+}
+.badge-eunmak-tag {
+	background: var(--eunmak-glow);
+	border: 1px solid rgba(56, 189, 248, 0.4);
+	color: var(--color-eunmak);
+	font-size: 0.62rem;
+	font-weight: 800;
+	padding: 1px 6px;
+	border-radius: 4px;
+}
+
+/* =========================================================
+	8. 영화 상세 뷰 (16:9 와이드스크린 스틸컷 & 갤러리)
+	========================================================= */
+.detail-view {
+	padding: 16px 20px 30px;
+	animation: fadeIn 0.2s ease-out;
+}
+.back-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 0.8rem;
+	color: var(--text-muted);
+	margin-bottom: 14px;
+	padding: 6px 12px;
+	background: var(--surface);
+	border-radius: 6px;
+	border: 1px solid var(--surface-border);
+	font-weight: 600;
+}
+
+.detail-hero-card {
+	background: var(--surface-card);
+	border: 1px solid var(--surface-border);
+	border-radius: 12px;
+	overflow: hidden;
+	margin-bottom: 16px;
+	position: relative;
+}
+
+/* 16:9 메인 스틸컷 컨테이너 */
+.detail-widescreen-wrap {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	background: #141720;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.detail-widescreen-wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.detail-widescreen-watermark {
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	font-family: 'Space Grotesk', monospace;
+	font-size: 0.65rem;
+	color: rgba(255, 255, 255, 0.6);
+	background: rgba(0, 0, 0, 0.6);
+	padding: 2px 7px;
+	border-radius: 4px;
+	letter-spacing: 0.08em;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.detail-widescreen-placeholder {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.35);
+	letter-spacing: 0.08em;
+}
+
+.detail-hero-content {
+	padding: 18px 20px;
+}
+.detail-color-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 0.72rem;
+	font-weight: 700;
+	padding: 3px 10px;
+	border-radius: 4px;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.detail-title {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 1.6rem;
+	font-weight: 900;
+	color: #fff;
+	line-height: 1.25;
+	margin-bottom: 8px;
+}
+.detail-meta-line {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	font-size: 0.78rem;
+	color: var(--text-muted);
+	margin-bottom: 14px;
+}
+.detail-meta-line span b {
+	color: #e2e8f0;
+}
+
+/* 16:9 스틸컷 갤러리 섹션 */
+.stills-gallery-section {
+	background: var(--surface-card);
+	border: 1px solid var(--surface-border);
+	border-radius: 12px;
+	padding: 16px;
+	margin-bottom: 16px;
+}
+.sgs-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+.sgs-title {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.74rem;
+	font-weight: 700;
+	color: var(--gold);
+	letter-spacing: 0.08em;
+}
+.sgs-ratio {
+	font-family: 'Space Grotesk', monospace;
+	font-size: 0.65rem;
+	color: #94a3b8;
+	background: rgba(255, 255, 255, 0.06);
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+.stills-thumb-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+}
+.still-thumb-item {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #141720;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+	position: relative;
+}
+.still-thumb-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.still-thumb-item:hover {
+	border-color: var(--gold);
+}
+
+/* 은막 상세 배너 */
+.eunmak-detail-banner {
+	background: rgba(14, 28, 44, 0.9);
+	border: 1px solid rgba(56, 189, 248, 0.4);
+	border-radius: 8px;
+	padding: 12px 14px;
+	margin-bottom: 14px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.eunmak-detail-banner .icon {
+	font-size: 1.4rem;
+}
+.eunmak-detail-banner .txt {
+	font-size: 0.78rem;
+	color: #bae6fd;
+	line-height: 1.45;
+}
+.eunmak-detail-banner .txt b {
+	color: #fff;
+}
+
+/* 심플 GV 안내 배너 */
+.gv-detail-banner {
+	background: rgba(245, 158, 11, 0.08);
+	border: 1px solid rgba(245, 158, 11, 0.3);
+	border-radius: 8px;
+	padding: 12px 14px;
+	margin-bottom: 14px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.gv-detail-banner .badge {
+	background: var(--gold);
+	color: #000;
+	font-weight: 800;
+	font-size: 0.68rem;
+	padding: 3px 8px;
+	border-radius: 4px;
+}
+.gv-detail-banner .txt {
+	font-size: 0.8rem;
+	color: #fef3c7;
+	line-height: 1.4;
+}
+
+/* 로그라인 */
+.logline-box {
+	background: rgba(255, 255, 255, 0.03);
+	border-left: 3px solid var(--gold);
+	padding: 12px 16px;
+	margin-bottom: 16px;
+	border-radius: 0 8px 8px 0;
+	font-family: 'Noto Serif KR', serif;
+	font-size: 0.92rem;
+	color: #f1f5f9;
+	line-height: 1.6;
+	font-style: italic;
+}
+
+/* 시놉시스 섹션 */
+.detail-section {
+	background: var(--surface-card);
+	border: 1px solid var(--surface-border);
+	border-radius: 12px;
+	padding: 18px 20px;
+	margin-bottom: 16px;
+}
+.detail-section h3 {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0.74rem;
+	letter-spacing: 0.12em;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	font-weight: 700;
+}
+.synopsis-text {
+	font-size: 0.88rem;
+	line-height: 1.75;
+	color: #cbd5e1;
+	white-space: pre-wrap;
+	word-break: keep-all;
+}
+
+/* 크레딧 테이블 */
+.credits-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.82rem;
+}
+.credits-table tr {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.credits-table tr:last-child {
+	border-bottom: none;
+}
+.credits-table th {
+	text-align: left;
+	padding: 8px 0;
+	color: var(--text-muted);
+	width: 75px;
+	font-weight: 500;
+}
+.credits-table td {
+	padding: 8px 0;
+	color: #e2e8f0;
+}
+
+/* =========================================================
+	9. 하단 고정 탭바 & 푸터
+	========================================================= */
+.bottom-nav {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: var(--container-max);
+	height: 64px;
+	background: rgba(20, 22, 28, 0.95);
+	backdrop-filter: blur(12px);
+	border-top: 1px solid var(--surface-border);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 100;
+}
+.nav-btn {
+	flex: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	font-size: 0.72rem;
+	font-weight: 600;
+	color: var(--text-muted);
+	transition: color 0.18s;
+}
+.nav-btn svg {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
+.nav-btn.active {
+	color: var(--gold);
+}
+
+.empty-state {
+	text-align: center;
+	padding: 50px 20px;
+	color: var(--text-muted);
+	font-size: 0.88rem;
+}
+.empty-state .icon {
+	font-size: 2.2rem;
+	margin-bottom: 10px;
+	opacity: 0.5;
+}
+
+/* 좋아요 버튼 */
+.fav-btn {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.65);
+	backdrop-filter: blur(6px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.15rem;
+	color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	z-index: 10;
+	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.fav-btn.active {
+	color: #ef4444;
+	background: rgba(239, 68, 68, 0.15);
+	border-color: rgba(239, 68, 68, 0.4);
+	transform: scale(1.08);
+}
+
+.footer-credits {
+	text-align: center;
+	padding: 24px 20px 10px;
+	font-size: 0.7rem;
+	color: var(--text-muted);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+}
+.footer-logo-img {
+	height: 22px;
+	opacity: 0.5;
+	margin-bottom: 2px;
+}
