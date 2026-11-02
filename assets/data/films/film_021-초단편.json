@@ -27,13 +27,13 @@
 	"running_time": null,
 	"screening": {
 		"day": 3,
-		"start": "18:30",
+		"start": "19:00",
 		"end": "20:00",
 		"part": 1,
 		"order": 3,
 		"hall": {
-			"ko": "DGIST E7 C관",
-			"en": "DGIST E7 Hall C"
+			"ko": "DGIST E7 233",
+			"en": "DGIST E7 233"
 		}
 	},
 	"is_gv": true,

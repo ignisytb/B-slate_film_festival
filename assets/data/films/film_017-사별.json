@@ -27,13 +27,13 @@
 	"running_time": "46:51",
 	"screening": {
 		"day": 3,
-		"start": "18:30",
+		"start": "19:00",
 		"end": "20:00",
 		"part": 1,
 		"order": null,
 		"hall": {
-			"ko": "DGIST E7 A관",
-			"en": "DGIST E7 Hall A"
+			"ko": "DGIST E7 L29",
+			"en": "DGIST E7 L29"
 		}
 	},
 	"is_gv": true,
