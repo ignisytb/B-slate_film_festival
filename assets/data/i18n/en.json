@@ -83,5 +83,17 @@
 	},
 	"footer": {
 		"host": "Hosted by B_SLATE, DGIST film club · All screenings at DGIST E7"
+	},
+	"reviews": {
+		"title": "Comments",
+		"placeholder": "Share your thoughts on this film (anonymous, up to 300 characters)",
+		"notice": "Posted anonymously. You can't edit or delete it after posting.",
+		"submit": "Post",
+		"loading": "Loading...",
+		"empty": "No comments yet. Be the first!",
+		"sent": "Posted.",
+		"too_fast": "Too many posts. Please wait a moment.",
+		"error": "Couldn't post. Please try again later.",
+		"load_error": "Couldn't load comments."
 	}
 }

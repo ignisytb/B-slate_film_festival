@@ -530,6 +530,8 @@ function renderDetailView(film) {
         <h3>CAST & CREW</h3>
         ${renderCredits(film)}
       </div>
+
+      ${renderReviewSection(film)}
     </div>
   `;
 }
@@ -542,7 +544,10 @@ function renderCurrentView() {
     const film = films.find(candidate => candidate.id === filmId);
     app.innerHTML = renderDetailView(film);
     window.scrollTo(0, 0);
-    if (film) showStillsGallery(film);
+    if (film) {
+      showStillsGallery(film);
+      showReviews(film.id);
+    }
     return;
   }
 

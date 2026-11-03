@@ -911,3 +911,34 @@ body {
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 	}
 }
+
+.review-form textarea {
+	background: rgba(236, 231, 218, 0.06);
+	border: 1px solid rgba(236, 231, 218, 0.35);
+	border-radius: 0;
+	color: var(--chalk);
+}
+.review-form textarea::placeholder,
+.review-notice,
+.review-time,
+.review-empty,
+.review-status {
+	color: rgba(236, 231, 218, 0.6);
+}
+.review-submit {
+	border-radius: 0;
+	background: var(--chalk);
+	color: var(--chalkboard);
+}
+.review-item {
+	border: none;
+	border-bottom: 1px dashed rgba(236, 231, 218, 0.3);
+	border-radius: 0;
+	background: transparent;
+	padding: 8px 0;
+}
+.review-content {
+	font-family: var(--font-chalk);
+	font-size: 1.05rem;
+	color: var(--chalk);
+}
