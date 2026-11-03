@@ -64,7 +64,18 @@ function toggleFav(id, event) {
     : [...bookmarks, id];
   saveBookmarks(bookmarks);
   updateFavCount();
-  renderCurrentView();
+
+  const isFavsList = currentTab === 'favs' && !filmIdFromHash(window.location.hash);
+  if (isFavsList) {
+    renderCurrentView();
+  } else {
+    updateFavButtons(id);
+  }
+}
+
+function updateFavButtons(id) {
+  const isFav = bookmarks.includes(id);
+  document.querySelectorAll(`.fav-btn[data-film-id="${id}"]`).forEach(button => button.classList.toggle('active', isFav));
 }
 
 function updateFavCount() {
@@ -114,7 +125,7 @@ function changeMainStill(src) {
 function renderFavButton(film) {
   const isFav = bookmarks.includes(film.id);
   return `
-    <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav('${film.id}', event)" aria-label="${t('common.save_to_favs')}">
+    <button class="fav-btn ${isFav ? 'active' : ''}" data-film-id="${film.id}" onclick="toggleFav('${film.id}', event)" aria-label="${t('common.save_to_favs')}">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${HEART_PATH}"/></svg>
     </button>
   `;
