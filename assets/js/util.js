@@ -129,3 +129,7 @@ function compareScreening(a, b) {
     || hallRank(a.screening.hall) - hallRank(b.screening.hall)
     || (a.screening.order ?? 0) - (b.screening.order ?? 0);
 }
+
+function screeningDate(day) {
+  return `11/${day + 17}`;
+}
