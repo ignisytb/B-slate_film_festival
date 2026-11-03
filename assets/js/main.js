@@ -117,6 +117,25 @@ function closePosterModal() {
   if (modal) modal.classList.remove('open');
 }
 
+function isPosterModalOpen() {
+  const modal = document.getElementById('poster-lightbox-modal');
+  return Boolean(modal && modal.classList.contains('open'));
+}
+
+function isTypingTarget(element) {
+  return Boolean(element.closest('input, textarea, [contenteditable="true"]'));
+}
+
+function handleEscapeKey(event) {
+  if (event.key !== 'Escape') return;
+  if (isPosterModalOpen()) {
+    closePosterModal();
+    return;
+  }
+  if (isTypingTarget(event.target)) return;
+  if (filmIdFromHash(window.location.hash)) window.location.hash = '';
+}
+
 function changeMainStill(src) {
   const mainImg = document.getElementById('detail-main-still-img');
   if (mainImg) mainImg.src = src;
@@ -625,6 +644,7 @@ async function init() {
 
   applyStaticTranslations();
   window.addEventListener('hashchange', renderCurrentView);
+  document.addEventListener('keydown', handleEscapeKey);
   renderCurrentView();
 }
 
