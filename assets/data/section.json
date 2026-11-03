@@ -6,8 +6,8 @@
 			"en": "CRIMSON"
 		},
 		"subtitle": {
-			"ko": "판타지 · 비일상적 죽음 · 사랑의 이면과 집착",
-			"en": "Fantasy · Death Beyond the Everyday · The Dark Side of Love and Obsession"
+			"ko": "판타지 · 사랑의 이면과 집착",
+			"en": "Fantasy · The Dark Side of Love and Obsession"
 		},
 		"desc": {
 			"ko": "현실의 경계를 허무는 강렬한 붉은빛. 죽음마저 거래하는 판타지부터 영원한 사랑을 갈망하는 지독한 집착까지, 억누를 수 없이 붉게 타오르는 비일상적인 정념의 순간들을 조명합니다.",
@@ -36,8 +36,8 @@
 			"en": "CHARCOAL"
 		},
 		"subtitle": {
-			"ko": "심리 공포 · 스릴러 · 의심과 불신 · 미지의 암전",
-			"en": "Psychological Horror · Thriller · Suspicion and Distrust · Into the Unknown Dark"
+			"ko": "심리 공포 · 스릴러 · 의심과 불신",
+			"en": "Psychological Horror · Thriller · Suspicion and Distrust"
 		},
 		"desc": {
 			"ko": "서늘한 적막과 어둠 속의 긴장감. 옴니버스 공포부터 일상을 서서히 옥죄어오는 의심과 현실의 불신까지, 인간 내면의 깊은 심연과 서스펜스를 묵직한 잿빛으로 포착합니다.",
@@ -66,12 +66,12 @@
 			"en": "PINK SPECTRUM"
 		},
 		"subtitle": {
-			"ko": "사랑의 다채로운 스펙트럼 · 풋풋한 만남과 이별 · 청춘의 그리움",
-			"en": "The Many Shades of Love · Fresh Encounters and Farewells · The Longing of Youth"
+			"ko": "사랑의 다채로운 스펙트럼 · 만남과 이별 · 청춘의 그리움",
+			"en": "The Many Shades of Love · Encounters and Farewells · The Longing of Youth"
 		},
 		"desc": {
-			"ko": "진한 분홍에서 연한 분홍, 어딘가에 스며든 노란빛 한 방울까지 번져나가는 사랑의 다채로운 굴절. LGBTQ, 삼각관계, 세로 영상의 찰나, 이별 뒤 남겨진 11%의 그리움까지 청춘이 마주하는 사랑의 모든 빛깔을 담았습니다.",
-			"en": "From deep pink to pale pink, with a single drop of yellow seeping in somewhere, love refracts in many colors. LGBTQ love, love triangles, fleeting moments in vertical video, and the 11% of longing left after a farewell: every color of love that youth encounters."
+			"ko": "진한 분홍에서 연한 분홍, 어딘가에 스며든 노란빛 한 방울까지 번져나가는 사랑의 다채로운 굴절. LGBTQ, 삼각관계, 세로 영상의 찰나, 청춘이 마주하는 사랑의 다양한 빛깔을 담았습니다.",
+			"en": "From deep pink to pale pink, with a single drop of yellow seeping in somewhere, love refracts in many colors. LGBTQ love, love triangles, fleeting moments in vertical video, and the diverse color of love that youth encounters."
 		},
 		"keywords": {
 			"ko": [
