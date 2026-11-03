@@ -28,7 +28,7 @@
 		"day": "{day}일차",
 		"part": "{part}부",
 		"screening_time": "{start}~{end} ({part}부)",
-		"runtime_unknown": "러닝타임 미정",
+		"runtime_unknown": "미정",
 		"film_count": "{count}편"
 	},
 	"catalog": {
