@@ -347,7 +347,15 @@ function sortForDefaultCatalog(items) {
   return [...openingAndClosing, ...festivalFilms, ...eunmakFilms];
 }
 
-function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
+function catalogItems() {
+  return currentTab === 'favs' ? films.filter(film => bookmarks.includes(film.id)) : films;
+}
+
+function catalogEmptyMessage() {
+  return currentTab === 'favs' ? t('catalog.favs_empty') : t('catalog.empty');
+}
+
+function renderCatalogResults(items, emptyMessage) {
   const matched = items.filter(film => matchesSection(film) && matchesSearch(film));
   const visibleFilms = isDefaultCatalog() ? sortForDefaultCatalog(matched) : matched;
   const listTitle = selectedSectionId === ALL
@@ -356,8 +364,6 @@ function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
   const showEunmakPanel = (selectedSectionId === ALL || selectedSectionId === EUNMAK_SECTION_ID) && !normalizedSearchText();
 
   return `
-    ${renderSectionChips()}
-    ${renderSearchBox()}
     ${renderCatalogIntro()}
     ${isDefaultCatalog() ? renderSpotlight() : ''}
 
@@ -378,6 +384,16 @@ function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
       <span>2026 BISEUL FILM FESTIVAL '낭만 ; 浪漫 ;'</span>
       <span>${t('footer.host')}</span>
     `)}
+  `;
+}
+
+function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
+  return `
+    ${renderSectionChips()}
+    ${renderSearchBox()}
+    <div id="catalog-results">
+      ${renderCatalogResults(items, emptyMessage)}
+    </div>
   `;
 }
 
@@ -667,11 +683,8 @@ function renderCurrentView() {
 
   if (currentTab === 'schedule') {
     app.innerHTML = renderScheduleView();
-  } else if (currentTab === 'catalog') {
-    app.innerHTML = renderCatalogView(films);
-  } else if (currentTab === 'favs') {
-    const favFilms = films.filter(film => bookmarks.includes(film.id));
-    app.innerHTML = renderCatalogView(favFilms, t('catalog.favs_empty'));
+  } else {
+    app.innerHTML = renderCatalogView(catalogItems(), catalogEmptyMessage());
   }
 }
 
@@ -692,17 +705,9 @@ function selectSection(sectionId) {
   renderCurrentView();
 }
 
-function focusSearchInputAtEnd() {
-  const input = document.getElementById('search-input');
-  if (!input) return;
-  input.focus();
-  input.setSelectionRange(input.value.length, input.value.length);
-}
-
 function handleSearch(text) {
   searchText = text;
-  renderCurrentView();
-  focusSearchInputAtEnd();
+  document.getElementById('catalog-results').innerHTML = renderCatalogResults(catalogItems(), catalogEmptyMessage());
 }
 
 async function loadFilms() {
