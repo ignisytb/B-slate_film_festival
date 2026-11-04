@@ -37,6 +37,7 @@
 		}
 	},
 	"is_gv": true,
+	"is_eng": true,
 	"cast": [
 		{
 			"name": {

@@ -809,8 +809,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	color: #94a3b8;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	gap: 4px;
 	margin-top: auto;
+}
+.fc-meta-sub > :first-child {
+	margin-right: auto;
 }
 
 /* =========================================================
@@ -984,16 +987,31 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	color: var(--text-muted);
 }
 
-/* 단일 GV 뱃지 (심플 골드) */
-.badge-gv-simple {
-	background: rgba(245, 158, 11, 0.15);
-	border: 1px solid rgba(245, 158, 11, 0.4);
-	color: var(--gold);
+/* 단일 GV / Eng 뱃지 */
+.badge-gv-simple,
+.badge-eng-simple {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--font-body);
 	font-size: 0.62rem;
 	font-weight: 800;
-	padding: 1px 6px;
+	line-height: 1;
+	width: 31px;
+	height: 19px;
+	border: 1px solid;
 	border-radius: 4px;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.03em;
+}
+.badge-gv-simple {
+	background: rgba(245, 158, 11, 0.15);
+	border-color: rgba(245, 158, 11, 0.4);
+	color: var(--gold);
+}
+.badge-eng-simple {
+	background: rgba(29, 78, 216, 0.12);
+	border-color: #1d4ed8;
+	color: #1d4ed8;
 }
 .badge-color-tag {
 	font-size: 0.64rem;

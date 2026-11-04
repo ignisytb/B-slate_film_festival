@@ -289,6 +289,7 @@ function renderFilmCard(film) {
         <p class="fc-director">${isEunmak(film) ? t('film.presented_by_eunmak') : t('film.director', { name: escapeHtml(localized(film.director)) })}</p>
         <div class="fc-meta-sub">
           <span>${formatDay(film.screening.day)} (${screeningDate(film.screening.day)})</span>
+          ${film.is_eng ? `<span class="badge-eng-simple">Eng</span>` : ''}
           ${film.is_gv ? `<span class="badge-gv-simple">GV</span>` : ''}
         </div>
       </div>
@@ -397,6 +398,7 @@ function renderScheduleCard(film) {
         <div class="sc-meta">
           ${sectionTag}
           <span style="font-size:0.68rem;color:var(--text-muted);">${escapeHtml(formatRuntime(film.running_time))}</span>
+          ${film.is_eng ? `<span class="badge-eng-simple">Eng</span>` : ''}
           ${film.is_gv ? `<span class="badge-gv-simple">GV</span>` : ''}
         </div>
         <h2 class="sc-title">${escapeHtml(localized(film.title))}</h2>
