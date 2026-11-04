@@ -1,0 +1,48 @@
+/* 에피소드 상세 BOX (.detail-section 의 테마 색/폰트를 그대로 상속) */
+.ep-series-header { margin: 20px 4px 10px; }
+
+.ep-box-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px 10px;
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ep-badge {
+	color: #fff;
+	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	padding: 3px 9px;
+	border-radius: 4px;
+}
+
+.detail-section h3.ep-box-title {
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 800;
+	letter-spacing: -0.01em;
+	text-transform: none;
+}
+
+.ep-meta {
+	width: 100%;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.ep-logline {
+	margin-bottom: 14px;
+	padding: 9px 13px;
+	font-style: italic;
+	font-size: 14.5px;
+	line-height: 1.5;
+	background: rgba(255, 255, 255, 0.07);
+	border-left: 3.5px solid;
+	border-radius: 4px;
+}
+
+.ep-box .synopsis-text { margin-bottom: 14px; word-break: keep-all; }

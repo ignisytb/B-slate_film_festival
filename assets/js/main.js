@@ -550,6 +550,7 @@ function renderDetailView(film) {
 
       <div id="stills-gallery" data-film-id="${film.id}"></div>
 
+      ${hasEpisodes(film) ? renderEpisodes(film) : `
       <div class="detail-section">
         <h3>SYNOPSIS</h3>
         <p class="synopsis-text">${escapeHtml(localized(film.synopsis) || t('detail.synopsis_empty'))}</p>
@@ -559,6 +560,7 @@ function renderDetailView(film) {
         <h3>CAST & CREW</h3>
         ${renderCredits(film)}
       </div>
+      `}
 
       ${renderReviewSection(film)}
     </div>
