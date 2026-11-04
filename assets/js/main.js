@@ -5,10 +5,11 @@ const ALL = 'all';
 const HEART_PATH = 'M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z';
 
 let films = [];
+let filmIndexOrder = [];
 let sectionsById = {};
 
 let currentTab = 'catalog';
-let selectedDay = ALL;
+let selectedSlots = new Set();
 let selectedSectionId = ALL;
 let searchText = '';
 let bookmarks = loadBookmarks();
@@ -380,6 +381,21 @@ function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
   `;
 }
 
+function sessionMark(film) {
+  if (film.is_opening) return 'OPEN';
+  if (film.is_closing) return 'FIN';
+  return `#${hallLetter(film.screening.hall)}`;
+}
+
+function renderSessionFavButton(film) {
+  const isFav = bookmarks.includes(film.id);
+  return `
+    <button class="fav-btn session-fav-btn ${isFav ? 'active' : ''}" data-film-id="${film.id}" onclick="toggleFav('${film.id}', event)" aria-label="${t('common.save_to_favs')}">
+      ${sessionMark(film)}
+    </button>
+  `;
+}
+
 function renderScheduleCard(film) {
   const section = sectionOf(film);
   const sectionTag = isEunmak(film)
@@ -404,20 +420,85 @@ function renderScheduleCard(film) {
         <h2 class="sc-title">${escapeHtml(localized(film.title))}</h2>
         <p class="sc-director">${credit} · ${formatDay(film.screening.day)}</p>
       </div>
+      ${renderSessionFavButton(film)}
     </a>
   `;
 }
 
-function renderScheduleView() {
-  const days = [...new Set(films.map(film => String(film.screening.day)))];
-  const visibleFilms = films.filter(film => selectedDay === ALL || String(film.screening.day) === selectedDay);
+function slotKey(day, part) {
+  return `${day}-${part}`;
+}
+
+function isInSelectedSlots(film) {
+  return selectedSlots.size === 0 || selectedSlots.has(slotKey(film.screening.day, film.screening.part));
+}
+
+function compareFilmIndex(a, b) {
+  return filmIndexOrder.indexOf(a.id) - filmIndexOrder.indexOf(b.id);
+}
+
+function screeningDays() {
+  return [...new Set(films.map(film => film.screening.day))].sort((a, b) => a - b);
+}
+
+function partsOn(day) {
+  return [...new Set(films.filter(film => film.screening.day === day).map(film => film.screening.part))].sort((a, b) => a - b);
+}
+
+function filmsInSlot(day, part) {
+  return films.filter(film => film.screening.day === day && film.screening.part === part);
+}
+
+function renderPartButton(day, part) {
+  const slotFilms = filmsInSlot(day, part);
+  const detail = `${slotFilms[0].screening.start} · ${t('format.film_count', { count: slotFilms.length })}`;
 
   return `
-    <div class="filter-bar">
-      ${[ALL, ...days].map(day => `
-        <button class="chip ${selectedDay === day ? 'active' : ''}" onclick="selectDay('${day}')">${day === ALL ? t('common.all') : formatDay(day)}</button>
-      `).join('')}
+    <button type="button" class="calendar-part" aria-pressed="${selectedSlots.has(slotKey(day, part))}"
+      onclick="toggleSlot(${day}, ${part})">
+      <span class="calendar-part-name">${t('format.part', { part })}</span>
+      <span class="calendar-part-detail">${detail}</span>
+    </button>
+  `;
+}
+
+function renderCalendarDay(day) {
+  return `
+    <div class="calendar-day">
+      <div class="calendar-date">
+        <span class="calendar-date-md">${screeningDate(day)}</span>
+        <span class="calendar-date-day">${formatDay(day)}</span>
+      </div>
+      <div class="calendar-parts">
+        ${partsOn(day).map(part => renderPartButton(day, part)).join('')}
+      </div>
     </div>
+  `;
+}
+
+function renderSelectedSlots(count) {
+  const labels = [...selectedSlots].sort().map(key => {
+    const [day, part] = key.split('-');
+    return `${formatDay(day)} ${t('format.part', { part })}`;
+  });
+
+  return `
+    <div class="calendar-status">
+      <span>${labels.length ? labels.join(', ') : t('common.all')} · ${t('format.film_count', { count })}</span>
+      <button type="button" class="chip ${selectedSlots.size ? '' : 'active'}" onclick="clearSlots()">${t('common.all')}</button>
+    </div>
+  `;
+}
+
+function renderScheduleView() {
+  const visibleFilms = films.filter(isInSelectedSlots).sort(compareFilmIndex);
+
+  return `
+    <hr class="calendar-divider">
+    <div class="schedule-calendar">
+      ${screeningDays().map(renderCalendarDay).join('')}
+    </div>
+    ${renderSelectedSlots(visibleFilms.length)}
 
     <div class="schedule-list">
       ${visibleFilms.length
@@ -594,8 +675,15 @@ function renderCurrentView() {
   }
 }
 
-function selectDay(day) {
-  selectedDay = day;
+function toggleSlot(day, part) {
+  const key = slotKey(day, part);
+  if (selectedSlots.has(key)) selectedSlots.delete(key);
+  else selectedSlots.add(key);
+  renderCurrentView();
+}
+
+function clearSlots() {
+  selectedSlots.clear();
   renderCurrentView();
 }
 
@@ -637,6 +725,7 @@ async function init() {
 
   try {
     const [filmData, sectionData] = await Promise.all([loadFilms(), loadJson(SECTION_DATA_PATH), loadDictionaries()]);
+    filmIndexOrder = filmData.map(film => film.id);
     films = filmData.sort(compareScreening);
     sectionsById = Object.fromEntries(sectionData.map(section => [section.id, section]));
   } catch (error) {
