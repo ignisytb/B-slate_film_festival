@@ -353,7 +353,8 @@ function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
   const listTitle = selectedSectionId === ALL
     ? t('catalog.archive_title')
     : t('catalog.section_title', { section: localized(sectionsById[selectedSectionId].title) });
-  const showEunmakPanel = (selectedSectionId === ALL || selectedSectionId === EUNMAK_SECTION_ID) && !normalizedSearchText();
+  const showEunmakPanel = currentTab === 'catalog' && (selectedSectionId === ALL || selectedSectionId === EUNMAK_SECTION_ID)
+      && !normalizedSearchText();
 
   return `
     ${renderSectionChips()}
