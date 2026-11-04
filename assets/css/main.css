@@ -1619,7 +1619,7 @@ input:focus-visible {
 	.chip:hover,
 	.ps-chip:hover,
 	.nav-btn:hover {
-		color: var(--text-main);
+		color: #E11;
 	}
 }
 
