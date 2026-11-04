@@ -474,7 +474,6 @@ function renderStillsGallery(stills) {
     <div class="stills-gallery-section">
       <div class="sgs-header">
         <span class="sgs-title">🎬 STILLS</span>
-        <span class="sgs-ratio">1920 × 1080 (16:9)</span>
       </div>
       <div class="stills-thumb-grid">
         ${stills.map(still => `

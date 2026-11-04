@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>2026 비슬영화제 공식 모바일 웹 프로그램북</title>
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/zine-chalk.css">
+</head>
+<body>
+  <div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#ff3b1f;color:#fff;font-size:12px;font-weight:700;text-align:center;padding:4px 8px;">PREVIEW · 공포 영화 시리즈 에피소드 상세 미리보기 (실제 사이트 아님) · <a href="#/film/011" style="color:#fff;text-decoration:underline;">상세 바로가기</a></div>
+  <div class="app-wrap">
+    
+    <!-- 🎬 헤더: 비슬레이트 공식 로고 & 뷰파인더 & 메인 포스터 쇼케이스 (첫 화면) -->
+    <header class="hero-header">
+      <div class="viewfinder-box">
+        <div class="cam-meta-bar">
+          <span class="rec-indicator"><span class="rec-dot"></span>REC</span>
+          <span>1/48 F2.8 ISO 640 24FPS</span>
+          <div class="lang-switch-box">
+            <button class="lang-btn" id="lang-btn-ko" onclick="setLanguage('ko')">KR</button>
+            <span class="lang-divider">/</span>
+            <button class="lang-btn" id="lang-btn-en" onclick="setLanguage('en')">EN</button>
+          </div>
+        </div>
+
+        <div class="hero-title-wrap">
+          <p class="hero-edition">2026 BISEUL FILM FESTIVAL</p>
+          <h1 class="hero-main-title">낭만 ;</h1>
+          <p class="hero-hanja">浪漫 ;</p>
+          <span class="hero-venue" data-i18n="hero.venue">장소 : <b>DGIST E7 전용</b></span>
+        </div>
+
+        <!-- 🌟 [첫 화면 메인포스터 쇼케이스] -->
+        <div class="hero-poster-container" onclick="openPosterModal(document.getElementById('hero-poster-img').src)">
+          <div class="hero-poster-wrap">
+            <img id="hero-poster-img" src="assets/img/posters/main_poster.jpg" alt="2026 비슬영화제 낭만 메인 포스터" data-i18n-alt="hero.poster_alt" class="hero-poster-img">
+            <div class="poster-zoom-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              <span data-i18n="hero.poster_zoom">포스터 터치하여 크게보기</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 포스터 시리즈 선택 미니 칩 (메인, 서브1, 서브2, 티저) -->
+        <div class="poster-series-bar">
+          <button class="ps-chip active" onclick="switchHeroPoster('assets/img/posters/main_poster.jpg', this)" data-i18n="poster.main">메인 포스터</button>
+          <button class="ps-chip" onclick="switchHeroPoster('assets/img/posters/sub_poster_1.jpg', this)" data-i18n="poster.sub_1">서브 1</button>
+          <button class="ps-chip" onclick="switchHeroPoster('assets/img/posters/sub_poster_2.jpg', this)" data-i18n="poster.sub_2">서브 2</button>
+          <button class="ps-chip" onclick="switchHeroPoster('assets/img/posters/teaser_poster_b.jpg', this)" data-i18n="poster.teaser_black">티저 Black</button>
+          <button class="ps-chip" onclick="switchHeroPoster('assets/img/posters/teaser_poster_w.jpg', this)" data-i18n="poster.teaser_white">티저 White</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 동적 화면 출력 컨테이너 -->
+    <main id="app-content"></main>
+
+    <!-- 하단 탭 내비게이션 -->
+    <nav class="bottom-nav">
+      <button class="nav-btn" id="nav-catalog" onclick="switchTab('catalog')">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+        <span data-i18n="tab.catalog">전체 영화</span>
+      </button>
+      <button class="nav-btn active" id="nav-schedule" onclick="switchTab('schedule')">
+        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+        <span data-i18n="tab.schedule">상영시간표</span>
+      </button>
+      <button class="nav-btn" id="nav-favs" onclick="switchTab('favs')">
+        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <span><span data-i18n="tab.favs">낭만 보관함</span> (<span id="fav-count">0</span>)</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- 포스터 라이트박스 팝업 모달 -->
+  <div id="poster-lightbox-modal" class="poster-lightbox" onclick="closePosterModal()">
+    <button class="lightbox-close-btn" onclick="closePosterModal()">✕</button>
+    <img id="lightbox-modal-img" class="lightbox-content-img" src="" onclick="event.stopPropagation();">
+  </div>
+
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/reviews.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- [미리보기 전용] 공포 영화 시리즈 에피소드 상세 정보 -->
+  <script src="assets/js/preview_horror_episodes.js"></script>
+</body>
+</html>
