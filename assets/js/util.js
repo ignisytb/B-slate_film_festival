@@ -123,6 +123,10 @@ function hallRank(hall) {
   return rank === -1 ? HALL_ORDER.length : rank;
 }
 
+function hallLetter(hall) {
+  return 'ABC'[HALL_ORDER.indexOf(hall.ko)] ?? '';
+}
+
 function compareScreening(a, b) {
   return a.screening.day - b.screening.day
     || a.screening.start.localeCompare(b.screening.start)
