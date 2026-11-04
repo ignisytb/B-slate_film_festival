@@ -46,5 +46,106 @@
 	"synopsis": {
 		"ko": "",
 		"en": ""
-	}
+	},
+	"episodes": [
+		{
+			"ep": 1,
+			"title": {
+				"ko": "등하불명",
+				"en": "Darkest Under the Lamp"
+			},
+			"year": 2021,
+			"genre": {
+				"ko": "스릴러",
+				"en": "Thriller"
+			},
+			"running_time": "6:17",
+			"director": {
+				"ko": "유제이",
+				"en": "Yoo Je-i"
+			},
+			"writer": {
+				"ko": "강은석",
+				"en": "Kang Eun-seok"
+			},
+			"cast": {
+				"ko": "차건희, 정욱진",
+				"en": "Cha Geon-hee, Jung Wook-jin"
+			},
+			"logline": {
+				"ko": "정체를 알 수 없는 존재에 대한 공포",
+				"en": "The terror of an unknown presence"
+			},
+			"synopsis": {
+				"ko": "늦은 밤, 혼자 남은 독서실에서 공부하던 주인공은 옆자리에 앉은 남자가 어딘가 수상하다는 것을 느낀다. 찜찜한 마음을 뒤로한 채 기숙사로 향하지만, 돌아가는 길에 설명할 수 없는 기묘한 일들이 연이어 벌어진다. 평범했던 일상이 조금씩 낯설고 섬뜩하게 변해가면서 주인공은 자신이 겪고 있는 상황을 의심하기 시작한다. 그날 밤, 주인공이 느낀 공포의 정체는 과연 무엇이었을까?",
+				"en": "Late at night, studying alone in a reading room, the protagonist senses something off about the man sitting in the next seat. Brushing off the unease, she heads back to the dorm, but a series of inexplicable, eerie events unfolds along the way. As her ordinary routine grows strange and chilling, she begins to doubt what she is experiencing. What was the true nature of the fear she felt that night?"
+			}
+		},
+		{
+			"ep": 2,
+			"title": {
+				"ko": "이상한 자판기",
+				"en": "The Strange Vending Machine"
+			},
+			"year": 2021,
+			"genre": {
+				"ko": "스릴러",
+				"en": "Thriller"
+			},
+			"running_time": "7:24",
+			"director": {
+				"ko": "정욱진",
+				"en": "Jung Wook-jin"
+			},
+			"writer": {
+				"ko": "정욱진",
+				"en": "Jung Wook-jin"
+			},
+			"cast": {
+				"ko": "손아영",
+				"en": "Son A-young"
+			},
+			"logline": {
+				"ko": "정체를 알 수 없는 존재에 대한 공포",
+				"en": "The terror of an unknown presence"
+			},
+			"synopsis": {
+				"ko": "늦은 밤, 혼자 학교에 남은 대학원생은 익숙하면서도 낯선 공간 속에서 이상한 기시감을 느낀다. 화장실에 들어선 순간, 머리 위에서 붉은 핏방울이 떨어진다. 천장을 올려다본 그녀가 마주한 것은 과연 무엇일까?",
+				"en": "Late at night, a graduate student left alone on campus feels a strange sense of déjà vu in a space both familiar and foreign. The moment she steps into the restroom, a drop of red blood falls from above. What will she face when she looks up at the ceiling?"
+			}
+		},
+		{
+			"ep": 3,
+			"title": {
+				"ko": "Drink it!",
+				"en": "Drink it!"
+			},
+			"year": 2021,
+			"genre": {
+				"ko": "스릴러",
+				"en": "Thriller"
+			},
+			"running_time": "6:44",
+			"director": {
+				"ko": "정욱진",
+				"en": "Jung Wook-jin"
+			},
+			"writer": {
+				"ko": "정욱진",
+				"en": "Jung Wook-jin"
+			},
+			"cast": {
+				"ko": "손아영",
+				"en": "Son A-young"
+			},
+			"logline": {
+				"ko": "정체를 알 수 없는 음료에 대한 공포",
+				"en": "The terror of an unknown drink"
+			},
+			"synopsis": {
+				"ko": "늦은 밤, 혼자 학교에 남은 주인공은 누르지도 않은 자판기에서 나온 정체불명의 음료를 마신다. 아무렇지 않게 넘기려던 순간, 평범했던 자신의 몸과 행동이 조금씩 달라지기 시작한다. 그녀가 마신 음료는 대체 무엇이었을까?",
+				"en": "Late at night, alone on campus, the protagonist drinks a mysterious beverage that dropped from a vending machine she never pressed. Just as she tries to shrug it off, her body and behavior begin to change little by little. What on earth did she drink?"
+			}
+		}
+	]
 }
