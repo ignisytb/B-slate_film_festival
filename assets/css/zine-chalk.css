@@ -250,11 +250,18 @@ body {
 .fc-director {
 	color: var(--text-muted);
 }
-.badge-gv-simple {
+.badge-gv-simple,
+.badge-eng-simple {
 	background: transparent;
+	border-radius: var(--radius-sm);
+}
+.badge-gv-simple {
 	border-color: var(--gold);
 	color: var(--gold);
-	border-radius: var(--radius-sm);
+}
+.badge-eng-simple {
+	border-color: #1d4ed8;
+	color: #1d4ed8;
 }
 .fc-color-tag,
 .detail-color-pill {
