@@ -2,15 +2,15 @@
 	"id": "film_010",
 	"title": {
 		"ko": "반격(反擊)",
-		"en": "KAIST Eunmak Exchange Film 1"
+		"en": "Counterattack"
 	},
 	"director": {
 		"ko": "이도영",
-		"en": "KAIST Film Club Eunmak"
+		"en": "Lee Do-young"
 	},
 	"writer": {
 		"ko": "김유미, 류성윤, 이건희, 이도영",
-		"en": "KAIST Eunmak Creative Team"
+		"en": "Kim Yu-mi, Ryu Seong-yun, Lee Geon-hee, Lee Do-young"
 	},
 	"year": null,
 	"section": "eunmak",
@@ -24,7 +24,7 @@
 	},
 	"is_opening": false,
 	"is_closing": false,
-	"running_time": "36.22",
+	"running_time": "36:22",
 	"screening": {
 		"day": 2,
 		"start": "19:00",
@@ -41,22 +41,42 @@
 	"cast": [
 		{
 			"name": {
-				"ko": "오택근, 김지상, 이도영",
-				"en": "Members of KAIST Eunmak"
+				"ko": "오택근",
+				"en": "Oh Taek-geun"
 			},
 			"role": {
-				"ko": "지석(오택근), 조력자(김지상), 킬러(이도영)",
-				"en": ""
+				"ko": "지석",
+				"en": "Ji-seok"
+			}
+		},
+		{
+			"name": {
+				"ko": "김지상",
+				"en": "Kim Ji-sang"
+			},
+			"role": {
+				"ko": "조력자",
+				"en": "Helper"
+			}
+		},
+		{
+			"name": {
+				"ko": "이도영",
+				"en": "Lee Do-young"
+			},
+			"role": {
+				"ko": "킬러",
+				"en": "Killer"
 			}
 		}
 	],
 	"trailer_url": "",
 	"logline": {
 		"ko": "반격(反擊); 되받아 공격함",
-		"en": "A special exchange screening with Eunmak (銀幕), the only central filmmaking club at KAIST."
+		"en": "Counterattack (反擊); striking back against an attack."
 	},
 	"synopsis": {
 		"ko": "사랑하는 엄마를 잃은 지석. 되돌릴 수 없는 상처를 입은 그는 자신이 받은 상처를 갚아주기 위해 살인마저 마다하지 않는다. 하지만 그가 상대해야하는 것은 커다란 조직이었고, 아무리 복수를 해도 사그라지지 않는 감정에 그는 점점 지쳐간다. 이제 복수를 위해 시작한 싸움은 지키기 위한 싸움이 되어 지석을 움직인다.",
-		"en": "A special exchange program between Eunmak (銀幕), the only central filmmaking club at KAIST, and the B-slate Film Festival.\n\nWe present a selection of fine short films by young creators from a science and technology university, capturing their view beyond the screen and their new artistic experiments.\n\n• Session: 〈A View Beyond the Screen〉\n• Venue: DGIST E7 233\n• Presented by: KAIST Film Club Eunmak (銀幕)"
+		"en": "Ji-seok loses his beloved mother. Left with an irreversible wound, he does not hesitate even to kill in order to pay back the pain inflicted upon him. Yet what he must face is a massive organization, and no matter how much vengeance he takes, he grows increasingly exhausted by emotions that refuse to subside. Now, a fight that began for revenge transforms into a fight to protect, driving Ji-seok forward."
 	}
 }

@@ -2,15 +2,15 @@
 	"id": "film_015",
 	"title": {
 		"ko": "하필, 여름에 빠진 너",
-		"en": "KAIST Eunmak Exchange Film 2"
+		"en": "Of All Seasons, Falling for Summer"
 	},
 	"director": {
 		"ko": "신주현",
-		"en": "KAIST Film Club Eunmak"
+		"en": "Shin Ju-hyun"
 	},
 	"writer": {
-		"ko": "KAIST 은막 창작팀",
-		"en": "KAIST Eunmak Creative Team"
+		"ko": "신주현",
+		"en": "Shin Ju-hyun"
 	},
 	"year": null,
 	"section": "eunmak",
@@ -41,22 +41,42 @@
 	"cast": [
 		{
 			"name": {
-				"ko": "신주현, 이준서,김채준",
-				"en": "Members of KAIST Eunmak"
+				"ko": "신주현",
+				"en": "Shin Ju-hyun"
 			},
 			"role": {
-				"ko": "여름(신주현), 선호(이준서), 준영(김채준)",
-				"en": ""
+				"ko": "여름",
+				"en": "Yeo-reum"
+			}
+		},
+		{
+			"name": {
+				"ko": "이준서",
+				"en": "Lee Jun-seo"
+			},
+			"role": {
+				"ko": "선호",
+				"en": "Seon-ho"
+			}
+		},
+		{
+			"name": {
+				"ko": "김채준",
+				"en": "Kim Chae-jun"
+			},
+			"role": {
+				"ko": "준영",
+				"en": "Jun-young"
 			}
 		}
 	],
 	"trailer_url": "",
 	"logline": {
 		"ko": "외롭다는 것은 본인과 친하지 아니한 것이니라.",
-		"en": "A special exchange screening with Eunmak (銀幕), the only central filmmaking club at KAIST."
+		"en": "To be lonely is to not be close with oneself."
 	},
 	"synopsis": {
-		"ko": "대학교에 갓 입학한 여름은 하고 싶은 것도, 이루고 싶은 것도 많은 새내기이지만 동시에 사랑이라는 낯선 감정에 휘둘리며 점차 지쳐가기 시작한다. 그렇게 휘청이던 그녀를 다잡아준 것은 한 장의 전단지. 처음 여름 자신이 가졌던 열정을 깨댣고 스스로에게 더욱 집중하게 된 여름은 사랑에 흔들리기보다 이끌어가는 사람으로 성장한다.",
-		"en": "A special exchange program between Eunmak (銀幕), the only central filmmaking club at KAIST, and the B-slate Film Festival.\n\nWe present a selection of fine short films by young creators from a science and technology university, capturing their view beyond the screen and their new artistic experiments.\n\n• Session: 〈A View Beyond the Screen〉\n• Venue: DGIST E7 233\n• Presented by: KAIST Film Club Eunmak (銀幕)"
+		"ko": "대학교에 갓 입학한 여름은 하고 싶은 것도, 이루고 싶은 것도 많은 새내기이지만 동시에 사랑이라는 낯선 감정에 휘둘리며 점차 지쳐가기 시작한다. 그렇게 휘청이던 그녀를 다잡아준 것은 한 장의 전단지. 처음 여름 자신이 가졌던 열정을 깨닫고 스스로에게 더욱 집중하게 된 여름은 사랑에 흔들리기보다 이끌어가는 사람으로 성장한다.",
+		"en": "Just entering university, Yeo-reum is a freshman with many things she wants to do and achieve, yet she gradually grows weary as she is swept up by the unfamiliar emotion of love. What steadies her faltering steps is a single flyer. Rediscovering the passion she originally held and focusing more deeply on herself, Yeo-reum grows into someone who leads rather than being shaken by love."
 	}
 }

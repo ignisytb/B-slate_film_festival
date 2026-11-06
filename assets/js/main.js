@@ -600,7 +600,7 @@ function renderCredits(film) {
 
   return `
     <table class="credits-table">
-      ${renderCreditRow(isEunmak(film) ? t('credit.presenter') : t('credit.director'), localized(film.director))}
+      ${renderCreditRow(t('credit.director'), localized(film.director))}
       ${renderCreditRow(t('credit.writer'), writer)}
       ${renderCreditRow(t('credit.cast'), actors)}
       ${renderCreditRow(t('credit.roles'), roles)}
