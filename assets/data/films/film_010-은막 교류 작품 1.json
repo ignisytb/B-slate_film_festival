@@ -1,15 +1,15 @@
 {
 	"id": "film_010",
 	"title": {
-		"ko": "은막 교류 작품 1",
+		"ko": "반격(反擊)",
 		"en": "KAIST Eunmak Exchange Film 1"
 	},
 	"director": {
-		"ko": "KAIST 영화제작동아리 은막",
+		"ko": "이도영",
 		"en": "KAIST Film Club Eunmak"
 	},
 	"writer": {
-		"ko": "KAIST 은막 창작팀",
+		"ko": "김유미, 류성윤, 이건희, 이도영",
 		"en": "KAIST Eunmak Creative Team"
 	},
 	"year": null,
@@ -24,7 +24,7 @@
 	},
 	"is_opening": false,
 	"is_closing": false,
-	"running_time": "55:00",
+	"running_time": "36.22",
 	"screening": {
 		"day": 2,
 		"start": "19:00",
@@ -41,22 +41,22 @@
 	"cast": [
 		{
 			"name": {
-				"ko": "카이스트 은막 단원들",
+				"ko": "오택근, 김지상, 이도영",
 				"en": "Members of KAIST Eunmak"
 			},
 			"role": {
-				"ko": "",
+				"ko": "지석(오택근), 조력자(김지상), 킬러(이도영)",
 				"en": ""
 			}
 		}
 	],
 	"trailer_url": "",
 	"logline": {
-		"ko": "카이스트(KAIST) 유일의 중앙 영화제작동아리 '은막(銀幕)'과의 특별 교류 상영작입니다.",
+		"ko": "반격(反擊); 되받아 공격함",
 		"en": "A special exchange screening with Eunmak (銀幕), the only central filmmaking club at KAIST."
 	},
 	"synopsis": {
-		"ko": "카이스트(KAIST) 유일의 중앙 영화제작동아리 '은막(銀幕)'과 비슬영화제(B_SLATE)가 함께하는 특별 교류 프로그램입니다.\n\n과학기술특성화대학 청년 창작자들의 스크린 너머 시선과 새로운 예술적 시도를 담은 단편 수작들을 초청 상영합니다.\n\n• 상영 세션: 〈스크린 너머의 시선〉\n• 상영 장소: DGIST E7 233\n• 주최/출품: 카이스트(KAIST) 영화제작동아리 은막(銀幕)",
+		"ko": "사랑하는 엄마를 잃은 지석. 되돌릴 수 없는 상처를 입은 그는 자신이 받은 상처를 갚아주기 위해 살인마저 마다하지 않는다. 하지만 그가 상대해야하는 것은 커다란 조직이었고, 아무리 복수를 해도 사그라지지 않는 감정에 그는 점점 지쳐간다. 이제 복수를 위해 시작한 싸움은 지키기 위한 싸움이 되어 지석을 움직인다.",
 		"en": "A special exchange program between Eunmak (銀幕), the only central filmmaking club at KAIST, and the B-slate Film Festival.\n\nWe present a selection of fine short films by young creators from a science and technology university, capturing their view beyond the screen and their new artistic experiments.\n\n• Session: 〈A View Beyond the Screen〉\n• Venue: DGIST E7 233\n• Presented by: KAIST Film Club Eunmak (銀幕)"
 	}
 }
