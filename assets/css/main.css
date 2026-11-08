@@ -1589,6 +1589,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	color: var(--gold);
 }
 
+@keyframes heartBeat {
+	0%, 100% { transform: scale(1); }
+	20% { transform: scale(1.25); }
+	40% { transform: scale(1); }
+	60% { transform: scale(1.15); }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+	#nav-favs:hover svg {
+		animation: heartBeat 0.9s ease-in-out infinite;
+	}
+}
+
 .empty-state {
 	text-align: center;
 	padding: 50px 20px;
