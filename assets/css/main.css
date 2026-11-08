@@ -1764,8 +1764,8 @@ input:focus-visible {
 		padding-bottom: 0;
 	}
 	.bottom-nav {
-		left: auto;
-		right: max(24px, calc(50vw - var(--container-max) / 2 - 96px));
+		left: calc(50% + var(--container-max) / 2 + 18px);
+		right: auto;
 		bottom: auto;
 		top: 120px;
 		transform: none;
@@ -1773,15 +1773,20 @@ input:focus-visible {
 		max-width: none;
 		height: auto;
 		flex-direction: column;
-		gap: 6px;
-		padding: 10px 8px;
+		gap: 4px;
+		padding: 8px 5px;
 		border-radius: 20px;
 	}
 	.nav-btn {
 		flex: 0 0 auto;
-		width: 84px;
+		width: 54px;
 		height: auto;
-		padding: 12px 6px;
-		gap: 5px;
+		padding: 9px 3px;
+		gap: 4px;
+		font-size: 0.6rem;
+	}
+	.nav-btn svg {
+		width: 18px;
+		height: 18px;
 	}
 }
