@@ -953,13 +953,13 @@ body {
 
 .sc-hall {
 	color: var(--heading);
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	padding-bottom: 3px;
 	border-bottom: 1px solid var(--heading);
 }
 .sc-time {
 	margin-top: 3px;
-	font-size: 0.85rem;
+	font-size: 1rem;
 	border-bottom: none;
 }
 
