@@ -1753,3 +1753,30 @@ input:focus-visible {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
+
+@media (min-width: 1400px) {
+	.app-wrap {
+		padding-bottom: 0;
+	}
+	.bottom-nav {
+		left: auto;
+		right: max(24px, calc(50vw - var(--container-max) / 2 - 96px));
+		bottom: auto;
+		top: 50%;
+		transform: translateY(-50%);
+		width: auto;
+		max-width: none;
+		height: auto;
+		flex-direction: column;
+		gap: 6px;
+		padding: 10px 8px;
+		border-radius: 18px;
+	}
+	.nav-btn {
+		flex: 0 0 auto;
+		width: 84px;
+		height: auto;
+		padding: 12px 6px;
+		gap: 5px;
+	}
+}
