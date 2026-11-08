@@ -1046,22 +1046,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	border-right: 1px solid var(--surface-border);
 	padding-right: 12px;
 }
+.sc-hall {
+	font-size: 1.02rem;
+	font-weight: 700;
+	color: var(--gold);
+	line-height: 1.15;
+	letter-spacing: -0.01em;
+	text-align: center;
+}
 .sc-time {
 	font-family: 'Space Grotesk', monospace;
-	font-size: 1.1rem;
-	font-weight: 700;
-	color: #fff;
-	letter-spacing: -0.02em;
-}
-.sc-hall {
-	margin-top: 4px;
-	padding: 2px 8px;
-	border-radius: 999px;
-	background: rgba(245, 158, 11, 0.16);
-	color: var(--gold);
-	font-size: 0.7rem;
-	font-weight: 700;
-	white-space: nowrap;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--text-muted);
+	margin-top: 3px;
+	letter-spacing: 0;
 }
 .sc-content {
 	flex: 1;

@@ -420,8 +420,8 @@ function renderScheduleCard(film) {
     <a class="schedule-card" href="${filmLink(film)}">
       <div class="sc-color-strip" style="background:${section.hex};"></div>
       <div class="sc-time-col">
-        <div class="sc-time">${film.screening.start}</div>
         <div class="sc-hall">${escapeHtml(shortHallName(film.screening.hall))}</div>
+        <div class="sc-time">${film.screening.start}</div>
       </div>
       <div class="sc-content">
         <div class="sc-meta">

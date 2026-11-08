@@ -952,9 +952,5 @@ body {
 }
 
 .sc-hall {
-	background: transparent;
 	color: var(--heading);
-	border: 1px solid var(--heading);
-	border-radius: 0;
-	font-weight: 700;
 }
