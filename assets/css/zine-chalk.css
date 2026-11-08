@@ -949,3 +949,11 @@ body {
 	font-size: 1.05rem;
 	color: var(--chalk);
 }
+
+.sc-hall {
+	background: transparent;
+	color: var(--heading);
+	border: 1px solid var(--heading);
+	border-radius: 0;
+	font-weight: 700;
+}

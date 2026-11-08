@@ -400,17 +400,11 @@ function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
   `;
 }
 
-function sessionMark(film) {
-  if (film.is_opening) return 'OPEN';
-  if (film.is_closing) return 'FIN';
-  return `#${hallLetter(film.screening.hall)}`;
-}
-
 function renderSessionFavButton(film) {
   const isFav = bookmarks.includes(film.id);
   return `
     <button class="fav-btn session-fav-btn ${isFav ? 'active' : ''}" data-film-id="${film.id}" onclick="toggleFav('${film.id}', event)" aria-label="${t('common.save_to_favs')}">
-      ${sessionMark(film)}
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${HEART_PATH}"/></svg>
     </button>
   `;
 }

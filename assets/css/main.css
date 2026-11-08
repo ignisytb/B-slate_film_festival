@@ -1054,10 +1054,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	letter-spacing: -0.02em;
 }
 .sc-hall {
-	font-size: 0.68rem;
-	color: var(--text-muted);
-	margin-top: 2px;
-	font-weight: 600;
+	margin-top: 4px;
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: rgba(245, 158, 11, 0.16);
+	color: var(--gold);
+	font-size: 0.7rem;
+	font-weight: 700;
+	white-space: nowrap;
 }
 .sc-content {
 	flex: 1;
@@ -1086,25 +1090,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .schedule-card .session-fav-btn {
 	top: 50%;
 	right: 12px;
-	width: 44px;
-	height: 44px;
 	transform: translateY(-50%);
-	border-radius: 0;
-	border: 2px solid var(--line, var(--surface-border));
-	background: var(--surface);
-	color: var(--text-main);
-	font-family: 'Space Grotesk', sans-serif;
-	font-weight: 700;
-	font-size: 0.8rem;
-	letter-spacing: 0.02em;
-	line-height: 1;
-	backdrop-filter: none;
 }
 .schedule-card .session-fav-btn.active {
 	transform: translateY(-50%) scale(1.08);
-	background: var(--rec-red, #ef4444);
-	border-color: var(--rec-red, #ef4444);
-	color: #fff;
 }
 
 /* 단일 GV / Eng 뱃지 */
