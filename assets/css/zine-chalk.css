@@ -945,8 +945,9 @@ body {
 	padding: 8px 0;
 }
 .review-content {
-	font-family: var(--font-chalk);
-	font-size: 1.05rem;
+	font-family: var(--font-body);
+	font-size: 0.92rem;
+	line-height: 1.6;
 	color: var(--chalk);
 }
 
