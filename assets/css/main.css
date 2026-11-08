@@ -226,14 +226,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* 🌟 [신규 추가] 공식 메인 포스터 첫 화면 쇼케이스 */
 .hero-poster-container {
 	margin: 16px auto 10px;
-	max-width: 260px;
-	width: 72%;
-	cursor: pointer;
+	max-width: 310px;
+	width: 80%;
 	position: relative;
-	transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.hero-poster-container:active {
-	transform: scale(0.98);
 }
 .hero-poster-wrap {
 	width: 100%;
@@ -243,13 +238,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	box-shadow: 0 14px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.15);
 	position: relative;
 	background: #141720;
+	cursor: pointer;
+	transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-poster-wrap:active {
+	transform: scale(0.98);
 }
 .hero-poster-img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	display: block;
-	transition: transform 0.3s ease;
+	transition: transform 0.3s ease, opacity 0.35s ease;
 }
 .hero-poster-wrap:hover .hero-poster-img {
 	transform: scale(1.02);
@@ -273,6 +273,72 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	white-space: nowrap;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 	pointer-events: none;
+}
+
+/* 포스터 좌우 넘김 버튼 */
+.hero-poster-nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: rgba(16, 18, 22, 0.75);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #f5f4ef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 4;
+	transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+	padding: 0;
+}
+.hero-poster-nav:hover {
+	background: var(--gold);
+	color: #0b0c0e;
+	border-color: var(--gold);
+	transform: translateY(-50%) scale(1.1);
+}
+.hero-poster-nav:active {
+	transform: translateY(-50%) scale(0.92);
+}
+.hero-poster-nav.prev {
+	left: -16px;
+}
+.hero-poster-nav.next {
+	right: -16px;
+}
+
+/* 포스터 인디케이터 점 (Dots) */
+.hero-poster-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	margin-top: 10px;
+}
+.poster-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.25);
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.poster-dot:hover {
+	background: rgba(255, 255, 255, 0.6);
+}
+.poster-dot.active {
+	width: 18px;
+	border-radius: 999px;
+	background: var(--gold);
+	box-shadow: 0 0 10px rgba(245, 158, 11, 0.45);
 }
 
 .poster-series-bar {
@@ -1624,6 +1690,9 @@ input:focus-visible {
 	.hero-hanja {
 		font-size: 1.05rem;
 	}
+	.hero-poster-container {
+		max-width: 350px;
+	}
 
 	.filter-bar {
 		flex-wrap: wrap;
@@ -1689,11 +1758,10 @@ input:focus-visible {
 
 	.viewfinder-box {
 		display: grid;
-		grid-template-columns: 1fr 280px;
+		grid-template-columns: 1fr 400px;
 		grid-template-areas:
 			"meta meta"
-			"title poster"
-			"title chips";
+			"title poster";
 		column-gap: 40px;
 		padding: 20px 40px 28px;
 	}
@@ -1723,10 +1791,6 @@ input:focus-visible {
 		width: 100%;
 		max-width: none;
 		margin: 8px 0 10px;
-	}
-	.poster-series-bar {
-		grid-area: chips;
-		align-self: start;
 	}
 
 	.films-grid {

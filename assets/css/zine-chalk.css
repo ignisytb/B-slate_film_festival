@@ -416,7 +416,6 @@ body::before {
 }
 .hero-poster-container {
 	transform: rotate(4deg);
-	max-width: 280px;
 }
 .hero-poster-container::before {
 	content: "";
@@ -432,6 +431,25 @@ body::before {
 .hero-poster-wrap {
 	border: 3px solid var(--heading);
 	border-radius: 0;
+}
+.hero-poster-nav {
+	background: #fff;
+	color: var(--heading);
+	border: 2px solid var(--heading);
+	box-shadow: 2px 2px 0 var(--heading);
+}
+.hero-poster-nav:hover {
+	background: var(--gold);
+	color: var(--accent-ink);
+}
+.poster-dot {
+	background: var(--line);
+	border: 1px solid var(--heading);
+}
+.poster-dot.active {
+	background: var(--heading);
+	border-color: var(--heading);
+	box-shadow: none;
 }
 .ps-chip {
 	border: 2px solid var(--heading);
@@ -785,6 +803,13 @@ body {
 	width: 90px;
 }
 .hero-poster-wrap {
+	border-width: 1px;
+}
+.hero-poster-nav {
+	box-shadow: none;
+	border-width: 1px;
+}
+.poster-dot {
 	border-width: 1px;
 }
 .cam-meta-bar {
