@@ -1776,10 +1776,7 @@ input:focus-visible {
 		height: auto;
 		padding: 9px 3px;
 		gap: 4px;
-		font-size: 0.6rem;
-	}
-	.nav-btn svg {
-		width: 18px;
-		height: 18px;
+		line-height: 1.3;
+		text-align: center;
 	}
 }
