@@ -98,14 +98,111 @@ function switchTab(tab) {
   renderCurrentView();
 }
 
-function switchHeroPoster(src, button) {
+const HERO_POSTERS = [
+  { src: 'assets/img/posters/main_poster.jpg', titleKey: 'poster.main', altKey: 'hero.poster_alt' },
+  { src: 'assets/img/posters/sub_poster_1.jpg', titleKey: 'poster.sub_1', altKey: 'poster.sub_1' },
+  { src: 'assets/img/posters/sub_poster_2.jpg', titleKey: 'poster.sub_2', altKey: 'poster.sub_2' },
+  { src: 'assets/img/posters/teaser_poster_b.jpg', titleKey: 'poster.teaser_black', altKey: 'poster.teaser_black' },
+  { src: 'assets/img/posters/teaser_poster_w.jpg', titleKey: 'poster.teaser_white', altKey: 'poster.teaser_white' }
+];
+
+let currentPosterIndex = 0;
+let posterAutoTimer = null;
+const POSTER_AUTO_INTERVAL = 4000;
+
+function updateHeroPosterUI(index) {
   const img = document.getElementById('hero-poster-img');
-  if (img) img.src = src;
-  document.querySelectorAll('.ps-chip').forEach(chip => chip.classList.remove('active'));
-  if (button) button.classList.add('active');
+  const poster = HERO_POSTERS[index];
+  if (!poster || !img) return;
+
+  img.style.opacity = '0';
+  setTimeout(() => {
+    img.src = poster.src;
+    img.setAttribute('alt', t(poster.altKey));
+    img.style.opacity = '1';
+  }, 160);
+
+  const dots = document.querySelectorAll('.hero-poster-dots .poster-dot');
+  dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+
+  const chips = document.querySelectorAll('.poster-series-bar .ps-chip');
+  chips.forEach((chip, i) => chip.classList.toggle('active', i === index));
+}
+
+function updateHeroPosterAlt() {
+  const img = document.getElementById('hero-poster-img');
+  const poster = HERO_POSTERS[currentPosterIndex];
+  if (img && poster) {
+    img.setAttribute('alt', t(poster.altKey));
+  }
+}
+
+function goToHeroPoster(index, isUserAction = false, event = null) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  currentPosterIndex = (index + HERO_POSTERS.length) % HERO_POSTERS.length;
+  updateHeroPosterUI(currentPosterIndex);
+
+  if (isUserAction) {
+    restartPosterAutoPlay();
+  }
+}
+
+function navigateHeroPoster(direction, event = null) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  goToHeroPoster(currentPosterIndex + direction, true);
+}
+
+function switchHeroPoster(src, button) {
+  const foundIndex = HERO_POSTERS.findIndex(p => p.src === src);
+  if (foundIndex !== -1) {
+    goToHeroPoster(foundIndex, true);
+  } else {
+    const img = document.getElementById('hero-poster-img');
+    if (img) img.src = src;
+    document.querySelectorAll('.ps-chip').forEach(chip => chip.classList.remove('active'));
+    if (button) button.classList.add('active');
+  }
+}
+
+function startPosterAutoPlay() {
+  stopPosterAutoPlay();
+  posterAutoTimer = setInterval(() => {
+    if (isPosterModalOpen()) return;
+    goToHeroPoster(currentPosterIndex + 1, false);
+  }, POSTER_AUTO_INTERVAL);
+}
+
+function stopPosterAutoPlay() {
+  if (posterAutoTimer) {
+    clearInterval(posterAutoTimer);
+    posterAutoTimer = null;
+  }
+}
+
+function restartPosterAutoPlay() {
+  stopPosterAutoPlay();
+  startPosterAutoPlay();
+}
+
+function initHeroPosterSlider() {
+  const container = document.querySelector('.hero-poster-container');
+  if (container) {
+    container.addEventListener('mouseenter', stopPosterAutoPlay);
+    container.addEventListener('mouseleave', () => {
+      if (!isPosterModalOpen()) startPosterAutoPlay();
+    });
+  }
+  startPosterAutoPlay();
 }
 
 function openPosterModal(src) {
+  stopPosterAutoPlay();
   const modal = document.getElementById('poster-lightbox-modal');
   const modalImg = document.getElementById('lightbox-modal-img');
   if (!modal || !modalImg) return;
@@ -116,6 +213,7 @@ function openPosterModal(src) {
 function closePosterModal() {
   const modal = document.getElementById('poster-lightbox-modal');
   if (modal) modal.classList.remove('open');
+  startPosterAutoPlay();
 }
 
 function isPosterModalOpen() {
@@ -723,6 +821,7 @@ function setLanguage(language) {
   currentLanguage = language;
   saveLanguage(language);
   applyStaticTranslations();
+  updateHeroPosterAlt();
   renderCurrentView();
 }
 
@@ -745,6 +844,7 @@ async function init() {
   applyStaticTranslations();
   window.addEventListener('hashchange', renderCurrentView);
   document.addEventListener('keydown', handleEscapeKey);
+  initHeroPosterSlider();
   renderCurrentView();
 }
 
