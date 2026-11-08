@@ -1056,7 +1056,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .sc-time {
 	font-family: 'Space Grotesk', monospace;
-	font-size: 0.68rem;
+	font-size: 0.85rem;
 	font-weight: 600;
 	color: var(--text-muted);
 	letter-spacing: 0;
