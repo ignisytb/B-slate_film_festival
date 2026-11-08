@@ -39,6 +39,7 @@
 		"opening_badge": "✨ OPENING FILM",
 		"closing_badge": "🌙 CLOSING FILM",
 		"archive_title": "Film List",
+		"favs_title": "My Collection",
 		"section_title": "{section} Session",
 		"empty": "No films match your search.",
 		"favs_empty": "Your collection is empty.<br>Tap the heart (♥) on the films you want to see!"

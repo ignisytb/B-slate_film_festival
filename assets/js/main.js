@@ -358,15 +358,17 @@ function catalogEmptyMessage() {
 function renderCatalogResults(items, emptyMessage) {
   const matched = items.filter(film => matchesSection(film) && matchesSearch(film));
   const visibleFilms = isDefaultCatalog() ? sortForDefaultCatalog(matched) : matched;
+  const isFavs = currentTab === 'favs';
+  const defaultTitle = isFavs ? (t('catalog.favs_title') || t('tab.favs')) : t('catalog.archive_title');
   const listTitle = selectedSectionId === ALL
-    ? t('catalog.archive_title')
+    ? defaultTitle
     : t('catalog.section_title', { section: localized(sectionsById[selectedSectionId].title) });
-  const showEunmakPanel = currentTab === 'catalog' && (selectedSectionId === ALL || selectedSectionId === EUNMAK_SECTION_ID)
+  const showEunmakPanel = !isFavs && (selectedSectionId === ALL || selectedSectionId === EUNMAK_SECTION_ID)
       && !normalizedSearchText();
 
   return `
-    ${renderCatalogIntro()}
-    ${isDefaultCatalog() ? renderSpotlight() : ''}
+    ${!isFavs ? renderCatalogIntro() : ''}
+    ${!isFavs && isDefaultCatalog() ? renderSpotlight() : ''}
 
     <div class="section-title-bar">
       <span class="section-title">${escapeHtml(listTitle)}</span>
