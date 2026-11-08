@@ -416,7 +416,6 @@ body::before {
 }
 .hero-poster-container {
 	transform: rotate(4deg);
-	max-width: 280px;
 }
 .hero-poster-container::before {
 	content: "";
