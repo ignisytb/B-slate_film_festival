@@ -1596,9 +1596,23 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	60% { transform: scale(1.15); }
 }
 
+@keyframes barStack {
+	from { opacity: 0; transform: translateY(-6px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
 	#nav-favs:hover svg {
 		animation: heartBeat 0.9s ease-in-out infinite;
+	}
+	#nav-catalog:hover .nav-icon-bar {
+		animation: barStack 0.3s ease-out both;
+	}
+	#nav-catalog:hover .nav-icon-bar:nth-child(2) {
+		animation-delay: 0.1s;
+	}
+	#nav-catalog:hover .nav-icon-bar:nth-child(1) {
+		animation-delay: 0.2s;
 	}
 }
 
