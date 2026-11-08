@@ -421,7 +421,6 @@ function renderScheduleCard(film) {
       <div class="sc-color-strip" style="background:${section.hex};"></div>
       <div class="sc-time-col">
         <div class="sc-hall">${escapeHtml(shortHallName(film.screening.hall))}</div>
-        <hr class="sc-divider">
         <div class="sc-time">${film.screening.start}</div>
       </div>
       <div class="sc-content">

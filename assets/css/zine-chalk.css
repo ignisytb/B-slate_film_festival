@@ -953,6 +953,14 @@ body {
 
 .sc-hall {
 	color: var(--heading);
+	font-size: 1.4rem;
+	padding-bottom: 3px;
+	border-bottom: 1px solid var(--heading);
+}
+.sc-time {
+	margin-top: 3px;
+	font-size: 0.68rem;
+	border-bottom: none;
 }
 
 @media (min-width: 1400px) {

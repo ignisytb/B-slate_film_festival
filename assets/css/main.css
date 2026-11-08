@@ -1047,19 +1047,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	padding-right: 12px;
 }
 .sc-hall {
-	font-size: 1.02rem;
+	font-size: 1.1rem;
 	font-weight: 700;
 	color: var(--gold);
 	line-height: 1.15;
 	letter-spacing: -0.01em;
 	text-align: center;
-}
-.sc-divider {
-	width: 26px;
-	height: 0;
-	margin: 5px 0;
-	border: none;
-	border-top: 1px solid var(--surface-border);
 }
 .sc-time {
 	font-family: 'Space Grotesk', monospace;
