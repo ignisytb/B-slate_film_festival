@@ -1112,18 +1112,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	border-right: 1px solid var(--surface-border);
 	padding-right: 12px;
 }
+.sc-hall {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: var(--gold);
+	line-height: 1.15;
+	letter-spacing: -0.01em;
+	text-align: center;
+}
 .sc-time {
 	font-family: 'Space Grotesk', monospace;
-	font-size: 1.1rem;
-	font-weight: 700;
-	color: #fff;
-	letter-spacing: -0.02em;
-}
-.sc-hall {
-	font-size: 0.68rem;
-	color: var(--text-muted);
-	margin-top: 2px;
+	font-size: 1rem;
 	font-weight: 600;
+	color: var(--text-muted);
+	letter-spacing: 0;
 }
 .sc-content {
 	flex: 1;
@@ -1152,25 +1154,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .schedule-card .session-fav-btn {
 	top: 50%;
 	right: 12px;
-	width: 44px;
-	height: 44px;
 	transform: translateY(-50%);
-	border-radius: 0;
-	border: 2px solid var(--line, var(--surface-border));
-	background: var(--surface);
-	color: var(--text-main);
-	font-family: 'Space Grotesk', sans-serif;
-	font-weight: 700;
-	font-size: 0.8rem;
-	letter-spacing: 0.02em;
-	line-height: 1;
-	backdrop-filter: none;
 }
 .schedule-card .session-fav-btn.active {
 	transform: translateY(-50%) scale(1.08);
-	background: var(--rec-red, #ef4444);
-	border-color: var(--rec-red, #ef4444);
-	color: #fff;
 }
 
 /* 단일 GV / Eng 뱃지 */
@@ -1828,5 +1815,34 @@ input:focus-visible {
 @media (min-width: 1280px) {
 	.films-grid {
 		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (min-width: 1400px) {
+	.app-wrap {
+		padding-bottom: 0;
+	}
+	.bottom-nav {
+		left: calc(50% + var(--container-max) / 2 + 18px);
+		right: auto;
+		bottom: auto;
+		top: 120px;
+		transform: none;
+		width: auto;
+		max-width: none;
+		height: auto;
+		flex-direction: column;
+		gap: 4px;
+		padding: 8px 5px;
+		border-radius: 20px;
+	}
+	.nav-btn {
+		flex: 0 0 auto;
+		width: 68px;
+		height: auto;
+		padding: 9px 3px;
+		gap: 4px;
+		line-height: 1.3;
+		text-align: center;
 	}
 }

@@ -482,7 +482,7 @@ function renderCatalogResults(items, emptyMessage) {
     ${showEunmakPanel ? renderEunmakPanel() : ''}
 
     ${renderFooter(`
-      <span>2026 BISEUL FILM FESTIVAL '낭만 ; 浪漫 ;'</span>
+      <span>2026 BSLATE FILM FESTIVAL '낭만 ; 浪漫 ;'</span>
       <span>${t('footer.host')}</span>
     `)}
   `;
@@ -498,17 +498,11 @@ function renderCatalogView(items, emptyMessage = t('catalog.empty')) {
   `;
 }
 
-function sessionMark(film) {
-  if (film.is_opening) return 'OPEN';
-  if (film.is_closing) return 'FIN';
-  return `#${hallLetter(film.screening.hall)}`;
-}
-
 function renderSessionFavButton(film) {
   const isFav = bookmarks.includes(film.id);
   return `
     <button class="fav-btn session-fav-btn ${isFav ? 'active' : ''}" data-film-id="${film.id}" onclick="toggleFav('${film.id}', event)" aria-label="${t('common.save_to_favs')}">
-      ${sessionMark(film)}
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${HEART_PATH}"/></svg>
     </button>
   `;
 }
@@ -524,8 +518,8 @@ function renderScheduleCard(film) {
     <a class="schedule-card" href="${filmLink(film)}">
       <div class="sc-color-strip" style="background:${section.hex};"></div>
       <div class="sc-time-col">
-        <div class="sc-time">${film.screening.start}</div>
         <div class="sc-hall">${escapeHtml(shortHallName(film.screening.hall))}</div>
+        <div class="sc-time">${film.screening.start}</div>
       </div>
       <div class="sc-content">
         <div class="sc-meta">
@@ -623,7 +617,7 @@ function renderScheduleView() {
         : renderEmptyState('📅', t('schedule.empty'))}
     </div>
 
-    ${renderFooter(`<span>2026 BISEUL FILM FESTIVAL '낭만 ; 浪漫 ;' · DGIST E7</span>`)}
+    ${renderFooter(`<span>2026 BSLATE FILM FESTIVAL '낭만 ; 浪漫 ;' · DGIST E7</span>`)}
   `;
 }
 
