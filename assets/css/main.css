@@ -1790,7 +1790,7 @@ input:focus-visible {
 		grid-area: poster;
 		width: 100%;
 		max-width: none;
-		margin: 8px 0 10px;
+		margin: 40px 0 10px;
 	}
 
 	.films-grid {
