@@ -1761,15 +1761,15 @@ input:focus-visible {
 		left: auto;
 		right: max(24px, calc(50vw - var(--container-max) / 2 - 96px));
 		bottom: auto;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 120px;
+		transform: none;
 		width: auto;
 		max-width: none;
 		height: auto;
 		flex-direction: column;
 		gap: 6px;
 		padding: 10px 8px;
-		border-radius: 18px;
+		border-radius: 20px;
 	}
 	.nav-btn {
 		flex: 0 0 auto;

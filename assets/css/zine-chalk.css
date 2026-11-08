@@ -954,3 +954,9 @@ body {
 .sc-hall {
 	color: var(--heading);
 }
+
+@media (min-width: 1400px) {
+	.bottom-nav {
+		border-radius: 20px;
+	}
+}
