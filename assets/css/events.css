@@ -1,8 +1,5 @@
-body.tab-event .hero-poster-container {
+body.tab-event .hero-header {
 	display: none;
-}
-body.tab-event .viewfinder-box {
-	padding-bottom: 8px;
 }
 
 .event-view {
