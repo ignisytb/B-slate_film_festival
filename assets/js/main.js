@@ -467,7 +467,7 @@ function renderCatalogResults(items, emptyMessage) {
     ${showEunmakPanel ? renderEunmakPanel() : ''}
 
     ${renderFooter(`
-      <span>2026 BSLATE FILM FESTIVAL '낭만 ; 浪漫 ;'</span>
+      <span>2026 B_SLATE FILM FESTIVAL '낭만 ; 浪漫 ;'</span>
       <span>${t('footer.host')}</span>
     `)}
   `;
@@ -602,7 +602,7 @@ function renderScheduleView() {
         : renderEmptyState('📅', t('schedule.empty'))}
     </div>
 
-    ${renderFooter(`<span>2026 BSLATE FILM FESTIVAL '낭만 ; 浪漫 ;' · DGIST E7</span>`)}
+    ${renderFooter(`<span>2026 B_SLATE FILM FESTIVAL '낭만 ; 浪漫 ;' · DGIST E7</span>`)}
   `;
 }
 
