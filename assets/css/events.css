@@ -1,5 +1,10 @@
-body.tab-event .hero-header {
+body.tab-event .hero-title-wrap,
+body.tab-event .hero-poster-container {
 	display: none;
+}
+body.tab-event .hero-header,
+body.tab-event .viewfinder-box {
+	padding-bottom: 0;
 }
 
 .event-view {
