@@ -93,7 +93,7 @@ function setActiveNav(tab) {
 function switchTab(tab) {
   currentTab = tab;
   setActiveNav(tab);
-  window.location.hash = '';
+  window.location.hash = tab === 'event' ? EVENT_ROUTE : '';
   window.scrollTo(0, 0);
   renderCurrentView();
 }
@@ -467,7 +467,7 @@ function renderCatalogResults(items, emptyMessage) {
     ${showEunmakPanel ? renderEunmakPanel() : ''}
 
     ${renderFooter(`
-      <span>2026 BSLATE FILM FESTIVAL '낭만 ; 浪漫 ;'</span>
+      <span>2026 B_SLATE FILM FESTIVAL '낭만 ; 浪漫 ;'</span>
       <span>${t('footer.host')}</span>
     `)}
   `;
@@ -602,7 +602,7 @@ function renderScheduleView() {
         : renderEmptyState('📅', t('schedule.empty'))}
     </div>
 
-    ${renderFooter(`<span>2026 BSLATE FILM FESTIVAL '낭만 ; 浪漫 ;' · DGIST E7</span>`)}
+    ${renderFooter(`<span>2026 B_SLATE FILM FESTIVAL '낭만 ; 浪漫 ;' · DGIST E7</span>`)}
   `;
 }
 
@@ -749,6 +749,11 @@ function renderDetailView(film) {
 function renderCurrentView() {
   const app = document.getElementById('app-content');
   const filmId = filmIdFromHash(window.location.hash);
+  if (window.location.hash === EVENT_ROUTE) {
+    currentTab = 'event';
+    setActiveNav(currentTab);
+  }
+  document.body.classList.toggle('tab-event', currentTab === 'event' && !filmId);
 
   if (filmId) {
     const film = films.find(candidate => candidate.id === filmId);
@@ -763,6 +768,8 @@ function renderCurrentView() {
 
   if (currentTab === 'schedule') {
     app.innerHTML = renderScheduleView();
+  } else if (currentTab === 'event') {
+    app.innerHTML = renderEventView();
   } else {
     app.innerHTML = renderCatalogView(catalogItems(), catalogEmptyMessage());
   }

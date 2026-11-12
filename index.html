@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/zine-chalk.css">
   <link rel="stylesheet" href="assets/css/episodes.css">
+  <link rel="stylesheet" href="assets/css/events.css">
 </head>
 <body>
   <div class="app-wrap">
@@ -33,7 +34,7 @@
         </div>
 
         <div class="hero-title-wrap">
-          <p class="hero-edition">2026 BSLATE FILM FESTIVAL</p>
+          <p class="hero-edition">2026 B_SLATE FILM FESTIVAL</p>
           <h1 class="hero-main-title">낭만 ;</h1>
           <p class="hero-hanja">浪漫 ;</p>
           <span class="hero-venue" data-i18n="hero.venue">장소 : <b>DGIST E7 전용</b></span>
@@ -82,6 +83,10 @@
         <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/><rect class="nav-icon-page" x="5" y="10" width="14" height="10"/></svg>
         <span data-i18n="tab.schedule">상영시간표</span>
       </button>
+      <button class="nav-btn" id="nav-event" onclick="switchTab('event')">
+        <svg viewBox="0 0 24 24"><path d="M22 10V6c0-1.11-.9-2-2-2H4c-1.1 0-1.99.89-1.99 2v4c1.1 0 1.99.9 1.99 2s-.89 2-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-2v-2h2v2zm0-4.5h-2v-2h2v2zm0-4.5h-2v-2h2v2z"/></svg>
+        <span data-i18n="tab.event">이벤트</span>
+      </button>
       <button class="nav-btn" id="nav-favs" onclick="switchTab('favs')">
         <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         <span><span data-i18n="tab.favs">낭만 보관함</span> (<span id="fav-count">0</span>)</span>
@@ -99,6 +104,7 @@
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/reviews.js"></script>
   <script src="assets/js/episodes.js"></script>
+  <script src="assets/js/events.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
