@@ -1,18 +1,18 @@
 const EVENT_ROUTE = '#event';
 
 const TICKET_PRIZES = [
-  { rank: 1, amount: 30000 },
-  { rank: 2, amount: 10000 },
-  { rank: 3, amount: 10000 }
+  { rank: 1, amount: 30000, winners: 1 },
+  { rank: 2, amount: 5000, winners: 4 }
 ];
 
-const STAMP_GOAL = 5;
+const STAMP_SLOTS = 6;
+const BONUS_SLOT_INDEX = 5;
 const STAMP_REWARDS = [
   { count: 1, key: 'jelly' },
   { count: 3, key: 'badge' },
   { count: 5, key: 'voucher', amount: 5000 }
 ];
-const STAMP_INK_COLORS = ['#d6334c', '#e27137', '#e06d96', '#7a8256', '#64748b'];
+const STAMP_INK_COLORS = ['#d6334c', '#e27137', '#e06d96', '#7a8256', '#64748b', '#38bdf8'];
 const STAMPED_PREVIEW_COUNT = 3;
 
 function formatWon(amount) {
@@ -100,17 +100,20 @@ function renderEventIntro() {
 
 function renderTicketArt() {
   return `
-    <div class="ticket-art" aria-hidden="true">
-      <div class="ticket-main">
-        <span class="ticket-rec"><span class="rec-dot"></span>ADMIT ONE</span>
-        <b class="ticket-title">낭만 ;</b>
-        <span class="ticket-meta">2026 BSLATE · DGIST E7</span>
+    <div class="ticket-art-wrap" aria-hidden="true">
+      <div class="ticket-art">
+        <div class="ticket-main">
+          <span class="ticket-rec"><span class="rec-dot"></span>ENTRY No.0001</span>
+          <b class="ticket-title">${t('event.ticket_stub')}</b>
+          <span class="entry-field">${t('event.entry_name')}<i></i></span>
+          <span class="entry-field">${t('event.entry_phone')}<i></i></span>
+        </div>
+        <div class="ticket-stub">
+          <b>낭만 ;</b>
+          <span class="ticket-meta">2026 BSLATE</span>
+        </div>
       </div>
-      <div class="ticket-stub">
-        <span class="stub-scissors">✂</span>
-        <b>${t('event.ticket_stub')}</b>
-        <span class="stub-lines"><i></i><i></i></span>
-      </div>
+      <span class="staff-tag">🙋 ${t('event.ticket_staff')}</span>
     </div>
   `;
 }
@@ -129,19 +132,17 @@ function renderSteps(stepKeys) {
   `;
 }
 
-function renderPodiumStep(prize) {
+function renderPrizeTier(prize) {
+  const vouchers = Array.from({ length: prize.winners }, () => renderVoucherArt(prize.amount, prize.rank === 1 ? 'large' : 'small'));
   return `
-    <div class="podium-step rank-${prize.rank}">
-      ${renderVoucherArt(prize.amount, prize.rank === 1 ? 'large' : 'small')}
-      <div class="podium-block">
-        <b>${t('event.rank', { rank: prize.rank })}</b>
-      </div>
+    <div class="prize-tier rank-${prize.rank}">
+      <div class="voucher-stack count-${prize.winners}">${vouchers.join('')}</div>
+      <b class="prize-tier-label">${t('event.rank_winners', { rank: prize.rank, count: prize.winners })}</b>
     </div>
   `;
 }
 
 function renderTicketEvent() {
-  const podiumOrder = [2, 1, 3].map(rank => TICKET_PRIZES.find(prize => prize.rank === rank));
   return `
     <section class="event-card" id="event-ticket">
       <div class="event-card-head">
@@ -156,7 +157,7 @@ function renderTicketEvent() {
       <div class="event-highlight">${t('event.ticket_more')}</div>
 
       <h4 class="event-subhead">🏆 ${t('event.ticket_prize_title')}</h4>
-      <div class="podium">${podiumOrder.map(renderPodiumStep).join('')}</div>
+      <div class="prize-row">${TICKET_PRIZES.map(renderPrizeTier).join('')}</div>
 
       <div class="event-notice">
         <p>📣 ${t('event.ticket_draw')}</p>
@@ -166,13 +167,20 @@ function renderTicketEvent() {
   `;
 }
 
+function renderEmptySlotLabel(index) {
+  return index === BONUS_SLOT_INDEX
+    ? '<span class="slot-bonus">★<br>BONUS</span>'
+    : `<span class="slot-no">${index + 1}</span>`;
+}
+
 function renderStampSlot(index) {
   const isStamped = index < STAMPED_PREVIEW_COUNT;
+  const isBonus = index === BONUS_SLOT_INDEX;
   const reward = STAMP_REWARDS.find(item => item.count === index + 1);
   const ink = STAMP_INK_COLORS[index % STAMP_INK_COLORS.length];
   return `
-    <div class="stamp-slot ${isStamped ? 'stamped' : ''} ${reward ? 'milestone' : ''}" style="--ink:${ink};">
-      ${isStamped ? '<span class="stamp-mark">浪漫</span>' : `<span class="slot-no">${index + 1}</span>`}
+    <div class="stamp-slot ${isStamped ? 'stamped' : ''} ${isBonus ? 'bonus' : ''}" style="--ink:${ink};">
+      ${isStamped ? '<span class="stamp-mark">浪漫</span>' : renderEmptySlotLabel(index)}
       ${reward ? `<span class="slot-gift">🎁</span>` : ''}
     </div>
   `;
@@ -186,7 +194,7 @@ function renderLeafletArt() {
         <b>낭만 ;</b>
       </div>
       <div class="leaflet-slots">
-        ${Array.from({ length: STAMP_GOAL }, (_, index) => renderStampSlot(index)).join('')}
+        ${Array.from({ length: STAMP_SLOTS }, (_, index) => renderStampSlot(index)).join('')}
       </div>
     </div>
   `;
@@ -218,6 +226,7 @@ function renderStampEvent() {
       <ol class="stamp-rewards">${STAMP_REWARDS.map(renderStampReward).join('')}</ol>
 
       <div class="event-highlight">${t('event.stamp_all')}</div>
+      <div class="event-highlight bonus-note">★ ${t('event.stamp_bonus')}</div>
 
       <div class="event-notice">
         <p>📍 ${t('event.stamp_where')}</p>
