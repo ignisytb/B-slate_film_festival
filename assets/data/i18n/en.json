@@ -17,7 +17,8 @@
 	"tab": {
 		"catalog": "All Films",
 		"schedule": "Schedule",
-		"favs": "My Collection"
+		"favs": "My Collection",
+		"event": "Events"
 	},
 	"common": {
 		"all": "All",
@@ -95,5 +96,46 @@
 		"too_fast": "Too many posts. Please wait a moment.",
 		"error": "Couldn't post. Please try again later.",
 		"load_error": "Couldn't load comments."
+	},
+	"event": {
+		"intro_title": "Watch films,<br>take home <mark>gifts</mark>!",
+		"intro_lead": "Two events run during the festival.<br>Your ticket is a raffle entry, and the leaflet is a stamp card.",
+		"ticket_name": "Ticket Raffle",
+		"ticket_jump_prize": "Up to ₩30,000 Baemin",
+		"stamp_name": "Stamp Rally",
+		"stamp_jump_prize": "Jelly · Badge · Baemin",
+		"ticket_title": "Ticket Raffle",
+		"ticket_summary": "Tear off the <b>entry stub</b> on your screening ticket and drop it in the box. Winners of Baemin gift cards are drawn at the closing ceremony.",
+		"ticket_stub": "ENTRY",
+		"ticket_step_1_icon": "🎟️",
+		"ticket_step_1": "Get a ticket for each screening",
+		"ticket_step_2_icon": "✍️",
+		"ticket_step_2": "Write your name and contact",
+		"ticket_step_3_icon": "📮",
+		"ticket_step_3": "Tear it off and drop it in",
+		"ticket_more": "More tickets, more chances to win! 🍀",
+		"ticket_prize_title": "Prizes",
+		"rank": "No.{rank}",
+		"voucher_brand": "Baemin Gift Card",
+		"ticket_draw": "Draw: <b>live at the closing ceremony, Fri 11/20</b>, 3rd → 2nd → 1st",
+		"ticket_attend": "Prizes are handed out on the spot to winners who are present. If a winner is absent, we draw again.",
+		"stamp_title": "Stamp Rally",
+		"stamp_summary": "<b>One stamp per screening session</b> on your leaflet. The more you collect, the more gifts you get.",
+		"stamp_step_1_icon": "📄",
+		"stamp_step_1": "Pick up a leaflet at the info desk",
+		"stamp_step_2_icon": "🎬",
+		"stamp_step_2": "Watch a film, stamp in any color",
+		"stamp_step_3_icon": "🎁",
+		"stamp_step_3": "Claim gifts at 1, 3 and 5 stamps",
+		"stamp_prize_title": "Gifts grow as you collect",
+		"stamp_count": "×{count}",
+		"reward_jelly": "HARIBO jelly",
+		"reward_badge": "Acrylic badge",
+		"reward_voucher": "₩5,000 Baemin card",
+		"stamp_all": "Gifts stack! Fill all 5 and take home all three ✨",
+		"stamp_where": "Claim gifts in front of the screening hall",
+		"stamp_rule": "One stamp per session. Claimed gifts are checked on your leaflet.",
+		"cta_text": "Which film will you start with?",
+		"cta_button": "See the schedule"
 	}
 }

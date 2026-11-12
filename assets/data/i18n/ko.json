@@ -17,7 +17,8 @@
 	"tab": {
 		"catalog": "전체 영화",
 		"schedule": "상영시간표",
-		"favs": "낭만 보관함"
+		"favs": "낭만 보관함",
+		"event": "이벤트"
 	},
 	"common": {
 		"all": "전체",
@@ -95,5 +96,46 @@
 		"too_fast": "너무 빨리 쓰고 있어요. 잠시 후 다시 시도해 주세요.",
 		"error": "등록하지 못했어요. 잠시 후 다시 시도해 주세요.",
 		"load_error": "글을 불러오지 못했어요."
+	},
+	"event": {
+		"intro_title": "영화 보고 <mark>선물</mark>까지<br>챙겨 가세요!",
+		"intro_lead": "낭만 영화제에서는 두 가지 이벤트가 열려요.<br>티켓은 추첨 응모권, 리플렛은 스탬프 판이 됩니다.",
+		"ticket_name": "티켓 추첨",
+		"ticket_jump_prize": "배민 최대 3만 원",
+		"stamp_name": "스탬프 랠리",
+		"stamp_jump_prize": "젤리 · 배지 · 배민",
+		"ticket_title": "티켓 추첨 이벤트",
+		"ticket_summary": "상영 티켓 끝의 <b>응모권</b>을 뜯어 응모함에 넣으면 끝! 폐막식에서 배달의민족 상품권 주인공을 뽑아요.",
+		"ticket_stub": "응모권",
+		"ticket_step_1_icon": "🎟️",
+		"ticket_step_1": "상영마다 티켓 받기",
+		"ticket_step_2_icon": "✍️",
+		"ticket_step_2": "응모권에 이름·연락처 적기",
+		"ticket_step_3_icon": "📮",
+		"ticket_step_3": "뜯어서 응모함에 쏙",
+		"ticket_more": "티켓이 많을수록 당첨 확률 UP! 많이 볼수록 유리해요 🍀",
+		"ticket_prize_title": "경품",
+		"rank": "{rank}등",
+		"voucher_brand": "배민 상품권",
+		"ticket_draw": "추첨·발표: <b>11/20(금) 폐막식 현장</b>, 3등 → 2등 → 1등 순서",
+		"ticket_attend": "폐막식에 참석한 당첨자에게 현장에서 바로 드려요. 자리에 없으면 다시 추첨합니다.",
+		"stamp_title": "스탬프 랠리",
+		"stamp_summary": "리플렛 빈칸에 <b>상영 세션마다 도장 하나</b>. 모은 개수만큼 선물이 쌓여요.",
+		"stamp_step_1_icon": "📄",
+		"stamp_step_1": "행사 본부에서 리플렛 받기",
+		"stamp_step_2_icon": "🎬",
+		"stamp_step_2": "영화 보고 원하는 색으로 도장 쾅",
+		"stamp_step_3_icon": "🎁",
+		"stamp_step_3": "1·3·5개째에 선물 교환",
+		"stamp_prize_title": "모을수록 커지는 선물",
+		"stamp_count": "{count}개",
+		"reward_jelly": "하리보 젤리",
+		"reward_badge": "아크릴 배지",
+		"reward_voucher": "배민 5천 원권",
+		"stamp_all": "누적 지급! 5개를 채우면 선물 3개를 모두 받아요 ✨",
+		"stamp_where": "선물 교환: 상영관 앞",
+		"stamp_rule": "한 세션에서는 도장 한 번. 받은 선물은 리플렛에 체크해 드려요.",
+		"cta_text": "어떤 영화부터 볼까요?",
+		"cta_button": "상영시간표 보기"
 	}
 }

@@ -93,7 +93,7 @@ function setActiveNav(tab) {
 function switchTab(tab) {
   currentTab = tab;
   setActiveNav(tab);
-  window.location.hash = '';
+  window.location.hash = tab === 'event' ? EVENT_ROUTE : '';
   window.scrollTo(0, 0);
   renderCurrentView();
 }
@@ -749,6 +749,11 @@ function renderDetailView(film) {
 function renderCurrentView() {
   const app = document.getElementById('app-content');
   const filmId = filmIdFromHash(window.location.hash);
+  if (window.location.hash === EVENT_ROUTE) {
+    currentTab = 'event';
+    setActiveNav(currentTab);
+  }
+  document.body.classList.toggle('tab-event', currentTab === 'event' && !filmId);
 
   if (filmId) {
     const film = films.find(candidate => candidate.id === filmId);
@@ -763,6 +768,8 @@ function renderCurrentView() {
 
   if (currentTab === 'schedule') {
     app.innerHTML = renderScheduleView();
+  } else if (currentTab === 'event') {
+    app.innerHTML = renderEventView();
   } else {
     app.innerHTML = renderCatalogView(catalogItems(), catalogEmptyMessage());
   }
