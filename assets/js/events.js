@@ -12,8 +12,6 @@ const STAMP_REWARDS = [
   { count: 3, key: 'badge' },
   { count: 5, key: 'voucher', amount: 5000 }
 ];
-const STAMP_INK_COLORS = ['#d6334c', '#e27137', '#e06d96', '#7a8256', '#64748b', '#38bdf8'];
-const STAMPED_PREVIEW_COUNT = 3;
 
 function formatWon(amount) {
   return amount.toLocaleString('ko-KR');
@@ -167,20 +165,18 @@ function renderTicketEvent() {
   `;
 }
 
-function renderEmptySlotLabel(index) {
+function renderSlotLabel(index) {
   return index === BONUS_SLOT_INDEX
     ? '<span class="slot-bonus">★<br>BONUS</span>'
     : `<span class="slot-no">${index + 1}</span>`;
 }
 
 function renderStampSlot(index) {
-  const isStamped = index < STAMPED_PREVIEW_COUNT;
   const isBonus = index === BONUS_SLOT_INDEX;
   const reward = STAMP_REWARDS.find(item => item.count === index + 1);
-  const ink = STAMP_INK_COLORS[index % STAMP_INK_COLORS.length];
   return `
-    <div class="stamp-slot ${isStamped ? 'stamped' : ''} ${isBonus ? 'bonus' : ''}" style="--ink:${ink};">
-      ${isStamped ? '<span class="stamp-mark">浪漫</span>' : renderEmptySlotLabel(index)}
+    <div class="stamp-slot ${isBonus ? 'bonus' : ''}">
+      ${renderSlotLabel(index)}
       ${reward ? `<span class="slot-gift">🎁</span>` : ''}
     </div>
   `;
