@@ -218,6 +218,7 @@ function handleEscapeKey(event) {
   }
   if (isTypingTarget(event.target)) return;
   if (filmIdFromHash(window.location.hash)) window.location.hash = '';
+  else if (currentTab === 'event') switchTab('schedule');
 }
 
 function changeMainStill(src) {
