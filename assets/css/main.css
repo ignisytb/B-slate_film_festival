@@ -1631,6 +1631,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .empty-state {
+	grid-column: 1 / -1;
 	text-align: center;
 	padding: 50px 20px;
 	color: var(--text-muted);
