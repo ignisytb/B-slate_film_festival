@@ -142,92 +142,79 @@ body.tab-event .viewfinder-box {
 
 .ticket-art-wrap {
 	position: relative;
-	margin: 20px auto 40px;
-	max-width: 340px;
+	width: 150px;
+	margin: 22px auto 56px;
 }
-.ticket-art {
-	display: flex;
-	transform: rotate(-2deg);
-	filter: drop-shadow(4px 4px 0 #111);
-	animation: ticketHandout 3.2s ease-in-out infinite;
-}
-.staff-tag {
-	position: absolute;
-	right: -4px;
-	bottom: -18px;
-	padding: 4px 10px;
-	background: var(--text-main);
-	color: var(--bg);
-	font-size: 0.75rem;
-	font-weight: 700;
-	transform: rotate(3deg);
-}
-.entry-field {
-	display: flex;
-	align-items: flex-end;
-	gap: 6px;
-	font-size: 0.75rem;
-	color: var(--text-sub);
-}
-.entry-field i {
-	flex: 1;
-	border-bottom: 1.5px solid var(--line);
-	margin-bottom: 3px;
-}
-
-@keyframes ticketHandout {
-	0%, 100% { transform: translateX(0) rotate(-2deg); }
-	50% { transform: translateX(6px) rotate(0deg); }
-}
-.ticket-main,
-.ticket-stub {
-	background: #fff8e1;
-	border: 2px solid var(--line);
-	padding: 12px;
-}
-.ticket-main {
-	flex: 1;
+.entry-slip {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
-	border-right: none;
-	border-radius: 10px 0 0 10px;
+	filter: drop-shadow(4px 4px 0 #111);
+	transform: rotate(-3deg);
 }
-.ticket-rec {
-	display: inline-flex;
-	align-items: center;
-	gap: 6px;
-	font-family: var(--font-label);
-	font-size: 0.7rem;
-	font-weight: 700;
-	color: var(--gold);
-}
-.ticket-title {
-	font-family: var(--font-display);
-	font-size: 1.8rem;
-	font-weight: 900;
-}
-.ticket-meta {
-	font-family: var(--font-label);
-	font-size: 0.6rem;
-	color: var(--text-muted);
-}
-.ticket-stub {
-	position: relative;
-	width: 96px;
+.slip-half {
+	aspect-ratio: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 6px;
+	background: #fff8e1;
+	border: 2px solid var(--line);
+}
+.slip-keep {
+	border-bottom: 2px dashed var(--line);
+	border-radius: 8px 8px 0 0;
+}
+.slip-drop {
+	border-top: none;
+	border-radius: 0 0 8px 8px;
 	background: var(--event-yellow);
-	border-left: 2px dashed var(--line);
-	border-radius: 0 10px 10px 0;
+	transform-origin: top left;
+	animation: slipTear 3.2s ease-in-out infinite;
 }
-.ticket-stub b {
-	font-size: 0.95rem;
-	font-weight: 900;
+.slip-label {
+	padding: 2px 6px;
+	background: var(--text-main);
+	color: var(--bg);
+	font-size: 0.72rem;
+	font-weight: 700;
 }
+.slip-no {
+	font-family: var(--font-label);
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+.slip-brand {
+	font-family: var(--font-display);
+	font-size: 0.85rem;
+	font-weight: 800;
+}
+.slip-scissors {
+	position: absolute;
+	top: 50%;
+	left: -24px;
+	transform: translateY(-50%);
+	font-size: 1.2rem;
+}
+.staff-tag {
+	position: absolute;
+	right: -70px;
+	bottom: -38px;
+	padding: 4px 10px;
+	background: var(--text-main);
+	color: var(--bg);
+	font-size: 0.75rem;
+	font-weight: 700;
+	white-space: nowrap;
+	transform: rotate(3deg);
+}
+
+@keyframes slipTear {
+	0%, 55%, 100% { transform: translate(0, 0) rotate(0); }
+	70%, 90% { transform: translate(6px, 10px) rotate(5deg); }
+}
+
 .event-steps {
 	list-style: none;
 	display: grid;
@@ -567,7 +554,7 @@ body.tab-event .viewfinder-box {
 
 @media (prefers-reduced-motion: reduce) {
 	.jump-icon,
-	.ticket-art,
+	.slip-drop,
 	.stamp-slot.bonus,
 	.rank-1 .voucher-card,
 	.acrylic-shine {

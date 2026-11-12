@@ -96,20 +96,23 @@ function renderEventIntro() {
   `;
 }
 
+function renderEntrySlipHalf(kind) {
+  return `
+    <div class="slip-half slip-${kind}">
+      <span class="slip-label">${t(`event.slip_${kind}`)}</span>
+      <b class="slip-no">No.042</b>
+      <span class="slip-brand">${kind === 'keep' ? '낭만 ;' : 'B_SLATE'}</span>
+    </div>
+  `;
+}
+
 function renderTicketArt() {
   return `
     <div class="ticket-art-wrap" aria-hidden="true">
-      <div class="ticket-art">
-        <div class="ticket-main">
-          <span class="ticket-rec"><span class="rec-dot"></span>ENTRY No.0001</span>
-          <b class="ticket-title">${t('event.ticket_stub')}</b>
-          <span class="entry-field">${t('event.entry_name')}<i></i></span>
-          <span class="entry-field">${t('event.entry_phone')}<i></i></span>
-        </div>
-        <div class="ticket-stub">
-          <b>낭만 ;</b>
-          <span class="ticket-meta">2026 B_SLATE</span>
-        </div>
+      <div class="entry-slip">
+        ${renderEntrySlipHalf('keep')}
+        ${renderEntrySlipHalf('drop')}
+        <span class="slip-scissors">✂️</span>
       </div>
       <span class="staff-tag">🙋 ${t('event.ticket_staff')}</span>
     </div>
