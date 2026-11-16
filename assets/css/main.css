@@ -1612,7 +1612,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	to { opacity: 0; transform: scaleY(0); }
 }
 
-@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+@media (hover: hover) {
 	#nav-favs:hover svg {
 		animation: heartBeat 0.9s ease-in-out infinite;
 	}
