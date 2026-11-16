@@ -551,13 +551,3 @@ body.tab-event .viewfinder-box {
 	font-size: 0.95rem;
 	cursor: pointer;
 }
-
-@media (prefers-reduced-motion: reduce) {
-	.jump-icon,
-	.slip-drop,
-	.stamp-slot.bonus,
-	.rank-1 .voucher-card,
-	.acrylic-shine {
-		animation: none;
-	}
-}
