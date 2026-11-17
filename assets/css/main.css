@@ -1595,6 +1595,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	transform-origin: top;
 }
 
+.nav-icon-perf {
+	fill: #000;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
 @keyframes heartBeat {
 	0%, 100% { transform: scale(1); }
 	20% { transform: scale(1.25); }
@@ -1612,6 +1618,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	to { opacity: 0; transform: scaleY(0); }
 }
 
+@keyframes ticketPunch {
+	from { transform: scale(0); }
+	70% { transform: scale(1.35); }
+	to { transform: scale(1); }
+}
+
 @media (hover: hover) {
 	#nav-favs:hover svg {
 		animation: heartBeat 0.9s ease-in-out infinite;
@@ -1627,6 +1639,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 	}
 	#nav-schedule:hover .nav-icon-page {
 		animation: pageFlip 0.22s ease-in 3;
+	}
+	#nav-event:hover .nav-icon-perf {
+		animation: ticketPunch 0.26s ease-out both;
+	}
+	#nav-event:hover .nav-icon-perf:nth-of-type(3) {
+		animation-delay: 0.1s;
+	}
+	#nav-event:hover .nav-icon-perf:nth-of-type(4) {
+		animation-delay: 0.2s;
 	}
 }
 
